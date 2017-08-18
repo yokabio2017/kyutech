@@ -1,6 +1,6 @@
 .kaobox{
-  margin: 30px auto;
-  padding: 20px;
+  margin: 10px auto;
+  padding: 0px;
   display: flex;
   -webkit-justify-content: center; /* Safari */
   justify-content:         center;
@@ -17,10 +17,8 @@
   align-content:         space-around;
   flex-basis: auto;
 
-
   width: 60%;
   height: auto;
-  border: 1px solid #ccc;
 }
 
 
