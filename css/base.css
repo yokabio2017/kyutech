@@ -2,7 +2,7 @@ body{
 	padding: 0;
 	margin: 0;
 	overflow-x:hidden;
-	background-color: #F0F7F4;
+	background-color: #eff8e2;
 	color: white;
 
 	/*font-family: 'Ranchers', cursive;*/
@@ -15,7 +15,7 @@ a.anchor{
 }
 #title{
 	text-align: center;
-	background-color: #697268;
+	background-color: #00a03d;
 
 
 
@@ -42,7 +42,7 @@ a.anchor{
 	justify-content: center;/* 3 */
 	align-items: center;    /* 4 */
 	z-index: 1050;
-	background-color: #95A3A4;
+	background-color: #870028;
 	font-size: 120%;
 
 
@@ -53,13 +53,13 @@ a.anchor{
 	font-size: 22px;
 	line-height: 28px;
 	text-decoration: none;
-	color: #292D2D;
+	color: #eff8e2;
 	margin-right: 50px;
 	font-size: 150%;
 }
 
 #header .top:hover{
-	color: #ffa100;
+	color: #fff321;
 }
 
 #header ul{
@@ -71,7 +71,7 @@ a.anchor{
 }
 .product{
 	text-align: center;
-	background-color: #426B69;
+	background-color: #177e89;
 	padding: 10px 0px;
 }
 .product_n{
@@ -85,7 +85,7 @@ a.anchor{
 
 .abst{
 	text-align: center;
-	background-color: #3A5E70;
+	background-color: #177e89;
 }
 .abst p{
 	text-align: left;
@@ -322,7 +322,7 @@ table td.kusari{
 
 }
 #menupd li:hover {
-  background: #BBC4C5;
+  background: #91173b;
 }
 
 #menupd li a{
@@ -330,10 +330,10 @@ table td.kusari{
 	padding: 10px 10px;
 	margin: 0;
 	text-decoration: none;
-	color: black;
+	color: #eff8e2;
 }
 #menupd li a:hover{
-	color: black;
+	color: #fff321;
 }
 
 #menupd li ul {
@@ -343,7 +343,7 @@ table td.kusari{
 
   left: -1px;
   width: 200px;
-  background: black;
+  background: #4a0016;
   border: solid 1px #313132;
 }
 #menupd li ul li {
@@ -361,8 +361,8 @@ table td.kusari{
 	color: white;
 }
 #menupd li ul li a:hover {
-  background: #6C808A;
-  color: #fff;
+  background: #91173b;
+  color: #fff321;
 }
 
 .agenda{
@@ -375,7 +375,7 @@ table td.kusari{
 	text-align: center;
 	width: 80%;
 	margin: auto;
-	background-color: #578CA7;
+	background-color: #870028;
 	padding: 10px;
 	margin: 15px 10px;
 	border-radius: 20px;
@@ -410,7 +410,7 @@ table td.kusari{
 #footer{
 	text-align: center;
 	border-top: 1px solid #ccc;
-	background-color: #27233A;
+	background-color: #0a2e36;
 	color: #93B5C6;
 
 }
