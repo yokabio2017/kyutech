@@ -1,0 +1,138 @@
+.kaobox{
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  -webkit-justify-content: center; /* Safari */
+  justify-content:         center;
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+
+  -webkit-align-items: center; /* Safari */
+  align-items:         center;
+
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content:         space-around;
+
+  -webkit-align-content: space-around; /* Safari */
+  align-content:         space-around;
+  flex-basis: auto;
+
+
+  width: 60%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+
+.kaobox div.kao{
+  width: 150px;
+  height: 150px;
+
+  overflow: hidden;
+  position: relative;
+  margin: 6px 10px;
+  box-sizing:border-box;
+}
+
+.kaobox div.kao .sita{
+  font-family: sans-serif;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  text-shadow: 2px 2px 0 #000,
+             -2px 2px 0 #000,
+             2px -2px 0 #000,
+             -2px -2px 0 #000;
+  letter-spacing: 2px;
+}
+
+.kaobox div.kao .kaku{
+  font-family: sans-serif;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  overflow: visible !important;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #000,
+             -2px 2px 0 #000,
+             2px -2px 0 #000,
+             -2px -2px 0 #000;
+  letter-spacing: 2px;
+}
+.kaobox div.kao:hover{
+
+  border: 5px solid green;
+  cursor: pointer;
+}
+
+.kao img.image{
+  display: block;
+  margin: auto;
+  width: 150px;
+  overflow: visible;
+}
+
+
+.selected{
+
+  border: 5px solid yellow !important;
+  z-index: 100;
+}
+
+
+.pref{
+  margin: auto;
+  display: flex;
+  -webkit-justify-content: center; /* Safari */
+  justify-content:         center;
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content:         space-around;
+
+  -webkit-align-content: space-around; /* Safari */
+  align-content:         space-around;
+  -webkit-align-items: center; /* Safari */
+  align-items:         center;
+  width: 60%;
+  height: auto;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+.pref div.face{
+  margin: 10px 20px;
+  width:200px;
+  height: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+
+.pref img{
+  width: 200px;
+  display: block;
+
+}
+
+#person{
+  flex-grow: 1;
+}
+
+#perinfo{
+  flex-grow: 2;
+
+}
+
+#perinfo span{
+  font-size: 300%;
+
+}

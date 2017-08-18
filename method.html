@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>BIOMOD2017 Team.YOKABIO METHOD</title>
+	<link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/js/jquery-ui.min.css">
+	<script src="js/bootstrap.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/open.js"></script>
+	<script src="js/page-top.js"></script>
+	<script src="js/followIndex.js"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+</head>
+<body>
+	<div id="title">
+		<h1>YOKABIO METHOD</h1>
+	</div>
+
+	<div id="header"></div>
+
+
+	<div class="agenda">
+		<div>Material &amp; Method</div>
+		<ol>
+			<li><a href="#sc">Simulation Condition</a></li>
+			<li><a href="#ts">Type &amp; Strands</a></li>
+			<li><a href="#wedt">Wet Experiment of DNA Tractor</a></li>
+		</ol>
+
+	</div>
+
+	<div id="kiji">
+		<ol>
+			<li>
+				<h1 id="sc">Simulation Condition</h1>
+				<p>
+					We set the binding rate constant (kf) based on toehold length as follows.<br>
+					<p style="" class="susiki">
+
+						If toehold_length &le; 6 <br>
+							&nbsp;&nbsp;&nbsp;kf = 5.0&times;10^(n-1) [M^(-1)s^(-1)] <br>
+						else<br>
+							&nbsp;&nbsp;&nbsp;kf = 3.0&times;10^6 [M^(-1)s^(-1)]<br>
+						Where<br>
+							&nbsp;&nbsp;&nbsp;n : toehold_length<br>
+
+					</p>
+				</p>
+			</li><!-- Simulation Condition-->
+
+			<li>
+				<h1 id="ts">Type &amp; Strands</h1>
+				Tractor
+
+				<p>
+					Tractorは一本鎖DNAであるT1とT2をアニーリングすることで生成される。
+					アニーリングは95℃で5分間温めた後、4時間かけてじっくりと20℃になるまで温度を下げるという条件で行う。
+				</p>
+				<img src="/img/Tractor.png" alt="" width="40%">
+				<table border=1>
+				 <tr><th></th><th>塩基配列</th></tr>
+				 <tr><td class="kusari">T1</td><td>CCCTAAACTAAACATTACTAACTTATCCTTTTGCCTCGTATCCTAACCGAACGGACTCCAGGACATCACACGCTCAATCACCACCT</td></tr>
+				 <tr><td class="kusari">T2</td><td>CCCTAAACTAAACATTACTAACTTATCCTTGTCCGTTCGGTTAGGATACGAGGCAATCCAGGACATCCTCACGCTCAATCAGCACCT</td></tr>
+				</table>
+				Ground A
+				<p>
+					Tractorは一本鎖DNAであるT1とT2をアニーリングすることで生成される。
+					アニーリングは95℃で5分間温めた後、4時間かけてじっくりと20℃になるまで温度を下げるという条件で行う。
+				</p>
+				<img src="/img/Ground1.png" alt="" width="60%">
+
+				<table border=1>
+					<tr><th></th><th>塩基配列</th></tr>
+					<tr><td class="kusari">S1</td><td>GGTAGTTCTAGGGTGCTGAGGTGGTGATTGAGCGTGTGATGTCACCACGTCTTCTCGCATCACACGCTCAATC</td></tr>
+					<tr><td class="kusari">S2</td><td>CACCTCGGATCTTGATGGAGGTGCTGATTGAGCGTGAGGATGTCAGCACCTCAACTCGCATCCTCACGCTCAATC</td></tr>
+					<tr><td class="kusari">G1</td><td>TCATAGGCACCGTTCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCT</td></tr>
+					<tr><td class="kusari">G4</td><td>GTCCAAGGCTATGACTATCTATGCACT</td></tr>
+					<tr><td class="kusari">C1</td><td>ACGGTGCCTATGACATGGTACTCAGCT</td></tr>
+
+				</table>
+
+				Ground B
+				<p>
+					Tractorは一本鎖DNAであるT1とT2をアニーリングすることで生成される。
+					アニーリングは95℃で5分間温めた後、4時間かけてじっくりと20℃になるまで温度を下げるという条件で行う。
+
+				</p>
+
+				<img src="/img/Ground2.png" alt="" width="60%">
+
+				<table border=1>
+				 <tr><th></th><th>塩基配列</th></tr>
+				 <tr><td class="kusari">G2</td><td>TACCATGAGTCGATCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCAGCTGAGTACCATG</td></tr>
+				 <tr><td class="kusari">C2</td><td>TCGACTCATGGTACAGTATCCGTGGCA</td></tr>
+				</table>
+
+				Ground C
+				<p>
+				Tractorは一本鎖DNAであるT1とT2をアニーリングすることで生成される。
+				アニーリングは95℃で5分間温めた後、4時間かけてじっくりと20℃になるまで温度を下げるという条件で行う。
+
+				</p>
+
+				<img src="/img/Ground3.png" alt="" width="60%">
+
+				<table border=1>
+				 <tr><th></th><th>塩基配列</th></tr>
+				 <tr><td class="kusari">S3</td><td>CACCTCGGATCTTGATGGAGGTGCTGATTGAGCGTGAGGATGCGCC</td></tr>
+				 <tr><td class="kusari">S4</td><td>GGCGCATCCTCACGCTCAATC</td></tr>
+				 <tr><td class="kusari">G3</td><td>TCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCTGCCACGGATACTG</td></tr>
+				</table>
+				Ground
+				<p>
+				Tractorは一本鎖DNAであるT1とT2をアニーリングすることで生成される。
+				アニーリングは95℃で5分間温めた後、4時間かけてじっくりと20℃になるまで温度を下げるという条件で行う。
+				</p>
+				<img src="/img/Ground.png" alt="" width="60%">
+
+				Tractor & Ground A
+				<p>
+				Tractorは一本鎖DNAであるT1とT2をアニーリングすることで生成される。
+				アニーリングは95℃で5分間温めた後、4時間かけてじっくりと20℃になるまで温度を下げるという条件で行う。
+
+				</p>
+				<img src="/img/Ground1+Tractor.png" alt="" width="50%">
+			</li><!--Type &amp; Strands-->
+
+			<li>
+				<h1 id="wedt">Wet Experiment of DNA Tractor</h1>
+				希釈
+				<p>
+
+				</p>
+				アニーリング
+				<p>
+
+				</p>
+
+				電気泳動
+				<p style="text-indent: 0;">
+				① 電気泳動装置（AE-y530MWラピダス・ミニスラブ電気泳動装置（アトー））にゲル（e-PAGEL）をセットした。<br>
+				② サンプル（10μL）とローディングダイ（Gel Loading Dye Purple (6x) B7024S (BioLabs) 4mL）（2μL）を混合した。<br>
+				③ ゲルのレーンに②で作成したサンプルをそれぞれ（10μL）注入し、電気泳動を（80分）行った。<br>
+				④ ゲルを取り出し、DNA染色試薬（ GelGreen Nucleic Acid Stain 10,000X DMSO 0.5mL）で40分染色した。<br>
+				⑤ 染色したゲルをゲルイメージャーで観察、分析した。
+				</p>
+			</li><!--Wet Experiment of DNA Tractor-->
+		</ol>
+
+
+
+
+
+	</div>
+	<p id="page-top"><a href="#">PAGE TOP</a></p>
+	<div id="footer"></div>
+
+</body>
+</html>
