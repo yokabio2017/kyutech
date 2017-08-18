@@ -152,11 +152,11 @@ table td.kusari{
 	clear: both;
 }
 
-#kiji ol{
+#kiji ol.kijilist{
 	margin-left: 100px;
 }
 
-#kiji ol li{
+#kiji ol.kijilist li{
 	font-size: 200%;
 }
 #kiji h1{
@@ -508,10 +508,13 @@ table td.kusari{
 
 	width: 80%;
 	height: auto;
+
 }
 
 .imgarea div{
 	width: 45%;
+	border: 1px solid #ccc;
+	padding: 5px;
 }
 
 .imgarea img{
@@ -522,7 +525,12 @@ table td.kusari{
 	margin: 0 !important;
 	padding: 0 !important;
 	text-indent: 0 !important;
-	text-align: center !important;
+	text-align: left !important;
 	border: 0px !important;
 	width: 100%;
+}
+
+.imgarea ol li{
+	font-size: 50% !important;
+	margin-left: 10px !important;
 }
