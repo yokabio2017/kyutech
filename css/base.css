@@ -15,10 +15,7 @@ a.anchor{
 }
 #title{
 	text-align: center;
-	background-color: #00a03d;
-
-
-
+	background-color: #6ee586;
 
 }
 #title iframe{
@@ -42,7 +39,8 @@ a.anchor{
 	justify-content: center;/* 3 */
 	align-items: center;    /* 4 */
 	z-index: 1050;
-	background-color: #870028;
+	background: linear-gradient(#f7004a, #f7004a);
+	/*background-color: ;*/
 	font-size: 120%;
 
 
@@ -85,7 +83,7 @@ a.anchor{
 
 .abst{
 	text-align: center;
-	background-color: #177e89;
+	background-color: #00aec1;
 }
 .abst p{
 	text-align: left;
@@ -121,6 +119,13 @@ a.anchor{
 	font-weight: bold;
 }
 
+.kiji{
+	color: black;
+	margin-bottom: 50px;
+	margin: 30px auto;
+	width: 90%;
+	min-height: 700px;
+}
 
 #kiji{
 	color: black;
@@ -130,6 +135,14 @@ a.anchor{
 	min-height: 700px;
 }
 
+span.dtrigger{
+	border-bottom: 1px dotted black;
+	color: #53dd6c;
+}
+
+span.dtrigger:hover{
+	cursor: pointer;
+}
 
 table{
 	font-size: 50%;
@@ -200,6 +213,43 @@ table td.kusari{
 	margin-bottom: 20px;
 }
 
+.kiji:after{
+	clear: both;
+}
+
+.kiji h1{
+	/*見出し*/
+	text-decoration: underline;
+	font-size: 120%;
+}
+
+.kiji video{
+	text-align: center;
+	width: 60%;
+	display: block;
+	margin: 30px auto;
+}
+
+.kiji h2{
+	margin-left: 30px;
+	text-decoration: underline;
+}
+
+
+.kiji p{
+	margin: 20px 20px 20px 30px;
+	border-bottom: 1px dotted #ccc;
+	line-height: 2em;
+	text-indent: 2em;
+	font-size: 100%;
+}
+
+
+.kiji img{
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+}
 
 
 .contents{
@@ -322,7 +372,7 @@ table td.kusari{
 
 }
 #menupd li:hover {
-  background: #91173b;
+  background: #f9457b;
 }
 
 #menupd li a{
@@ -343,7 +393,7 @@ table td.kusari{
 
   left: -1px;
   width: 200px;
-  background: #4a0016;
+  background: #9e0030;
   border: solid 1px #313132;
 }
 #menupd li ul li {
@@ -361,7 +411,7 @@ table td.kusari{
 	color: white;
 }
 #menupd li ul li a:hover {
-  background: #91173b;
+  background: #f9457b;
   color: #fff321;
 }
 
@@ -410,7 +460,7 @@ table td.kusari{
 #footer{
 	text-align: center;
 	border-top: 1px solid #ccc;
-	background-color: #0a2e36;
+	background-color: #003035;
 	color: #93B5C6;
 
 }
