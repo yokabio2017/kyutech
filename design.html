@@ -51,7 +51,10 @@
 					しかし、論文ではS1とS2が全く同じ塩基配列のため、Walkerの左足から反応が進むか右足から反応が進むかわからないという問題点がある。右足(w2)から先に反応が進んだ場合、Walkerが宙ぶらりんになってしまい、望まれない反応系となってしまう。
 					この問題の解決策として、我々はミスマッチ塩基対を利用するという方針を立てた。ミスマッチ塩基対とは、意図しない鎖同士が結合をしないように、部分的に相補でない配列に置き換えることを言う。鎖が結合して２本鎖になる時、それぞれの鎖で相補となる組み合わせが多い為結合するのだから、その組み合わせを意図的に減らして結合しなくするという仕組みである。<br>
 			</p>
-				<span style = "text-align: center; display: block;">アニメーション予定</span>
+<p>
+We designed a system to move the structure of DNA origami by means of DNAWalker. At first, I will explain the reference article[1]. This walker is a structure in which two DNA strands are partially hybridized, and each single strand part is a leg. In addition, the scaffolds are designed to form complementary partial sequences to form a hairpin structure, so that they do not bind even if fuel DNA is added. However, in the article, since S1 and S2 are exactly the same base sequence, there is a problem that it is not known whether Walker's reaction proceeds from the left foot or reaction proceeds from the right foot. Walker will be dangling when it goes forward from the right foot (w 2), resulting in an undesired reaction system. As a solution to this problem, we made a policy to utilize mismatched base pairs. A mismatch base pair means to replace a sequence which is not partially complementary so that unintended chains do not bind to each other. When chains join to form a double strand, since there are many complimentary combinations in each strand, they are combined, so that the combination is intentionally reduced to make it uncoupled.
+		</p>	
+	<span style = "text-align: center; display: block;">アニメーション予定</span>
 				<!-- 動画ファイルは public_htmlimg/〇〇.mp4 と保存して src="img/〇〇.mp4"  poster は多分さむね-->
 				<!--
 				<div class="video-wrap">
@@ -65,9 +68,12 @@
 				<p>
 				以下に、<span class="missmatchtrigger dtrigger">ミスマッチ塩基対</span>を利用したWalkerの原理を説明する。表に示す仕様を満たすように、塩基配列にミスマッチ塩基対を組み込んだ。
 				〇と書いてある組み合わせは結合することを表し、×と書いてある組み合わせは結合しないことを表している。
-				例えば、S1とF1は結合するのに対し、S1とF2は結合しないといったようになる。
-<table border=1>
-					<tr><th>Strands</th><th>S1</th><th>S2</th><th>F1</th><th>F2</th></tr>
+				例えば、S1とF1は結合するのに対し、S1とF2は結合しないといったようになる。</p>
+<p>
+The principle of Walker using a mismatched base pair will be explained below. Mismatched base pairs were incorporated into the base sequence so as to satisfy the specifications shown in the table. A combination written ◯ indicates that the combination is to be combined, and a combination written as X indicates that the combination is not combined. For example, S1 and F1 are coupled, whereas S1 and F2 are not. 
+</p>
+<table border=1>					
+<tr><th>Strands</th><th>S1</th><th>S2</th><th>F1</th><th>F2</th></tr>
 					<tr><th>S1</th><th>×</th><th>×</th><th>〇</th><th>×</th></tr>
 					<tr><th>S2</th><th>×</th><th>×</th><th>×</th><th>〇</th></tr>
 					<tr><th>F1</th><th>〇</th><th>×</th><th>×</th><th>〇</th></tr>
@@ -78,7 +84,10 @@
 				まず、左足(T1)と右足(T2)は異なる配列にし、さらにTractorの足場は下図のように１歩置きに異なる配列にして、左足(T1)とS1、右足(T2)とS2がそれぞれ結合するように設計してある。また、燃料Fuelはミスマッチ塩基対を利用したF1とF2から成る２本鎖となっており、F2のtoeholdは隠されてF1のtoeholdのみむき出しになっている。F1とS1が結合することによってF2と
 T1が解離して、次に、解離したT1とS2が結合してTractorが動く、という仕組みになっている。
 
-				詳しい反応の手順については下の図において8つのステップに分けて説明する。
+				詳しい反応の手順については下の図において8つのステップに分けて説明する。</p>
+<p>
+First, the left leg (W1) and the right foot (W2) are arranged in different arrangements, the Walker scaffolds are arranged in different steps as shown below, and the left leg (W1) and S1, the right leg (W2) It is designed to do. In addition, Fuel is a duplex composed of F1 and F2 using mismatched base pairs, the toehold of F2 is hidden and only toehold of F1 is exposed. F1 and S1 combine to dissociate F2 and W1, and then dissociated W1 and S2 combine to move Walker. The detailed reaction procedure will be described in 8 steps in the figure below.
+
 				</p>
 
 				<div class="imgarea">
@@ -88,13 +97,14 @@ T1が解離して、次に、解離したT1とS2が結合してTractorが動く�
 					<div>
 						<p>
 							step1 <br>
-							このプロセスでは、S1とT1を剥がして左足(T1)を浮かせることを目標とする。<br>
+							In this process, we aim to peel S1 and W1 and float the left foot (W1).<br>
 							<ol>
-								<li>初期状態</li>
-								<li>S1とF1がToehold部分で結合</li>
-								<li>S1とF1の鎖置換反応でF2が解離し始める</li>
-								<li>T1とF1の鎖置換反応でT1とF2が解離</li>
-								<li>F1とS1が結合し、T1が宙ぶらりん</li>
+								<li>initial state</li>
+								<li>S1 and F1 join in the Toehold part</li>
+								<li>In the chain substitution reaction between S1 and F1, F2 starts dissociating</li>
+								<li>In the chain substitution reaction of W1 and F1, W1 and F2 dissociate</li>
+								<li>F1 and S1 are combined, W1 is dangling</li>
+
 							</ol>
 						</p>
 					</div>
@@ -106,13 +116,14 @@ T1が解離して、次に、解離したT1とS2が結合してTractorが動く�
 					<div>
 						<p>
 							step2<br>
-							このプロセスでは、Step1で浮かせた左足とSpot1が結合し、１歩進めることを目標とする。<br>
+						In this process, the goal is to combine Spot 1 with the left foot lifted in Step 1, to advance one step.<br>
 							<ol>
-								<li>初期状態</li>
-								<li>宙ぶらりんになったT1が相補な配列を探索</li>
-								<li>T1とSpot1がToehold部分で結合</li>
-								<li>T1とSpot1が結合することでヘアピン構造が崩れる。結果的にTractorは一歩進む。</li>
+								<li>initial state</li>
+								<li>Dangling W1 searches for complementary sequences</li>
+								<li>W1 and Spot1 join in the Toehold part</li>
+								<li>The binding of W1 and Spot 1 disrupts the hairpin structure. As a result, Walker goes one step.</li>
 							</ol>
+
 						</p>
 					</div>
 				</div>
@@ -123,14 +134,16 @@ T1が解離して、次に、解離したT1とS2が結合してTractorが動く�
 						<img src="img/step3.png" alt="step3">
 						<p>
 							step3<br>
-							このプロセスでは、T2とs2を剥がしてT2を浮かせることを目標とする。<br>
+							In this process, we aim to peel off W2 and s2, and let W2 float.<br>
 							<ol>
-								<li>初期状態</li>
-								<li>S2とF2がToehold部分で結合</li>
-								<li>S2とF2が結合が進む</li>
-								<li>S2とF2の鎖置換反応でT2が解離</li>
-								<li>F2とS2が結合し、T2が宙ぶらりん</li>
+								<li>initial state</li>
+								<li>S2 and F2 join in the Toehold part</li>
+								<li>Binding progresses between S2 and F2</li>
+								<li>In the strand displacement reaction of S2 and F2, W2 dissociates</li>
+								<li>F2 and S2 are combined, W2 is dangling</li>
 							</ol>
+
+
 						</p>
 					</div>
 
@@ -138,13 +151,14 @@ T1が解離して、次に、解離したT1とS2が結合してTractorが動く�
 						<img src="img/step4.png" alt="step4">
 						<p>
 							step4<br>
-							このプロセスでは、Step3で浮かせた右足(T2)とSpot2が結合し、さらに一歩進めることを目標とする。<br>
+							In this process, the right foot (W2) floated in Step 3 is combined with Spot 2 and the goal is to go one step further.<br>
 							<ol>
-								<li>初期状態</li>
-								<li>宙ぶらりんになったT2が相補な配列を探索</li>
-								<li>T2とSpot2がToehold部分で結合</li>
-								<li>T2とSpot2が結合することでヘアピン構造が崩れる。結果的にTractorは一歩進む。</li>
+								<li>initial state</li>
+								<li>Dangling W2 searches for complementary sequences</li>
+								<li>W2 and Spot2 join in the Toehold part</li>
+								<li>The binding of W2 and Spot 2 collapses the hairpin structure. As a result, Walker goes one step.</li>
 							</ol>
+
 						</p>
 					</div>
 
@@ -152,22 +166,27 @@ T1が解離して、次に、解離したT1とS2が結合してTractorが動く�
 
 
 				<p>
-				以降のStepはFuelが完全に消費されていない場合に限り進むため、Fuelの初期濃度が低いとStep3までで反応は終了する。
+				以降のStepはFuelが完全に消費されていない場合に限り進むため、Fuelの初期濃度が低いとStep4までで反応は終了する。
 				</p>
+	<p>
+The subsequent Step proceeds only when Fuel is not completely consumed, so if the initial concentration of Fuel is low, the reaction will be completed until Step 4.
+	</p>
 
 				<div class="imgarea">
 					<div>
 						<img src="img/step5.png" alt="step5">
 						<p>
 							step5<br>
-							このプロセスでは、S1とT1を剥がして左足(T1)を浮かせることを目標とする。<br>
+							In this process, we aim to peel S1 and W1 and float the left foot (W1).<br>
 							<ol>
-								<li>初期状態</li>
-								<li>S1とF1がToehold部分で結合</li>
-								<li>S1とF1の鎖置換反応でF2が解離し始める</li>
-								<li>T1とF1の鎖置換反応でT1とF2が解離</li>
-								<li>F1とS1が結合し、T1が宙ぶらりん</li>
+								<li>initial state</li>
+								<li>S1 and F1 join in the Toehold part</li>
+								<li>In the chain substitution reaction between S1 and F1, F2 starts dissociating</li>
+								<li>In the chain substitution reaction of W1 and F1, W1 and F2 dissociate</li>
+								<li>F1 and S1 are combined, W1 is dangling</li>
 							</ol>
+
+
 						</p>
 					</div>
 
@@ -175,13 +194,14 @@ T1が解離して、次に、解離したT1とS2が結合してTractorが動く�
 						<img src="img/step6.png" alt="step6">
 						<p>
 							step6<br>
-							このプロセスでは、Step1で浮かせた左足とSpot1が結合し、１歩進めることを目標とする。<br>
+							In this process, the goal is to combine Spot 3 with the left foot lifted in Step 5, to advance one step.<br>
 							<ol>
-								<li>初期状態</li>
-								<li>宙ぶらりんになったT1が相補な配列を探索</li>
-								<li>T1とSpot3がToehold部分で結合</li>
-								<li>T1とSpot3が結合することでヘアピン構造が崩れる。結果的にTractorは一歩進む。</li>
+								<li>initial state</li>
+								<li>Dangling W1 searches for complementary sequences</li>
+								<li>W1 and Spot3 join in the Toehold part</li>
+								<li>The binding of W1 and Spot 3 collapses the hairpin structure. As a result, Walker goes one step.</li>
 							</ol>
+
 						</p>
 					</div>
 				</div>
@@ -192,13 +212,13 @@ T1が解離して、次に、解離したT1とS2が結合してTractorが動く�
 						<img src="img/step7.png" alt="step7">
 						<p>
 							step7<br>
-							このプロセスでは、T2とs2を剥がしてT2を浮かせることを目標とする。<br>
+						In this process, we aim to peel off W2 and S2 and let W2 float.<br>
 							<ol>
-								<li>初期状態</li>
-								<li>S2とF2がToehold部分で結合</li>
-								<li>S2とF2が結合が進む</li>
-								<li>S2とF2の鎖置換反応でT2が解離</li>
-								<li>F2とS2が結合し、T2が宙ぶらりん</li>
+								<li>initial state</li>
+								<li>S2 and F2 join in the Toehold part</li>
+								<li>Binding progresses between S2 and F2</li>
+								<li>In the strand displacement reaction of S2 and F2 W2 dissociates</li>
+								<li>F2 and S2 are combined, W2 is dangling</li>
 							</ol>
 						</p>
 					</div>
@@ -207,13 +227,14 @@ T1が解離して、次に、解離したT1とS2が結合してTractorが動く�
 						<img src="img/step8.png" alt="step8">
 						<p>
 							step8<br>
-							このプロセスでは、Step3で浮かせた右足(T2)とSpot2が結合し、さらに一歩進めることを目標とする。<br>
+							In this process, the right foot (W2) floated in Step 7 is combined with Spot 4 and the goal is to go one step further.<br>
 							<ol>
-								<li>初期状態</li>
-								<li>宙ぶらりんになったT2が相補な配列を探索</li>
-								<li>T2とSpot4がToehold部分で結合</li>
-								<li>T2とSpot4が結合することでOutputが放出される。結果的にTractorは一歩進む。</li>
+								<li>initial state</li>
+								<li>Dangling W2 searches for complementary sequences</li>
+								<li>W2 and Spot4 join in the Toehold part</li>
+								<li>By combining W2 and Spot 4, Output is released. As a result, Walker goes one step.</li>
 							</ol>
+
 						</p>
 					</div>
 
@@ -222,17 +243,13 @@ T1が解離して、次に、解離したT1とS2が結合してTractorが動く�
 				<p>
 				このように、ミスマッチ塩基対を組み込むことで一方向にTractorが進むように設計されていることが分かる。
 				</p>
-
+	<p>
+In this way, by incorporating mismatched base pairs, it is understood that Walker is designed to proceed in one direction.
+</p>
 
 
 			</li><!-- Mechanism-->
 
-			<li>
-				<h1 id="st">Structure</h1>
-				<p>
-				</p>
-
-			</li><!-- Structure-->
 
 	</li><!--Refference-->
 			<li>
