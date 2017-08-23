@@ -33,7 +33,6 @@
 }
 
 .kaobox div.kao .sita{
-  font-family: sans-serif;
   color: white;
   position: absolute;
   bottom: 0;
@@ -48,7 +47,7 @@
 }
 
 .kaobox div.kao .kaku{
-  font-family: sans-serif;
+
   color: white;
   position: absolute;
   top: 0;

@@ -205,7 +205,7 @@ table td.kusari{
 
 #kiji p{
 	margin: 20px 20px 20px 30px;
-	border-bottom: 1px dotted #ccc;
+	/*border-bottom: 1px dotted #ccc;*/
 	line-height: 2em;
 	text-indent: 2em;
 	font-size: 50%;
@@ -575,7 +575,7 @@ table td.kusari{
 
 .imgarea div{
 	width: 45%;
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	padding: 5px;
 }
 
