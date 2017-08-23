@@ -83,7 +83,13 @@ a.anchor{
 
 .abst{
 	text-align: center;
-	background-color: #00aec1;
+	background: -webkit-gradient(radial, 100% 0%, 0, 100% 0%, 241, color-stop(0.96, #1e7e01), color-stop(0.60, #025a01), color-stop(0.00, #ff000a));
+	background: -webkit-radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
+	background: -moz-radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
+	background: -o-radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
+	background: -ms-radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
+	background: radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
+
 }
 .abst p{
 	text-align: left;
@@ -115,7 +121,13 @@ a.anchor{
 	-webkit-align-content: space-between; /* Safari */
   align-content:         space-between;
 	padding: 30px 0px;
-	background-color: #eff8e2;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.94, #123e99), color-stop(0.00, #000), color-stop(0.00, #000));
+background: -webkit-linear-gradient(top, #000 0%, #000 0%, #123e99 94%);
+background: -moz-linear-gradient(top, #000 0%, #000 0%, #123e99 94%);
+background: -o-linear-gradient(top, #000 0%, #000 0%, #123e99 94%);
+background: -ms-linear-gradient(top, #000 0%, #000 0%, #123e99 94%);
+background: linear-gradient(to bottom, #000 0%, #000 0%, #123e99 94%);
+
 	font-weight: bold;
 }
 
@@ -580,6 +592,11 @@ table td.kusari{
 	width: 100%;
 }
 
+.imgarea div p .title{
+	font-size: 130%;
+	text-decoration: underline;
+}
+
 .imgarea ol li{
 	font-size: 50% !important;
 	margin-left: 10px !important;
@@ -587,4 +604,8 @@ table td.kusari{
 
 .back{
 	background-color: #eff8e2;
+}
+
+.ox_table th.o{
+	background-color: yellow;
 }
