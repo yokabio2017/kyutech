@@ -84,9 +84,7 @@ $(function(){
        /*
        開き終わった後と閉じた後に実行する処理を分けたいのでその都度イベントを消去
        */
-       setTimeout(function(){
-      		window.location.href = url;
-        },500);
+       window.location.href = url;
 
        shutter.off('transitionend');
 
