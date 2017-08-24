@@ -43,17 +43,12 @@
 
 
 	<div id="kiji">
-		<h1 id="wet">Wet Experiment</h1>
-		<h2>Experiment1 Groundの設計</h2>
+		<h1 id="wet">Wet Lab Experiment</h1>
+		<h2>Experiment 1 Ground design</h2>
 		<div class="sentence">
 			<p class="bunsyo">
-				DNA Walkerが走行する足場となるDNA構造物(Ground)がきちんと作られるのかを確認する。この際、適切なアニーリング条件を見つけるために、アニーリング時間を1，5，10時間の3パターン準備した。。
-				Groundは図に示すようにGround A,B,Cをインキュベートすることで作成される。我々は、適切にGround A,B,Cが一本鎖DNAのC1,C2を介して結合していることを確認するため次のような電気泳動実験を行った。
-				Ground A,B,Cはそれぞれ70bp程度なのでGroundは200bp程度であることが予測できる。しかし、アニーリング時間を1，5，10時間で変化させたどの場合であったとしても200bp付近にバンドを持つような結果を得ることはできなかった。
-				今回、ヘアピン構造をもつS1,S2は加えずにアニーリングを行ったため、G1,G2,G3が一本鎖の状態で存在している場所があり、その部分から更に小さく折りたたまれるような構造になったのではないかと考えられる。
-			</p>
-			<p class="bunsyo">
-				Confirm whether the DNA structure (Ground) that is the track on which DNA Walker runs is properly made. In this case, three patterns of annealing time of 1, 5, and 10 hours were prepared in order to find an appropriate annealing condition. Ground is created by incubating Ground A, B, C as shown in the figure. In order to confirm that Ground A, B and C are properly bound via C1 and C2 of single-stranded DNA, we carried out the following electrophoresis experiments. Since Ground A, B, C are each about 70 bp, it can be predicted that Ground is about 200 bp. However, it was impossible to obtain a result having a band near 200 bp in any cases where the annealing time was changed in 1, 5, 10 hours. Since annealing was carried out without S1 and S2 having a hairpin structure this time, there is a place where G1, G2, G3 are present in a single-stranded state, and the structure is such that it is folded further smaller from that part what it was.
+				It is first necessary to confirm whether the DNA structure (Ground) that is the track on which the DNA Walker runs is properly made. In this case, three annealing times, i.e., 1, 5, and 10 hours, were
+				used to find an appropriate annealing condition. Ground A, B, and C were incubated as shown in the figure. In order to confirm that Ground A, B, and C were properly bound via C1 and C2 of single-stranded DNA, we carried out the following electrophoresis experiments. Since Ground A, B, C are each about 70 bp, the predicted length of Ground was about 200 bp. However, it was impossible to obtain a band near 200 bp in any cases where the annealing time was set to 1, 5, and 10 hours. Since annealing was carried out without S1 and S2, with a hairpin structure, there is a point where G1, G2, and G3 are present in a single-stranded state, and the structure is such that it is folded to a smaller conformation.
 			</p>
 			<img src="img/Ground(Experiment2).png" alt="" width="70%">
 
@@ -84,7 +79,7 @@
 
 
 
-		<h2>Experiment2 DSD containing mismatched base pair</h2>
+		<h2>Experiment 2 DSD containing mismatched base pairs</h2>
 		<div class="sentence">
 			<p class="bunsyo">
 				今回DNAWalkerの設計において、望まない反応経路を遮断するためにミスマッチ塩基対を塩基配列に組み込んだ。
@@ -108,11 +103,7 @@
 		<h1 id="dry">Dry Experiment</h1>
 		<div class="sentence">
 			<p class="bunsyo">
-				私たちはTractorの進み具合がFuelの濃度に依存することを確認するためにMatlab<sup>[1]</sup>を用いてシミュレーションを行った。TractorとGroundの初期濃度は100(nM)とし、Fuelの初期濃度を50,100,150,200(nM)としてOutputの時間濃度変化をシミュレーションした。さらに、時刻を10000(sec)に固定しFuelの初期濃度を0から500nMにまで変化させた際のOutputの濃度変化のシミュレーションを行った。
-				図１から４より、Outputの濃度変化がFuelの初期濃度に依存していることが確認でき、図５よりFuelの初期濃度が一定の値を越えると急激にOutputの濃度が上昇していることが読み取れる。また、Spotの段数を１段、２段、３段と増やすにつれて、閾値を超えた際のOutputの濃度上昇が急激になっていることがわかる。
-			</p>
-			<p class="bunsyo">
-				We simulated with Matlab<sup>[1]</sup> to confirm that the process of Walker depends on the initial concentration of Fuel. We simulated the time concentration change of Output after setting the initial concentration of Walker and Ground in 100 nM, and Fuel in 50,100,150,200 nM. Also, we simulated the time concentration change of Output when changing the initial concentration of Fuel from 0 to 500 nM with fixing time as 10000 seconds. From figure 1 to 4 we find that the time concentration change of Output depends on the initial concentration of Fuel, and figure 5 says that the concentration of Output increased rapidly when the initial concentration of Fuel is given more than specific value. Additionally, concentration of Output has increased rapidly above threshold as increase levels of Spot one by one (Version A,B, and C).
+				 We performed simulations using Matlab<sup>[1]</sup> to confirm that the Walker process depends on the initial concentration of Fuel. We simulated the time-dependent concentration change of Output after setting the initial concentrations of Walker and Ground in 100 nM, and the concentration of Fuel to 50, 100, 150, and 200 nM. Additionally, we simulated the concentration change of Output when changing the initial concentration of Fuel from 0 to 500 nM with a fixed time of 10000 seconds. As shown in Figures 1 to 4, we found that the time-dependent concentration change of Output depends on the initial concentration of Fuel. As shown in Figure 5, the concentration of Output increased rapidly when the initial concentration of Fuel was given more than a specific value. Additionally, the concentration of Output increased rapidly above a threshold value as the levels of Spot increased (Version A, B, and C).
 			</p>
 			<div class="imgarea">
 				<div class="image">

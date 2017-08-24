@@ -52,13 +52,7 @@
 			<div class="sentence">
 				<img src="img/zenbou.png" alt=""width="60%">
 				<p class="bunsyo">
-					我々は、DNAWalker[1]を用いてDNA折り紙の構造物を動かすシステムを設計した。
-					最初に、参考にした論文[1]について説明する。このウォーカーは、２本のDNA鎖が部分的にハイブリした構造体で、それぞれの１本鎖の部分が足となっている。また、足場は互いに相補な部分配列を作ってヘアピン構造を形成するように設計されており、燃料DNAが加えられても結合しないようになっている。
-					しかし、論文ではS1とS2が全く同じ塩基配列のため、Walkerの左足から反応が進むか右足から反応が進むかわからないという問題点がある。右足(w2)から先に反応が進んだ場合、Walkerが宙ぶらりんになってしまい、望まれない反応系となってしまう。
-					この問題の解決策として、我々はミスマッチ塩基対を利用するという方針を立てた。ミスマッチ塩基対とは、意図しない鎖同士が結合をしないように、部分的に相補でない配列に置き換えることを言う。鎖が結合して２本鎖になる時、それぞれの鎖で相補となる組み合わせが多い為結合するのだから、その組み合わせを意図的に減らして結合しなくするという仕組みである。<br>
-				</p>
-				<p class="bunsyo">
-					We designed a system to move the structure of DNA origami by means of DNAWalker. At first, I will explain the reference article<sup>[1]</sup>. This walker is a structure in which two DNA strands are partially hybridized, and each single strand part is a leg. In addition, the scaffolds are designed to form complementary partial sequences to form a hairpin structure, so that they do not bind even if fuel DNA is added. However, in the article, since S1 and S2 are exactly the same base sequence, there is a problem that it is not known whether Walker's reaction proceeds from the left foot or reaction proceeds from the right foot. Walker will be dangling when it goes forward from the right foot (w 2), resulting in an undesired reaction system. As a solution to this problem, we made a policy to utilize <a href="discuss.html#miss"> Mismatched base pairs</a>. A mismatch base pair means to replace a sequence which is not partially complementary so that unintended chains do not bind to each other. When chains join to form a double strand, since there are many complimentary combinations in each strand, they are combined, so that the combination is intentionally reduced to make it uncoupled.
+					We designed a system to move the DNA origami structure via a DNAWalker. First, I will summarize the reference article <sup>[1]</sup>. The walker is a structure in which two DNA strands are partially hybridized, and each single strand represents a leg. In addition, the scaffolds are designed to form partial complementary sequences to form a hairpin structure so that they do not bind, even if fuel DNA is added. However, S1 and S2 had exactly the same base sequence, and it is not known whether the Walker's reaction proceeds from the left foot or the right foot. The Walker will be dangling when it moves forward from the right foot (w2), resulting in an undesired reaction system. As a solution to this problem, we utilized <a href="discuss.html/#miss">mismatched base pairs</a>. Specifically, we replaced a sequence with one that is not fully complementary to ensure that unintended chains do not bind to each other. When chains join to form a double strand, since there are many complimentary combinations in each strand, they are combined, and the combination is intentionally reduced to make it uncoupled.
 				</p>
 				<span style = "text-align: center; display: block;">アニメーション予定</span>
 					<!-- 動画ファイルは public_htmlimg/〇〇.mp4 と保存して src="img/〇〇.mp4"  poster は多分さむね-->
@@ -71,13 +65,9 @@
 						<div class="video-btn" id="video-btn"></div>
 					</div>
 				-->
+
 				<p class="bunsyo">
-					以下に、ミスマッチ塩基対を利用したWalkerの原理を説明する。表に示す仕様を満たすように、塩基配列にミスマッチ塩基対を組み込んだ。
-					〇と書いてある組み合わせは結合することを表し、×と書いてある組み合わせは結合しないことを表している。
-					例えば、S1とF1は結合するのに対し、S1とF2は結合しないといったようになる。
-				</p>
-				<p class="bunsyo">
-					The principle of Walker using a mismatched base pair will be explained below. <a href="discuss.html#miss"> Mismatched base pairs</a> were incorporated into the base sequence so as to satisfy the specifications shown in the table. A combination written ◯ indicates that the combination is to be combined, and a combination written as X indicates that the combination is not combined. For example, S1 and F1 are coupled, whereas S1 and F2 are not.
+					The principle of the Walker with a mismatched base pair is explained below. <a href="discuss.html/#miss">Mismatched base pairs</a> were incorporated into the base sequence to satisfy the specifications indicated in the table. The symbol ◯ indicates a successful combination, and the X symbol indicates that the components are not successfully combined. For example, S1 and F1 are coupled, whereas S1 and F2 are not.
 				</p>
 
 				<table border=1 class="ox_table">
@@ -87,13 +77,9 @@
 					<tr><th>F1</th><th class="o">〇</th><th>×</th><th>×</th><th class="o">〇</th></tr>
 					<tr><th>F2</th><th>×</th><th class="o">〇</th><th class="o">〇</th><th>×</th></tr>
 				</table>
+
 				<p class="bunsyo">
-					まず、左足(T1)と右足(T2)は異なる配列にし、さらにTractorの足場は下図のように１歩置きに異なる配列にして、左足(T1)とS1、右足(T2)とS2がそれぞれ結合するように設計してある。また、燃料Fuelはミスマッチ塩基対を利用したF1とF2から成る２本鎖となっており、F2のtoeholdは隠されてF1のtoeholdのみむき出しになっている。F1とS1が結合することによってF2と
-					T1が解離して、次に、解離したT1とS2が結合してTractorが動く、という仕組みになっている。
-					詳しい反応の手順については下の図において8つのステップに分けて説明する。
-				</p>
-				<p class="bunsyo">
-					First, the left leg (W1) and the right foot (W2) are arranged in different arrangements, the Walker scaffolds are arranged in different steps as shown below, and the left leg (W1) and S1, the right leg (W2) It is designed to do. In addition, Fuel is a duplex composed of F1 and F2 using <a href="discuss.html#miss"> Mismatched base pairs</a>, the toehold of F2 is hidden and only toehold of F1 is exposed. F1 and S1 combine to dissociate F2 and W1, and then dissociated W1 and S2 combine to move Walker. The detailed reaction procedure will be described in 8 steps in the figure below.
+					First, the left leg (W1) and the right foot (W2) are arranged in different arrangements; the Walker scaffolds are arranged in different steps, as described below, and the left leg (W1) and S1, followed by the right leg (W2) are designed. In addition, Fuel is a duplex composed of F1 and F2 designed with <a href="discuss.html/#miss">mismatched base pairs</a> such that the toehold of F2 is hidden and only the toehold of F1 is exposed. F1 and S1 combine to dissociate F2 and W1, and then dissociated W1 and S2 combine to move the Walker. The detailed reaction procedure is described in 8 steps below.
 				</p>
 
 				<div class="imgarea">
@@ -101,17 +87,17 @@
 						<img src="img/step1.png">
 					</div>
 					<div class="exp">
-						<h2>step1</h2>
+						<h2>Step 1</h2>
 						<div class="sentence">
 							<p>
-								In this process, we aim to peel S1 and W1 and float the left foot (W1).<br>
+								In this process, we aim to peel S1 and W1 and float the left foot (W1). <br>
 							</p>
 							<ol>
 								<li>initial state</li>
-								<li>S1 and F1 join in the Toehold part</li>
-								<li>In the chain substitution reaction between S1 and F1, F2 starts dissociating</li>
+								<li>S1 and F1 join in the toehold region</li>
+								<li>In the chain substitution reaction between S1 and F1, F2 starts to dissociate</li>
 								<li>In the chain substitution reaction of W1 and F1, W1 and F2 dissociate</li>
-								<li>F1 and S1 are combined, W1 is dangling</li>
+								<li>F1 and S1 are combined, and W1 is dangling</li>
 							</ol>
 						</div>
 					</div>
@@ -121,16 +107,16 @@
 						<img src="img/step2.png">
 					</div>
 					<div class="exp">
-						<h2>step2</h2>
+						<h2>Step 2</h2>
 						<div class="sentence">
 							<p>
-								In this process, the goal is to combine Spot 1 with the left foot lifted in Step 1, to advance one step.<br>
+								In this process, the goal is to combine Spot 1 with the left foot lifted in Step 1, to advance one step.
 							</p>
 							<ol>
-								<li>initial state</li>
+								<li>Initial state</li>
 								<li>Dangling W1 searches for complementary sequences</li>
-								<li>W1 and Spot1 join in the Toehold part</li>
-								<li>The binding of W1 and Spot 1 disrupts the hairpin structure. As a result, Walker goes one step.</li>
+								<li>W1 and Spot1 join in the toehold region</li>
+								<li>The binding of W1 and Spot 1 disrupts the hairpin structure. As a result, the Walker moves one step.</li>
 							</ol>
 						</div>
 					</div>
@@ -140,17 +126,17 @@
 						<img src="img/step3.png">
 					</div>
 					<div class="exp">
-						<h2>step3</h2>
+						<h2>Step 3</h2>
 						<div class="sentence">
 							<p>
-								In this process, we aim to peel off W2 and s2, and let W2 float.<br>
+								In this process, we aim to peel off W2 and s2, and let W2 float.
 							</p>
 							<ol>
-								<li>initial state</li>
-								<li>S2 and F2 join in the Toehold part</li>
+								<li>Initial state</li>
+								<li>S2 and F2 join in the toehold region</li>
 								<li>Binding progresses between S2 and F2</li>
 								<li>In the strand displacement reaction of S2 and F2, W2 dissociates</li>
-								<li>F2 and S2 are combined, W2 is dangling</li>
+								<li>F2 and S2 are combined, and W2 is dangling</li>
 							</ol>
 						</div>
 					</div>
@@ -160,26 +146,23 @@
 						<img src="img/step4.png">
 					</div>
 					<div class="exp">
-						<h2>step4</h2>
+						<h2>Step 4</h2>
 						<div class="sentence">
 							<p>
-								In this process, the right foot (W2) floated in Step 3 is combined with Spot 2 and the goal is to go one step further.<br>
+								In this process, the right foot (W2) floated in Step 3 is combined with Spot 2 and the goal is to go one step further.
 							</p>
 							<ol>
-								<li>initial state</li>
+								<li>Initial state</li>
 								<li>Dangling W2 searches for complementary sequences</li>
-								<li>W2 and Spot2 join in the Toehold part</li>
-								<li>The binding of W2 and Spot 2 collapses the hairpin structure. As a result, Walker goes one step.</li>
+								<li>W2 and Spot 2 join in the toehold region</li>
+								<li>The binding of W2 and Spot 2 collapses the hairpin structure. As a result, the Walker moves one step. </li>
 							</ol>
 						</div>
 					</div>
 				</div><!-- imagearea -->
 
 				<p class="bunsyo">
-					以降のStepはFuelが完全に消費されていない場合に限り進むため、Fuelの初期濃度が低いとStep4までで反応は終了する。
-				</p>
-				<p class="bunsyo">
-					The subsequent Step proceeds only when Fuel is not completely consumed, so if the initial concentration of Fuel is low, the reaction will be completed until Step 4.
+					The subsequent Step proceeds only when Fuel is not completely consumed; if the initial concentration of Fuel is low, the reaction will be proceed until Step 4.
 				</p>
 
 
@@ -188,17 +171,17 @@
 						<img src="img/step5.png">
 					</div>
 					<div class="exp">
-						<h2>step5</h2>
+						<h2>Step 5</h2>
 						<div class="sentence">
 							<p>
-								In this process, we aim to peel S1 and W1 and float the left foot (W1).<br>
+								In this process, we aim to peel S1 and W1 and float the left foot (W1).
 							</p>
 							<ol>
-								<li>initial state</li>
-								<li>S1 and F1 join in the Toehold part</li>
-								<li>In the chain substitution reaction between S1 and F1, F2 starts dissociating</li>
-								<li>In the chain substitution reaction of W1 and F1, W1 and F2 dissociate</li>
-								<li>F1 and S1 are combined, W1 is dangling</li>
+								<li>Initial state</li>
+								<li>S1 and F1 join in the toehold region </li>
+								<li>In the chain substitution reaction between S1 and F1, F2 starts to dissociate</li>
+								<li>In the chain substitution reaction of W1 and F1, W1 and F2 dissociate /li>
+								<li>F1 and S1 are combined, and W1 is dangling</li>
 							</ol>
 						</div>
 
@@ -209,16 +192,16 @@
 						<img src="img/step6.png">
 					</div>
 					<div class="exp">
-						<h2>step6</h2>
+						<h2>Step 6</h2>
 						<div class="sentence">
 							<p>
-								In this process, the goal is to combine Spot 3 with the left foot lifted in Step 5, to advance one step.<br>
+								In this process, the goal is to combine Spot 3 with the left foot lifted in Step 5, to advance one step.
 							</p>
 							<ol>
-								<li>initial state</li>
+								<li>Initial state</li>
 								<li>Dangling W1 searches for complementary sequences</li>
-								<li>W1 and Spot3 join in the Toehold part</li>
-								<li>The binding of W1 and Spot 3 collapses the hairpin structure. As a result, Walker goes one step.</li>
+								<li>W1 and Spot3 join in the toehold region</li>
+								<li>The binding of W1 and Spot 3 collapses the hairpin structure. As a result, the Walker moves one step.</li>
 							</ol>
 						</div>
 					</div>
@@ -228,17 +211,17 @@
 						<img src="img/step7.png">
 					</div>
 					<div class="exp">
-						<h2>step7</h2>
+						<h2>Step 7</h2>
 						<div class="sentence">
 							<p>
-								In this process, we aim to peel off W2 and S2 and let W2 float.<br>
+								In this process, we aim to peel off W2 and S2 and let W2 float.
 							</p>
 							<ol>
-								<li>initial state</li>
-								<li>S2 and F2 join in the Toehold part</li>
+								<li>Initial state</li>
+								<li>S2 and F2 join in the toehold region</li>
 								<li>Binding progresses between S2 and F2</li>
 								<li>In the strand displacement reaction of S2 and F2 W2 dissociates</li>
-								<li>F2 and S2 are combined, W2 is dangling</li>
+								<li>F2 and S2 are combined, and W2 is dangling</li>
 							</ol>
 						</div>
 
@@ -249,33 +232,30 @@
 						<img src="img/step8.png">
 					</div>
 					<div class="exp">
-						<h2>step8</h2>
-						<div class="sentece">
+						<h2>Step 8</h2>
+						<div class="sentence">
 							<p>
-								In this process, the right foot (W2) floated in Step 7 is combined with Spot 4 and the goal is to go one step further.<br>
+								In this process, the right foot (W2) floated in Step 7 is combined with Spot 4 and the goal is to move one step further.
 							</p>
 							<ol>
-								<li>initial state</li>
+								<li>Initial state</li>
 								<li>Dangling W2 searches for complementary sequences</li>
-								<li>W2 and Spot4 join in the Toehold part</li>
-								<li>By combining W2 and Spot 4, Output is released. As a result, Walker goes one step.</li>
+								<li>W2 and Spot 4 join in the toehold region</li>
+								<li>By combining W2 and Spot 4, Output is released. As a result, the Walker moves one step.</li>
 							</ol>
 						</div>
 					</div>
 				</div><!-- imagearea -->
+
 				<p class="bunsyo">
-					このように、ミスマッチ塩基対を組み込むことで一方向にTractorが進むように設計されていることが分かる。
-				</p>
-				<p class="bunsyo">
-					In this way, by incorporating <a href="discuss.html#miss"> Mismatched base pairs</a>, it is understood that Walker is designed to proceed in one direction.
+					In this way, by incorporating <a href="discuss.html/#miss">mismatched base pairs</a>, the Walker is designed to proceed in a single direction.
 				</p>
 			</div>
 
 			<h1 id="ref">Reference</h1>
 			<div class="sentence">
 				<p class="ref">
-					[1] P. Yin, H. Choi, C. Calvert, N. Pierce: Programming biomolecular self-assembly pathways, <i>Nature</i>,
-					Vol.451, pp.318, 2008.
+					[1] P. Yin, H. Choi, C. Calvert, N. Pierce: Programming biomolecular self-assembly pathways, Nature, Vol. 451, pp. 318, 2008.
 				</p>
 			</div>
 
