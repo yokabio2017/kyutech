@@ -13,122 +13,126 @@
 	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
-	<script src="js/open.js"></script>
 	<script src="js/page-top.js"></script>
-	<script src="js/followIndex.js"></script>
 </head>
 <body>
-	<div id="title">
+	<header class="main">
+	</header>
+	<header class="sub">
+		<nav id="main-nav" class="sub">
+		  <ul>
+				<li class="main"><a href="#" class="item">Experiment</a></li>
+				<li class="main"><span class="wake"></span></li>
+		    <li class="main"><a href="#wet" class="item">Wet Experiment</a></li>
+				<li class="main"><a href="#dry" class="item">Dry Experiment</a></li>
+				<li class="main"><a href="#ref" class="item">Reference</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="title" class="sub">
 		<h1>YOKABIO EXPERIMENT</h1>
 	</div>
 
-	<div id="header"></div>
 
+	<div id="kiji">
+		<h1 id="wet">Wet Experiment</h1>
+		<h2>Experiment1 Groundの設計</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				DNA Walkerが走行する足場となるDNA構造物(Ground)がきちんと作られるのかを確認する。この際、適切なアニーリング条件を見つけるために、アニーリング時間を1，5，10時間の3パターン準備した。。
+				Groundは図に示すようにGround A,B,Cをインキュベートすることで作成される。我々は、適切にGround A,B,Cが一本鎖DNAのC1,C2を介して結合していることを確認するため次のような電気泳動実験を行った。
+				Ground A,B,Cはそれぞれ70bp程度なのでGroundは200bp程度であることが予測できる。しかし、アニーリング時間を1，5，10時間で変化させたどの場合であったとしても200bp付近にバンドを持つような結果を得ることはできなかった。
+				今回、ヘアピン構造をもつS1,S2は加えずにアニーリングを行ったため、G1,G2,G3が一本鎖の状態で存在している場所があり、その部分から更に小さく折りたたまれるような構造になったのではないかと考えられる。
+			</p>
+			<p class="bunsyo">
+				Confirm whether the DNA structure (Ground) that is the track on which DNA Walker runs is properly made. In this case, three patterns of annealing time of 1, 5, and 10 hours were prepared in order to find an appropriate annealing condition. Ground is created by incubating Ground A, B, C as shown in the figure. In order to confirm that Ground A, B and C are properly bound via C1 and C2 of single-stranded DNA, we carried out the following electrophoresis experiments. Since Ground A, B, C are each about 70 bp, it can be predicted that Ground is about 200 bp. However, it was impossible to obtain a result having a band near 200 bp in any cases where the annealing time was changed in 1, 5, 10 hours. Since annealing was carried out without S1 and S2 having a hairpin structure this time, there is a place where G1, G2, G3 are present in a single-stranded state, and the structure is such that it is folded further smaller from that part what it was.
+			</p>
+			<img src="img/Ground(Experiment2).png" alt="" width="70%">
 
-		<div class="agenda">
-			<div>Experiment</div>
-			<ol>
-				<li><a href="#wet">Wet Experiment</a></li>
-				<li><a href="#dry">Dry Experiment</a></li>
-			</ol>
-
+			<div class="imgarea">
+				<div class="image">
+					<img src="img/Experiment1.png" alt="" width="70%">
+				</div>
+				<div class="exp">
+						<table border=1>
+							<tr><th>Wells</th><th>試薬</th></tr>
+							<tr><th>①</th><th>DNAラダー</th></tr>
+							<tr><th>②</th><th>Ground A + B + C (1 h)</tl></tr>
+							<tr><th>③</th><th>Ground A + B  (1 h)</th></tr>
+							<tr><th>④</th><th>Ground B + C (1 h)</th></tr>
+							<tr><th>⑤</th><th>Ground A + B + C (5 h)</th></tr>
+							<tr><th>⑥</th><th>Ground A + B  (5 h)</th></tr>
+							<tr><th>⑦</th><th>Ground B + C (5 h)</th></tr>
+							<tr><th>⑧</th><th>Ground A + B + C (10 h)</th></tr>
+							<tr><th>⑨</th><th>Ground A + B  (10 h)</th></tr>
+							<tr><th>⑩</th><th>Ground B + C (10 h)</th></tr>
+							<tr><th>⑪</th><th>C1</th></tr>
+							<tr><th>⑫</th><th>C2</th></tr>
+					</table>
+				</div>
+			</div>
 		</div>
 
 
-	<div id="kiji">
-		<ol class="kijilist">
-			<li>
-				<h1 id="wet">Wet Experiment</h1>
-				Experiment1 Groundの設計
-				<p>
-					DNA Walkerが走行する足場となるDNA構造物(Ground)がきちんと作られるのかを確認する。この際、適切なアニーリング条件を見つけるために、アニーリング時間を1，5，10時間の3パターン準備した。。
-					Groundは図に示すようにGround A,B,Cをインキュベートすることで作成される。我々は、適切にGround A,B,Cが一本鎖DNAのC1,C2を介して結合していることを確認するため次のような電気泳動実験を行った。
-					Ground A,B,Cはそれぞれ70bp程度なのでGroundは200bp程度であることが予測できる。しかし、アニーリング時間を1，5，10時間で変化させたどの場合であったとしても200bp付近にバンドを持つような結果を得ることはできなかった。
-					今回、ヘアピン構造をもつS1,S2は加えずにアニーリングを行ったため、G1,G2,G3が一本鎖の状態で存在している場所があり、その部分から更に小さく折りたたまれるような構造になったのではないかと考えられる。
-				</p>
-				<p>
-					Confirm whether the DNA structure (Ground) that is the track on which DNA Walker runs is properly made. In this case, three patterns of annealing time of 1, 5, and 10 hours were prepared in order to find an appropriate annealing condition. Ground is created by incubating Ground A, B, C as shown in the figure. In order to confirm that Ground A, B and C are properly bound via C1 and C2 of single-stranded DNA, we carried out the following electrophoresis experiments. Since Ground A, B, C are each about 70 bp, it can be predicted that Ground is about 200 bp. However, it was impossible to obtain a result having a band near 200 bp in any cases where the annealing time was changed in 1, 5, 10 hours. Since annealing was carried out without S1 and S2 having a hairpin structure this time, there is a place where G1, G2, G3 are present in a single-stranded state, and the structure is such that it is folded further smaller from that part what it was.
-				</p>
-				<img src="img/Ground(Experiment2).png" alt="" width="70%">
 
-				<div class="imgarea">
-					<div>
-						<img src="img/Experiment1.png" alt="" width="70%">
-					</div>
-					<div>
-							<table border=1>
-								<tr><th>Wells</th><th>試薬</th></tr>
-								<tr><th>①</th><th>DNAラダー</th></tr>
-								<tr><th>②</th><th>Ground A + B + C (1 h)</tl></tr>
-								<tr><th>③</th><th>Ground A + B  (1 h)</th></tr>
-								<tr><th>④</th><th>Ground B + C (1 h)</th></tr>
-								<tr><th>⑤</th><th>Ground A + B + C (5 h)</th></tr>
-								<tr><th>⑥</th><th>Ground A + B  (5 h)</th></tr>
-								<tr><th>⑦</th><th>Ground B + C (5 h)</th></tr>
-								<tr><th>⑧</th><th>Ground A + B + C (10 h)</th></tr>
-								<tr><th>⑨</th><th>Ground A + B  (10 h)</th></tr>
-								<tr><th>⑩</th><th>Ground B + C (10 h)</th></tr>
-								<tr><th>⑪</th><th>C1</th></tr>
-								<tr><th>⑫</th><th>C2</th></tr>
-						</table>
-					</div>
+
+		<h2>Experiment2 DSD containing mismatched base pair</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				今回DNAWalkerの設計において、望まない反応経路を遮断するためにミスマッチ塩基対を塩基配列に組み込んだ。
+				仕様は表に示す通りであり、きちんと設計できているのか電気泳動を用いて検証を行った。
+				レーン⑥、⑦の比較、⑧、⑨の比較よりきちんと仕様を満たすように設計できていることが確認できる。しかし、レーン⑩においてバンドが700bp付近に確認できた。
+				これは、アニーリングの際に意図しない鎖が連鎖的に結合し巨大な構造物を形成したためだと考えられる。
+			</p>
+			<p class="bunsyo">
+				In the design of DNAWalker, mismatched base pairs were incorporated into the base sequence in order to block undesired reaction pathways. The specifications are as shown in the table, and verification was carried out using electrophoresis whether it was designed properly.
+				It can be confirmed that it is designed to satisfy the specification properly from the comparison of lanes ⑥, ⑦, ⑧, ⑨. But in lane ⑩ the band was confirmed around 700 bp. This is probably because unintentional chains were linked in a chain in annealing to form a huge structure.
+			</p>
+			<p class="bunsyo">
+				続いて、ミスマッチ塩基対を含む鎖でのDSDの検証を電気泳動で行った。反応の流れは図に示し、結果を図に示す。パターンAはs1-w1の2本鎖DNAとinputに相当するF1とで鎖置換反応がおこりw1が放出される。同様に、パターンBではs2-w2の2本鎖DNAとF2が反応しw2が放出される。パターンAは、レーン⑥と⑦のバンドを確認すると変化が見られないため鎖の交換が行われていないと考えられる。対して、パターンBはレーン⑧、⑨よりバンドに変化が見られ鎖の交換が行われたと考えられる。うまく反応が起こらなかったパターンAに関しては反応前後でエネルギーの差が大きくなかったためだと考えられる。したがって、より反応の前後でエネルギーの差が生じるように塩基配列を微調整する必要がある。
+			</p>
+			<p class="bunsyo">
+				Subsequently, verification of DSD on chains containing mismatched base pairs was performed by electrophoresis. The flow of the reaction is shown in the figure and the result is shown in the figure. In pattern A, a strand displacement reaction occurs between double-stranded DNA of s1-w1 and F1 corresponding to input, and w1 is released. Similarly, in pattern B, F2 reacts with s2-w2 double-stranded DNA and w2 is released. Pattern A seems to have not been exchanged for chain because no change is seen when checking the bands of lanes ⑥ and ⑦. On the other hand, Pattern B seems to have changed from the lanes ⑧ and ⑨, and the chain exchange was done. Regarding the pattern A in which the reaction did not occur properly, it is considered that the difference in energy was not large before and after the reaction. Therefore, it is necessary to finely adjust the base sequence so that a difference in energy occurs before and after the reaction.
+			</p>
+		</div>
+
+
+		<h1 id="dry">Dry Experiment</h1>
+		<div class="sentence">
+			<p class="bunsyo">
+				私たちはTractorの進み具合がFuelの濃度に依存することを確認するためにMatlab<sup>[1]</sup>を用いてシミュレーションを行った。TractorとGroundの初期濃度は100(nM)とし、Fuelの初期濃度を50,100,150,200(nM)としてOutputの時間濃度変化をシミュレーションした。さらに、時刻を10000(sec)に固定しFuelの初期濃度を0から500nMにまで変化させた際のOutputの濃度変化のシミュレーションを行った。
+				図１から４より、Outputの濃度変化がFuelの初期濃度に依存していることが確認でき、図５よりFuelの初期濃度が一定の値を越えると急激にOutputの濃度が上昇していることが読み取れる。また、Spotの段数を１段、２段、３段と増やすにつれて、閾値を超えた際のOutputの濃度上昇が急激になっていることがわかる。
+			</p>
+			<p class="bunsyo">
+				We simulated with Matlab<sup>[1]</sup> to confirm that the process of Walker depends on the initial concentration of Fuel. We simulated the time concentration change of Output after setting the initial concentration of Walker and Ground in 100 nM, and Fuel in 50,100,150,200 nM. Also, we simulated the time concentration change of Output when changing the initial concentration of Fuel from 0 to 500 nM with fixing time as 10000 seconds. From figure 1 to 4 we find that the time concentration change of Output depends on the initial concentration of Fuel, and figure 5 says that the concentration of Output increased rapidly when the initial concentration of Fuel is given more than specific value. Additionally, concentration of Output has increased rapidly above threshold as increase levels of Spot one by one (Version A,B, and C).
+			</p>
+			<div class="imgarea">
+				<div class="image">
+					<img src="img/DNAWalker50nM.png" alt="">
 				</div>
-
-
-				Experiment2 DSD containing mismatched base pair
-
-			</li><!-- Wet Experiment-->
-
-
-			<li>
-				<h1 id="dry">Dry Experiment</h1>
-				<p>
-					私たちはTractorの進み具合がFuelの濃度に依存することを確認するためにMatlab<sup>[1]</sup>を用いてシミュレーションを行った。TractorとGroundの初期濃度は100(nM)とし、Fuelの初期濃度を50,100,150,200(nM)としてOutputの時間濃度変化をシミュレーションした。さらに、時刻を10000(sec)に固定しFuelの初期濃度を0から500nMにまで変化させた際のOutputの濃度変化のシミュレーションを行った。
-					図１から４より、Outputの濃度変化がFuelの初期濃度に依存していることが確認でき、図５よりFuelの初期濃度が一定の値を越えると急激にOutputの濃度が上昇していることが読み取れる。また、Spotの段数を１段、２段、３段と増やすにつれて、閾値を超えた際のOutputの濃度上昇が急激になっていることがわかる。
-				</p>
-				<p>
-					We simulated with Matlab<sup>[1]</sup> to confirm that the process of Walker depends on the initial concentration of Fuel. We simulated the time concentration change of Output after setting the initial concentration of Walker and Ground in 100 nM, and Fuel in 50,100,150,200 nM. Also, we simulated the time concentration change of Output when changing the initial concentration of Fuel from 0 to 500 nM with fixing time as 10000 seconds. From figure 1 to 4 we find that the time concentration change of Output depends on the initial concentration of Fuel, and figure 5 says that the concentration of Output increased rapidly when the initial concentration of Fuel is given more than specific value. Additionally, concentration of Output has increased rapidly above threshold as increase levels of Spot one by one (Version A,B, and C).
-				</p>
-				<div class="imgarea">
-					<div>
-						<img src="img/DNAWalker50nM.png" alt="" width="45%">
-					</div>
-					<div>
-						<img src="img/DNAWalker100nM.png" alt="" width="45%">
-					</div>
+				<div class="image">
+					<img src="img/DNAWalker100nM.png" alt="">
 				</div>
+			</div>
 
-				<div class="imgarea">
-					<div>
-						<img src="img/DNAWalker150nM.png" alt="" width="45%">
-					</div>
-					<div>
-						<img src="img/DNAWalker200nM.png" alt="" width="45%">
-					</div>
+			<div class="imgarea">
+				<div class="image">
+					<img src="img/DNAWalker150nM.png" alt="">
 				</div>
+				<div class="image">
+					<img src="img/DNAWalker200nM.png" alt="">
+				</div>
+			</div>
+			<img src="img/段数変化.png" alt="" width="80%">
+			<img src="img/DNAWalker段数.png" alt="" width="40%">
 
-				<img src="img/段数変化.png" alt="" width="80%">
-				<img src="img/DNAWalker段数.png" alt="" width="40%">
+		</div>
 
-
-
-			</li><!-- Dry Experiment-->
-
-			<li>
-				<h1 id="gr">Reference</h1>
-				<p style="text-indent: 0;">
-					[1]Matlab: <a href="http://jp.mathworks.com/products/matlab/">http://jp.mathworks.com/products/matlab/</a>
-				</p>
-
-			</li><!--Refference-->
-
-		</ol>
-
-
-
-
-
-
+		<h1 id="ref">Reference</h1>
+		<p class="ref">
+			[1]Matlab: <a href="http://jp.mathworks.com/products/matlab/">http://jp.mathworks.com/products/matlab/</a>
+		</p>
 	</div>
 	<p id="page-top"><a href="#">PAGE TOP</a></p>
 	<div id="footer"></div>

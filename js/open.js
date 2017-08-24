@@ -6,7 +6,7 @@ $(function(){
 
 
   var isOpen = false;
-
+  /*
   var bt = $("#header").offset().top; // boxのページ上からの距離を取得
 
   var ds = 0;
@@ -20,7 +20,7 @@ $(function(){
         $("#header").removeClass('follow'); // classを削除
     }
   });
-
+  */
 
   function close(){
 

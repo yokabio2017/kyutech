@@ -13,17 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="css/member.css">
 	<script type="text/javascript">
 	$(function(){
-		$("#footer").load("footer.html");
-		$("#header").load("header.html", function(){
-			$("#menupd li").hover(function() {
-					$("ul:not(:animated)", this).slideDown();
-			}, function() {
-					$(this).children('ul').slideUp();
-			});
-		});
-
-
-
 		$('.kao').click(function() {
 			$(".selected").removeClass("selected");
 			$(this).addClass("selected");
@@ -37,15 +26,16 @@
 		});
 	});
 	</script>
+	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
-	<script src="js/open.js"></script>
 	<script src="js/page-top.js"></script>
 </head>
 <body>
+	<header class="main"></header>
 	<div id="title">
 		<h1>YOKABIO MEMBER</h1>
 	</div>
-	<div id="header"></div>
+
 
 	<!--member page-->
 	<div id="kiji">

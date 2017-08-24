@@ -1,7 +1,7 @@
 $(function(){
   $("#footer").load("footer.html");
-  $("#header").load("header.html", function(){
-    $("#menupd li").hover(function() {
+  $("header.main").load("header.html", function(){
+    $("#main-nav li").hover(function() {
         $("ul:not(:animated)", this).slideDown();
     }, function() {
         $(this).children('ul').slideUp();

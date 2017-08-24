@@ -13,190 +13,226 @@
 	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
-	<script src="js/open.js"></script>
 	<script src="js/page-top.js"></script>
-	<script src="js/followIndex.js"></script>
 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 
 </head>
 <body>
-	<div id="title">
+
+	<header class="main">
+	</header>
+	<header class="sub">
+		<nav id="main-nav" class="sub">
+		  <ul>
+				<li class="main"><a href="#" class="item">Material &amp; Method</a></li>
+				<li class="main"><span class="wake" class="item"></span></li>
+				<li class="main"><a href="#sc" class="item">Simulation Condition</a></li>
+				<li class="main"><a href="#ts" class="item">Type &amp; Strands</a></li>
+				<li class="main"><a href="#wedt" class="item">Wet Experiment of DNA Walker</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="title" class="sub">
 		<h1>YOKABIO METHOD</h1>
 	</div>
 
-	<div id="header"></div>
-
-
-	<div class="agenda">
-		<div>Material &amp; Method</div>
-		<ol>
-			<li><a href="#sc">Simulation Condition</a></li>
-			<li><a href="#ts">Type &amp; Strands</a></li>
-			<li><a href="#wedt">Wet Experiment of DNA Tractor</a></li>
-		</ol>
-
-	</div>
-
 	<div id="kiji">
-		<ol class="kijilist">
-			<li>
-				<h1 id="sc">Simulation Condition</h1>
-				<p>
-					We set the binding rate constant (kf) based on toehold length as follows[1,2].<br>
-				</p>
-				<p style="" class="susiki">
-					If toehold_length &le; 6 <br>
-						&nbsp;&nbsp;&nbsp;kf = 5.0&times;10<sup>n-1</sup> [M<sup>-1</sup>s<sup>-1</sup>] <br>
-					else<br>
-						&nbsp;&nbsp;&nbsp;kf = 3.0&times;10<sup>6</sup> [M<sup>-1</sup>s<sup>-1</sup>]<br>
-					Where<br>
-						&nbsp;&nbsp;&nbsp;n : toehold_length<br>
-				</p>
-			</li><!-- Simulation Condition-->
 
-			<li>
-				<h1 id="ts">Type &amp; Strands</h1>
-				Walker
-				<p>
-					Tractorは一本鎖DNAであるT1とT2をアニーリングすることで生成される。
-					アニーリングは95&#08451;で5分間温めた後、4時間かけてじっくりと20&#08451;になるまで温度を下げるという条件で行う。
-				</p>
-				<p>
-					Walker is made of annealed W1 and W2 which are single DNA strands.
-				</p>
-				<img src="img/Tractor.png" alt="" width="40%">
-				<table border=1>
+		<h1 id="sc">Simulation Condition</h1>
+		<div class="sentence">
+			<p class="bunsyo">
+				We set the binding rate constant (kf) based on toehold length as follows[1,2].<br>
+			</p>
+			<p style="" class="susiki">
+				If toehold_length &le; 6 <br>
+					&nbsp;&nbsp;&nbsp;kf = 5.0&times;10<sup>n-1</sup> [M<sup>-1</sup>s<sup>-1</sup>] <br>
+				else<br>
+					&nbsp;&nbsp;&nbsp;kf = 3.0&times;10<sup>6</sup> [M<sup>-1</sup>s<sup>-1</sup>]<br>
+				Where<br>
+					&nbsp;&nbsp;&nbsp;n : toehold_length<br>
+			</p>
+		</div>
+
+
+		<h1 id="ts">Type &amp; Strands</h1>
+		<h2>Walker</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				Tractorは一本鎖DNAであるT1とT2をアニーリングすることで生成される。
+				アニーリングは95&#08451;で5分間温めた後、4時間かけてじっくりと20&#08451;になるまで温度を下げるという条件で行う。
+			</p>
+			<p class="bunsyo">
+				Walker is made of annealed W1 and W2 which are single DNA strands.
+			</p>
+			<img src="img/Tractor.png" alt="" width="40%">
+			<table border=1>
+			<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
+			 <tr><td class="kusari">T1</td><td>CCCTAAACTAAACATTACTAACTTATCCTTTTGCCTCGTATCCTAACCGAACGGACTCCAGGACATCACACGCTCAATCACCACCT</td></tr>
+			 <tr><td class="kusari">T2</td><td>CCCTAAACTAAACATTACTAACTTATCCTTGTCCGTTCGGTTAGGATACGAGGCAATCCAGGACATCCTCACGCTCAATCAGCACCT</td></tr>
+			</table>
+		</div>
+
+
+		<h2>Ground A</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				Hairpins S1 and S2 were mixed with single strands C1, G1 and G4, then annealed to produce Ground A.
+			</p>
+			<img src="img/Ground1.png" alt="" width="60%">
+
+			<table border=1>
 				<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
-				 <tr><td class="kusari">T1</td><td>CCCTAAACTAAACATTACTAACTTATCCTTTTGCCTCGTATCCTAACCGAACGGACTCCAGGACATCACACGCTCAATCACCACCT</td></tr>
-				 <tr><td class="kusari">T2</td><td>CCCTAAACTAAACATTACTAACTTATCCTTGTCCGTTCGGTTAGGATACGAGGCAATCCAGGACATCCTCACGCTCAATCAGCACCT</td></tr>
-				</table>
+				<tr><td class="kusari">S1</td><td>GGTAGTTCTAGGGTGCTGAGGTGGTGATTGAGCGTGTGATGTCACCACGTCTTCTCGCATCACACGCTCAATC</td></tr>
+				<tr><td class="kusari">S2</td><td>CACCTCGGATCTTGATGGAGGTGCTGATTGAGCGTGAGGATGTCAGCACCTCAACTCGCATCCTCACGCTCAATC</td></tr>
+				<tr><td class="kusari">G1</td><td>TCATAGGCACCGTTCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCT</td></tr>
+				<tr><td class="kusari">G4</td><td>GTCCAAGGCTATGACTATCTATGCACT</td></tr>
+				<tr><td class="kusari">C1</td><td>ACGGTGCCTATGACATGGTACTCAGCT</td></tr>
+			</table>
 
-				Ground A
-				<p>
-					Hairpins S1 and S2 were mixed with single strands C1, G1 and G4, then annealed to produce Ground A.
-				</p>
-				<img src="img/Ground1.png" alt="" width="60%">
+		</div>
 
-				<table border=1>
-					<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
-					<tr><td class="kusari">S1</td><td>GGTAGTTCTAGGGTGCTGAGGTGGTGATTGAGCGTGTGATGTCACCACGTCTTCTCGCATCACACGCTCAATC</td></tr>
-					<tr><td class="kusari">S2</td><td>CACCTCGGATCTTGATGGAGGTGCTGATTGAGCGTGAGGATGTCAGCACCTCAACTCGCATCCTCACGCTCAATC</td></tr>
-					<tr><td class="kusari">G1</td><td>TCATAGGCACCGTTCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCT</td></tr>
-					<tr><td class="kusari">G4</td><td>GTCCAAGGCTATGACTATCTATGCACT</td></tr>
-					<tr><td class="kusari">C1</td><td>ACGGTGCCTATGACATGGTACTCAGCT</td></tr>
-				</table>
+		<h2>Ground B</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				Hairpins S1 and S2 were mixed with single strands C2, G2 and G4, then annealed to produce Ground B.
+			</p>
 
-				Ground B
-				<p>
-					Hairpins S1 and S2 were mixed with single strands C2, G2 and G4, then annealed to produce Ground B.
-				</p>
+			<img src="img/Ground2.png" alt="" width="60%">
 
-				<img src="img/Ground2.png" alt="" width="60%">
+			<table border=1>
+			<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
+			 <tr><td class="kusari">G2</td><td>TACCATGAGTCGATCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCAGCTGAGTACCATG</td></tr>
+			 <tr><td class="kusari">C2</td><td>TCGACTCATGGTACAGTATCCGTGGCA</td></tr>
+			</table>
+		</div>
 
-				<table border=1>
-				<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
-				 <tr><td class="kusari">G2</td><td>TACCATGAGTCGATCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCAGCTGAGTACCATG</td></tr>
-				 <tr><td class="kusari">C2</td><td>TCGACTCATGGTACAGTATCCGTGGCA</td></tr>
-				</table>
 
-				Ground C
-				<p>
-					Hairpin S1 and single strands S3, S4 were mixed with single strands G3 and S4, then annealed to produce Ground C.
-				</p>
-				<img src="img/Ground3.png" alt="" width="60%">
+		<h2>Ground C</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				Hairpin S1 and single strands S3, S4 were mixed with single strands G3 and S4, then annealed to produce Ground C.
+			</p>
+			<img src="img/Ground3.png" alt="" width="60%">
 
-				<table border=1>
-				<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
-				 <tr><td class="kusari">S3</td><td>CACCTCGGATCTTGATGGAGGTGCTGATTGAGCGTGAGGATGCGCC</td></tr>
-				 <tr><td class="kusari">S4</td><td>GGCGCATCCTCACGCTCAATC</td></tr>
-				 <tr><td class="kusari">G3</td><td>TCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCTGCCACGGATACTG</td></tr>
-				</table>
-				Ground
-				<p>
-					Ground A, B and C were incubated at room temperature for 5 hours to produce Ground.
-				</p>
-				<img src="img/Ground.png" alt="" width="60%">
+			<table border=1>
+			<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
+			 <tr><td class="kusari">S3</td><td>CACCTCGGATCTTGATGGAGGTGCTGATTGAGCGTGAGGATGCGCC</td></tr>
+			 <tr><td class="kusari">S4</td><td>GGCGCATCCTCACGCTCAATC</td></tr>
+			 <tr><td class="kusari">G3</td><td>TCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCTGCCACGGATACTG</td></tr>
+			</table>
+		</div>
 
-				Walker & Ground A
-				<p>
-					Ground A and the pre- assembled Walker were incubated at room temperature for 2 hours to produce Walker & Ground A.
-				</p>
-				<img src="img/Ground1+Tractor.png" alt="" width="50%">
+		<h2>Ground</h2>
+		<div class="senten">
+			<p class="bunsyo">
+				Ground A, B and C were incubated at room temperature for 5 hours to produce Ground.
+			</p>
+			<img src="img/Ground.png" alt="" width="60%">
+		</div>ce
 
-				Fuel
-				<p>
-					Fuel is made of annealed F1 and F2 which are single DNA strands.
-				</p>
-				<img src="img/Fuel.png" alt="" width="40%">
-				<table border=1>
-				<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
-				 <tr><td class="kusari">F1</td><td>TGTGAAGCGAGAACTCGTGGTGAGATGTCTCCCTCAATCAGCACCTCAACTCGCATCCTCA</td></tr>
-				 <tr><td class="kusari">F2</td><td>TGAGGATGCGAGTTGAGGTGCTGACATCCTCACGCTCAATCAGCACCTCAACTCGCA</td></tr>
-				</table>
-			</li><!--Type &amp; Strands-->
 
-			<li>
-				<h1 id="wedt">Wet Experiment of DNA Walker</h1>
-				Sample Preparation<br>
-				Step.1 Dilute
-				<p>
-					We diluted each strand until reaching 10 μM. The experiment was performed at 20&#08451; in Tris-EDTA buffer supplemented with 12.5 mM MgCl2.
-				</p>
-					Step.2 Annealing
-				<p>
-					We annealed DNA samples by the following three conditions to figure out the best annealing condition.
-					We heated the mixture at 95&#08451; for 5 minutes and slowly cool to 20&#08451; over the course of 1,5,10 hours with thermal cycler.
-				</p>
+		<h2>Walker & Ground A</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				Ground A and the pre- assembled Walker were incubated at room temperature for 2 hours to produce Walker & Ground A.
+			</p>
+			<img src="img/Ground1+Tractor.png" alt="" width="50%">
+		</div>
 
-				Electrophoresis
-				<p style="text-indent: 0;">
-					① 電気泳動装置にゲルをセットした。<br>
-					Setting gel on Electrophoresis chamber.<br>
-					② サンプル（10μL）とローディングダイ（2μL）を混合した。<br>
-					Mixing Samples (10μl) and loading dye (2μl).<br>
-					③ ゲルのレーンに②で作成したサンプルをそれぞれ（10μL）注入し、電気泳動を（80分）行った。<br>
-					Applying each sample (10μl) to wells and 150V for about 80 minutes.<br>
-					④ ゲルを取り出し、DNA染色試薬（ GelGreen Nucleic Acid Stain 10,000X DMSO 0.5mL）で40分染色した。<br>
-					Taking gel out of wells, staining it by using DNA staining solution in 40 minutes.<br>
-					⑤ 染色したゲルをゲルイメージャーで観察、分析した。<br>
-					Observing fluorescences by using gel imager.<br>
-				</p>
 
-				Material
-				<p>
-					Each material was purchased from companies below.
-				</p>
-				<table border=1>
-				 <tr><th>Material</th><th>Name</th><th>Company</th></tr>
-				 <tr><th>Poly-Acrylamide Gel</th><th>e-PAGEL</th><th>ATTO, JAPAN</th></tr>
-				 <tr><th>TBE Buffer</th><th>WSE-7051EzRunTBE</th><th>ATTO, JAPAN</th></tr>
-				 <tr><th>loading dye</th><th>Gel Loading Dye Purple (6x) B7024S</th><th>BioLabs, JAPAN</th></tr>
-				 <tr><th>DNA stain</th><th>GelGreen Nucleic Acid Stain 10,000X DMSO 0.5mL</th><th>Biotium, USA</th></tr>
-				</table>
+		<h2>Fuel</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				Fuel is made of annealed F1 and F2 which are single DNA strands.
+			</p>
+			<img src="img/Fuel.png" alt="" width="40%">
+			<table border=1>
+			<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
+			 <tr><td class="kusari">F1</td><td>TGTGAAGCGAGAACTCGTGGTGAGATGTCTCCCTCAATCAGCACCTCAACTCGCATCCTCA</td></tr>
+			 <tr><td class="kusari">F2</td><td>TGAGGATGCGAGTTGAGGTGCTGACATCCTCACGCTCAATCAGCACCTCAACTCGCA</td></tr>
+			</table>
+		</div>
 
-				Equipment
-				<p>
-					Each equipment was purchased from companies below.
-				</p>
-				<table border=1>
-				 <tr><th>Equipment</th><th>Name</th><th>Company</th></tr>
-				 <tr><th>Electrophoresis chamber</th><th>AE-y530MW</th><th>ATTO, JAPAN</th></tr>
-				 <tr><th>Thermal cycler</th><th>GeneAtlas(ASTEC325)</th><th>ASTEC, JAPAN</th></tr>
-				 <tr><th>gel imager</th><th>GELSCAN-2</th><th>iMeasure, JAPAN</th></tr>
-				</table>
-			</li><!--Wet Experiment of DNA Tractor-->
+		<h1 id="wedt">Wet Experiment of DNA Walker</h1>
+		<h2>Sample Preparation</h2>
+		<h3>Step.1 Dilute</h3>
+		<div class="sentence">
+			<p class="bunsyo">
+				We diluted each strand until reaching 10 μM. The experiment was performed at 20&#08451; in Tris-EDTA buffer supplemented with 12.5 mM MgCl2.
+			</p>
+		</div>
 
-			<li>
-				<h1 id="gr">Reference</h1>
-				<p style="text-indent: 0;">
-					[1] D. Zhan and E. Winfree: Control of DNA Strand Displacement Kinetics using Toehold Exchange,J. Am. Chem. Soc, Vol. 131, pp. 17303-17314, 2009.<br>
-					[2] S. Kobayashi, K. Yanagibashi, K. Fujimoto, K. Komiya and M. Hagiya:
-					Analog DNA Computing Devices Toward the Control of Molecular Robots, Workshop on Self-organization in Swarm of Robots: from Molecular Robots to Mobile Agents (WSSR 2014), Nara, Octorber, 2014.
-				</p>
-			</li><!--Refference-->
-		</ol>
+		<h3>Step.2 Annealing</h3>
+		<div class="sentence">
+			<p class="bunsyo">
+				We annealed DNA samples by the following three conditions to figure out the best annealing condition.
+				We heated the mixture at 95&#08451; for 5 minutes and slowly cool to 20&#08451; over the course of 1,5,10 hours with thermal cycler.
+				<img src="img/Thermal.jpg" alt="" width="25%">
+			</p>
+		</div>
+
+
+		<h2>Electrophoresis</h2>
+		<div class="sentence">
+			<p class="ref">
+				① 電気泳動装置にゲルをセットした。<br>
+				Setting gel on Electrophoresis chamber.<br>
+				② サンプル（10μL）とローディングダイ（2μL）を混合した。<br>
+				Mixing Samples (10μl) and loading dye (2μl).<br>
+				③ ゲルのレーンに②で作成したサンプルをそれぞれ（10μL）注入し、電気泳動を（80分）行った。<br>
+				Applying each sample (10μl) to wells and 150V for about 80 minutes.<br>
+				④ ゲルを取り出し、DNA染色試薬（ GelGreen Nucleic Acid Stain 10,000X DMSO 0.5mL）で40分染色した。<br>
+				Taking gel out of wells, staining it by using DNA staining solution in 40 minutes.<br>
+				⑤ 染色したゲルをゲルイメージャーで観察、分析した。<br>
+				Observing fluorescences by using gel imager.<br>
+				<img src="img/electro.jpg" alt="" width="30%">
+				<img src="img/gelimager.jpg" alt="" width="30%">
+			</p>
+		</div>
+
+
+		<h2>Material</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				Each material was purchased from companies below.
+			</p>
+			<table border=1>
+			 <tr><th>Material</th><th>Name</th><th>Company</th></tr>
+			 <tr><th>Poly-Acrylamide Gel</th><th>e-PAGEL</th><th>ATTO, JAPAN</th></tr>
+			 <tr><th>TBE Buffer</th><th>WSE-7051EzRunTBE</th><th>ATTO, JAPAN</th></tr>
+			 <tr><th>loading dye</th><th>Gel Loading Dye Purple (6x) B7024S</th><th>BioLabs, JAPAN</th></tr>
+			 <tr><th>DNA stain</th><th>GelGreen Nucleic Acid Stain 10,000X DMSO 0.5mL</th><th>Biotium, USA</th></tr>
+			</table>
+		</div>
+
+
+		<h2>Equipment</h2>
+		<div class="sentence">
+			<p class="bunsyo">
+				Each equipment was purchased from companies below.
+			</p>
+			<table border=1>
+			 <tr><th>Equipment</th><th>Name</th><th>Company</th></tr>
+			 <tr><th>Electrophoresis chamber</th><th>AE-y530MW</th><th>ATTO, JAPAN</th></tr>
+			 <tr><th>Thermal cycler</th><th>GeneAtlas(ASTEC325)</th><th>ASTEC, JAPAN</th></tr>
+			 <tr><th>gel imager</th><th>GELSCAN-2</th><th>iMeasure, JAPAN</th></tr>
+			</table>
+		</div>
+
+
+		<h1 id="ref">Reference</h1>
+		<div class="sentence">
+			<p>
+				[1] D. Zhan and E. Winfree: Control of DNA Strand Displacement Kinetics using Toehold Exchange,J. Am. Chem. Soc, Vol. 131, pp. 17303-17314, 2009.<br>
+				[2] S. Kobayashi, K. Yanagibashi, K. Fujimoto, K. Komiya and M. Hagiya:
+				Analog DNA Computing Devices Toward the Control of Molecular Robots, Workshop on Self-organization in Swarm of Robots: from Molecular Robots to Mobile Agents (WSSR 2014), Nara, Octorber, 2014.
+			</p>
+		</div>
+
 	</div>
+
 	<p id="page-top"><a href="#">PAGE TOP</a></p>
 	<div id="footer"></div>
 
