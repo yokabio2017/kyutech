@@ -1,3 +1,16 @@
+<script>
+$(function(){
+  $("#panel-btn").click(function() {
+     $(".smart-menu").slideToggle(200);
+     $("#panel-btn-icon").toggleClass("close");
+     return false;
+  });
+  $(".smart-menu a").click(function(){
+     $(".smart-menu").slideToggle(200);
+     $("#panel-btn-icon").toggleClass("close");
+  })
+});
+</script>
 <a id="main-logo" href="index.html"></a>
 <nav id="main-nav">
   <ul>
@@ -60,5 +73,5 @@
   </ul>
 </nav>
 <div id="menu">
-  <a href="#" id="panel-btn"><span id="panel-btn-icon"></span></a>
+  <a href="" id="panel-btn"><span id="panel-btn-icon"></span></a>
 </div>
