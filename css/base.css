@@ -409,6 +409,7 @@ h3 + .sentence{
 	margin-bottom: 50px;
 	margin: auto 10px 50px 10px;
 	background-repeat: no-repeat;
+	float: left;
 }
 
 .contents.left{
