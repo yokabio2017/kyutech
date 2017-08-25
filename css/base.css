@@ -211,12 +211,12 @@ header.sub{
 
 .abst{
 	text-align: center;
-	background: -webkit-gradient(radial, 100% 0%, 0, 100% 0%, 241, color-stop(0.96, #1e7e01), color-stop(0.60, #025a01), color-stop(0.00, #ff000a));
-	background: -webkit-radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
-	background: -moz-radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
-	background: -o-radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
-	background: -ms-radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
-	background: radial-gradient(100% 0%, circle, #ff000a 0%, #025a01 60%, #1e7e01 96%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.94, #02153d), color-stop(0.00, #000), color-stop(0.00, #000));
+	background: -webkit-linear-gradient(top, #000 0%, #000 0%, #02153d 94%);
+	background: -moz-linear-gradient(top, #000 0%, #000 0%, #02153d 94%);
+	background: -o-linear-gradient(top, #000 0%, #000 0%, #02153d 94%);
+	background: -ms-linear-gradient(top, #000 0%, #000 0%, #02153d 94%);
+	background: linear-gradient(to bottom, #000 0%, #000 0%, #02153d 94%);
 
 }
 .abst p{
