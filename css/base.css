@@ -402,14 +402,21 @@ h3 + .sentence{
 
 .contents{
 	position: relative;
-	width: 45%;
-	height: 300px;
-	text-align: center;
-	padding: 1px;
-	border: 1px solid #7e7e7e;
-	background-color: black;
-	margin-bottom: 50px;
+	width: 450px;
+	height: 338px;
 
+	border-radius: 5px;
+	margin-bottom: 50px;
+	
+	background-repeat: no-repeat;
+}
+
+.contents.left{
+	background-image: url('./../img/soribackr.png');
+}
+
+.contents.right{
+	background-image: url('./../img/soribackl.png');
 }
 
 .contents a{
@@ -433,15 +440,12 @@ h3 + .sentence{
 	height: 100%;
 	width: 100%;
 	position: absolute;
-  top:0;
-	background-color: black;
+  top: 0;
 	cursor: pointer;
-	border: 4px solid #7e7e7e;
 	overflow: hidden;
-	transition: all 0.5s ease-in-out;
-	background-image: url("../img/shutter.jpg");
-	box-sizing:border-box;
 
+	transition: all 0.5s ease-in-out;
+	box-sizing:border-box;
 }
 .shutter p{
 	position: relative;

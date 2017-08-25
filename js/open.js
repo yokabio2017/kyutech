@@ -59,10 +59,10 @@ $(function(){
   function open(shutter, url){
     //開いたり閉じたりするときのレイヤーの調整
     if($('[stat="opened"]').length){
-        shutter.css("z-index", "1004");
+        shutter.css("z-index", "3");
         close();
     } else {
-        shutter.css("z-index", "1002");
+        shutter.css("z-index", "3");
     }
 
     var dir = shutter.attr("dir");
@@ -80,7 +80,7 @@ $(function(){
     //シャッターが開き終わった時に呼ばれる
     shutter.on('transitionend', function(){
        //開いた状態のシャッターは(z-index:1001)
-       shutter.css("z-index", "1001");
+       shutter.css("z-index", "3");
        /*
        開き終わった後と閉じた後に実行する処理を分けたいのでその都度イベントを消去
        */
