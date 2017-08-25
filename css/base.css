@@ -355,7 +355,7 @@ h3 + .sentence{
 #kiji img{
 	display: block;
 	margin: auto;
-	margin-bottom: 20px;
+
 }
 
 .kiji:after{
@@ -935,6 +935,9 @@ td{
 	}
 	#container{
 		display: none !important;
+	}
+	#kiji h1{
+		font-size: 150%;
 	}
 
 }

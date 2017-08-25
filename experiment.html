@@ -17,6 +17,19 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/page-top.js"></script>
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#nav-experiment").hide();
+	    $("#main-nav li").hover(function() {
+	        $("ul:not(:animated)", this).slideDown();
+	    }, function() {
+	        $(this).children('ul').slideUp();
+	    });
+	  });
+	});
+	</script>
+	</script>
 </head>
 <body>
 	<header class="main">
@@ -53,23 +66,24 @@
 				It is first necessary to confirm whether the DNA structure (Ground) that is the track on which the DNA Walker runs is properly made. In this case, three annealing times, i.e., 1, 5, and 10 hours, were
 				used to find an appropriate annealing condition. Ground A, B, and C were incubated as shown in the figure. In order to confirm that Ground A, B, and C were properly bound via C1 and C2 of single-stranded DNA, we carried out the following electrophoresis experiments. Since Ground A, B, C are each about 70 bp, the predicted length of Ground was about 200 bp. However, it was impossible to obtain a band near 200 bp in any cases where the annealing time was set to 1, 5, and 10 hours. Since annealing was carried out without S1 and S2, with a hairpin structure, there is a point where G1, G2, and G3 are present in a single-stranded state, and the structure is such that it is folded to a smaller conformation.
 			</p>
-			<p style="width: 60%; text-align: center; margin: auto;">
+
+			<a href="img/Ground(Experiment2).png" rel="lightbox[img-group]" title="Figure 1:"><img src="img/Ground(Experiment2).png" alt="" width="70%"></a>
+			<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
 				<strong>Figure 1</strong>
 			</p>
-			<a href="img/Ground(Experiment2).png" rel="lightbox[img-group]"><img src="img/Ground(Experiment2).png" alt="" width="70%"></a>
-
 
 			<div class="imgarea">
 				<div class="image">
-					<p style="width: 60%; text-align: center; margin: auto;">
+
+					<a href="img/Experiment1.png" rel="lightbox[img-group]" title="Figure 2:"><img src="img/Experiment1.png" alt="" width="70%"></a>
+					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
 						<strong>Figure 2</strong>
 					</p>
-					<a href="img/Experiment1.png" rel="lightbox[img-group]"><img src="img/Experiment1.png" alt="" width="70%"></a>
-
 
 				</div>
 				<div class="exp">
 						<table border=1>
+							<caption>Table 1:</caption>
 							<tr><th>Wells</th><th>Sample</th></tr>
 							<tr><th>①</th><th>DNALadder</th></tr>
 							<tr><th>②</th><th>Ground A + B + C (1 h)</tl></tr>
@@ -107,15 +121,17 @@
 			</p>
 			<div class="imgarea">
 				<div class="image">
-					<p style="width: 60%; text-align: center; margin: auto;">
-						<strong>Figure 3</strong>
-					</p>
-					<a href="img/Experiment2.png" rel="lightbox[img-group]"><img src="img/Experiment2.png" alt="" width="70%"></a>
 
+					<a href="img/Experiment2.png" rel="lightbox[img-group]" title="Figure 3:"><img src="img/Experiment2.png" alt="" width="70%"></a>
+					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+						<strong>Figure 3:</strong>
+					</p>
 
 				</div>
 				<div class="exp">
+
 						<table border=1>
+							<caption>Table 2:</caption>
 							<tr><th>Wells</th><th>Sample</th></tr>
 							<tr><th>①</th><th>DNALadder</th></tr>
 							<tr><th>②</th><th>S1</tl></tr>
@@ -138,17 +154,20 @@
 			<p class="bunsyo">
 				Subsequently, verification of DSD on chains containing <a href="discuss.html#miss">mismatched base pairs</a> was performed by electrophoresis. The flow of the reaction is shown in the figure and the result is shown in the figure. In pattern A, a strand displacement reaction occurs between double-stranded DNA of s1-w1 and F1 corresponding to input, and w1 is released. Similarly, in pattern B, F2 reacts with s2-w2 double-stranded DNA and w2 is released. Pattern A seems to have not been exchanged for chain because no change is seen when checking the bands of lanes ⑥ and ⑦. On the other hand, Pattern B seems to have changed from the lanes ⑧ and ⑨, and the chain exchange was done. Regarding the pattern A in which the reaction did not occur properly, it is considered that the difference in energy was not large before and after the reaction. Therefore, it is necessary to finely adjust the base sequence so that a difference in energy occurs before and after the reaction.
 			</p>
+			<a href="img/ミスマッチ塩基対DSDスキーム.png" rel="lightbox[img-group]" title="Figure 4:"><img src="img/ミスマッチ塩基対DSDスキーム.png" alt="" width="70%"></a>
+			<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+				<strong>Figure 4:</strong>
+			</p>
 			<div class="imgarea">
 				<div class="image">
-					<p style="width: 60%; text-align: center; margin: auto;">
-						<strong>Figure 4</strong>
+					<a href="img/Experiment3.png" rel="lightbox[img-group]" title="Figure 5:"><img src="img/Experiment3.png" alt="" width="70%"></a>
+					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+						<strong>Figure 5:</strong>
 					</p>
-					<a href="img/Experiment3.png" rel="lightbox[img-group]"><img src="img/Experiment3.png" alt="" width="70%"></a>
-
-
 				</div>
 				<div class="exp">
 						<table border=1>
+							<caption>Table 3:</caption>
 							<tr><th>Wells</th><th>Sample</th></tr>
 							<tr><th>①</th><th>DNALadder</th></tr>
 							<tr><th>②</th><th>F1</tl></tr>
@@ -173,44 +192,43 @@
 			</p>
 			<div class="imgarea">
 				<div class="image">
-					<p style="width: 60%; text-align: center; margin: auto;">
-						<strong>Figure 5</strong>
+					<a href="img/DNAWalker50nM.png" rel="lightbox[img-group]" title="Figure 6:"><img src="img/DNAWalker50nM.png" alt="" width="70%"></a>
+					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+						<strong>Figure 6:</strong>
 					</p>
-					<a href="img/DNAWalker50nM.png" rel="lightbox[img-group]"><img src="img/DNAWalker50nM.png" alt="" width="70%"></a>
-
-
 				</div>
 				<div class="image">
-					<p style="width: 60%; text-align: center; margin: auto;">
-						<strong>Figure 6</strong>
+					<a href="img/DNAWalker100nM.png" rel="lightbox[img-group]" title="Figure 7:"><img src="img/DNAWalker100nM.png" alt="" width="70%"></a>
+					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+						<strong>Figure 7:</strong>
 					</p>
-					<a href="img/DNAWalker100nM.png" rel="lightbox[img-group]"><img src="img/DNAWalker100nM.png" alt="" width="70%"></a>
 				</div>
 			</div>
 
 			<div class="imgarea">
 				<div class="image">
-					<p style="width: 60%; text-align: center; margin: auto;">
-						<strong>Figure 7</strong>
+					<a href="img/DNAWalker150nM.png" rel="lightbox[img-group]" title="Figure 8:"><img src="img/DNAWalker150nM.png" alt="" width="70%"></a>
+					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+						<strong>Figure 8:</strong>
 					</p>
-					<a href="img/DNAWalker150nM.png" rel="lightbox[img-group]"><img src="img/DNAWalker150nM.png" alt="" width="70%"></a>
 				</div>
 				<div class="image">
-					<p style="width: 60%; text-align: center; margin: auto;">
-						<strong>Figure 8</strong>
+					<a href="img/DNAWalker200nM.png" rel="lightbox[img-group]" title="Figure 9:"><img src="img/DNAWalker200nM.png" alt="" width="70%"></a>
+					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+						<strong>Figure 9:</strong>
 					</p>
-					<a href="img/DNAWalker200nM.png" rel="lightbox[img-group]"><img src="img/DNAWalker200nM.png" alt="" width="70%"></a>
 				</div>
 			</div>
-			<p style="width: 60%; text-align: center; margin: auto;">
-				<strong>Figure 9</strong>
-			</p>
-			<a href="img/段数変化.png" rel="lightbox[img-group]"><img src="img/段数変化.png" alt="" width="70%"></a>
 
-			<p style="width: 60%; text-align: center; margin: auto;">
-				<strong>Figure 10</strong>
+			<a href="img/段数変化.png" rel="lightbox[img-group]" title="Figure 10:"><img src="img/段数変化.png" alt="" width="70%"></a>
+			<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+				<strong>Figure 10:</strong>
 			</p>
-			<a href="img/DNAWalker段数.png" rel="lightbox[img-group]"><img src="img/DNAWalker段数.png" alt="" width="70%"></a>
+
+			<a href="img/DNAWalker段数.png" rel="lightbox[img-group]" title="Figure 11:"><img src="img/DNAWalker段数.png" alt="" width="70%"></a>
+			<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+				<strong>Figure 11:</strong>
+			</p>
 		</div>
 
 		<h1 id="ref">Reference</h1>

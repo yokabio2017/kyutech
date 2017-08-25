@@ -27,6 +27,18 @@
 		});
 	});
 	</script>
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#nav-member").hide();
+	    $("#main-nav li").hover(function() {
+	        $("ul:not(:animated)", this).slideDown();
+	    }, function() {
+	        $(this).children('ul').slideUp();
+	    });
+	  });
+	});
+	</script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/page-top.js"></script>

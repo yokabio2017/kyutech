@@ -17,7 +17,18 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/page-top.js"></script>
-
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#nav-discuss").hide();
+	    $("#main-nav li").hover(function() {
+	        $("ul:not(:animated)", this).slideDown();
+	    }, function() {
+	        $(this).children('ul').slideUp();
+	    });
+	  });
+	});
+	</script>
 </head>
 <body>
 	<header class="main">
@@ -50,9 +61,10 @@
 		<h1 id="miss">DNA mismatch base pair</h1>
 		<div class="sentence">
 				<p class="bunsyo">
-					A mismatched base pair occurs when a sequence is paired with a sequence that is partially complementary for binding to desired chains, but not unintended chains. When chains are joined into two strands, there are many combinations that complement each of the chains; accordingly, they are linked and the combination is intentionally reduced to prevent combining. For example, consider a base
-					sequence that satisfies the specifications shown in the table. A combination labeled ◯ can be combined, and a combination labeled X cannot be combined. In S1 and S4, which are unwanted bonds, replacement with base sequences that are partially not complementary results in a decrease in complementary portions, reducing binding.
+					A mismatched base pair occurs when a sequence is paired with a sequence that is partially complementary for binding to desired chains, but not unintended chains. When chains are joined into two strands, there are many combinations that complement each of the chains; accordingly, they are linked and the combination is intentionally reduced to prevent combining.
+					For example, strand 1 and strand 2, which are unwanted bonds, replacement with base sequences that are partially not complementary results in a decrease in complementary portions, reducing binding.
 				</p>
+		<img src="img/Mismatch base pairs.png" alt="" width="45%">
 		</div>
 
 		<h1 id="dodo">Design of DNA origami</h1>

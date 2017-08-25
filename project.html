@@ -19,7 +19,16 @@
 	<script src="js/open.js"></script>
 	<script src="js/page-top.js"></script>
 	<script>
-
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#nav-project").hide();
+	    $("#main-nav li").hover(function() {
+	        $("ul:not(:animated)", this).slideDown();
+	    }, function() {
+	        $(this).children('ul').slideUp();
+	    });
+	  });
+	});
 	</script>
 </head>
 <body>
@@ -54,6 +63,10 @@
 	<div id="kiji">
 		<h1 id="bg">Background</h1>
 		<div class="sentence">
+			<a href="img/back.png" rel="lightbox[img-group]" title="Figure 1: Background"><img src="img/back.png"alt="" width="55%" title="Figure 1: Project goal and achievement"></a>
+			<p style="width: 60%; text-align: center; margin: auto;">
+				<strong>Figure 1: Background</strong>
+			</p>
 			<p class="bunsyo">
 				Recently, DNA nanotechnology has evolved to combine DNA origami and DNA tiles to create various structures. In addition, molecular devices typified by DDS have been developed using insights from DNA nanocomputing. For example, by combining two-dimensional DNA origami, a box-shaped DNA origami structure can be generated such that the upper part of the box is capable of opening and closing by a DNA strand substitution reaction, thereby functioning as a lid <sup>[1]</sup>. However, according to the control method of this lid, there are only two states, i.e., completely closed or fully opened, and it is impossible to adjust the degree of opening to intermediate values. To address these issues, we reasoned that if we could develop a method to move the DNA origami structure an arbitrary distance, we could apply it to various applications, beyond the opening and closing of a lid.
 			</p>
@@ -61,6 +74,10 @@
 
 		<h1 id="pi">Project Idea</h1>
 		<div class="sentence">
+			<a href="img/pullsori.png" rel="lightbox[img-group]" title="Figure 2: Project idea image"><img src="img/pullsori.png"alt="" width="55%" title="Figure 1: Project goal and achievement"></a>
+			<p style="width: 60%; text-align: center; margin: auto;">
+				<strong>Figure 2: Project idea image</strong>
+			</p>
 			<p class="bunsyo">
 				We created a system that functions as a power source for moving DNA structures. We considered a system with a separate structure to be moved and power source, rather than one in which the DNA structure to be moved and its power source are united. In this framework, even if the DNA structure was changed according to the specifications of the application, movement was possible as long as a connection with the power source was made. Therefore, the aim of this project was to design a system that functions as a power source. The proposed power source must satisfy the following four specifications. First, this system must be able to connect to the target DNA structure. Second, this system must be able to move autonomously. Third, since DNA molecules are in Brownian motion in solution, they move in all directions; therefore, this system should move in a single direction. Fourth, this system must be able to adjust its progress. We built a system that satisfies these four specifications with reference to the principle of operation of a structure called a DNAWalker <sup>[2]</sup>.
 			</p>
@@ -68,11 +85,14 @@
 
 		<h1 id="gr">Goals Reached</h1>
 		<div class="sentence">
-			<a href="img/exgoalreached.png" rel="lightbox" ><img src="img/exgoalreached.png" alt="" width="50%"></a>
+			<a href="img/goalreached.png" rel="lightbox[img-group]" title="Figure 3: Project goal and achievement"><img src="img/goalreached.png"alt="" width="75%" title="Figure 1: Project goal and achievement"></a>
+			<p style="width: 60%; text-align: center; margin: auto;">
+				<strong>Figure 3: Project goal and achievement</strong>
+			</p>
 			<p class="bunsyo">
-
 			</p>
 		</div>
+
 
 		<h1 id="ref">References</h1>
 		<div class="sentence">

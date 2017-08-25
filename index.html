@@ -11,11 +11,23 @@
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
 	<script src="js/open.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/page-top.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#main-nav li").hover(function() {
+					$("ul:not(:animated)", this).slideDown();
+			}, function() {
+					$(this).children('ul').slideUp();
+			});
+		});
+	});
+
+	</script>
+
 </head>
 <body>
 	<header class="main"></header>
@@ -23,7 +35,7 @@
 		<ul>
 			<li><a href="project.html" class="item">Our Project</a></li>
 			<li><a href="design.html" class="item">Design</a></li>
-			<li><a href="method.html" class="item">Material&Methods</a></li>
+			<li><a href="method.html" class="item">Material&amp;Methods</a></li>
 			<li><a href="experiment.html" class="item">Experiment</a></li>
 			<li><a href="discuss.html"  class="item">Discussion</a></li>
 			<li class="main"><a href="elsi.html" class="item">ELSI</a></li>
