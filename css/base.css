@@ -3,6 +3,7 @@
 h1{
 	margin-top:-100px;
 }
+
 body{
 	padding: 0;
 	margin: 0;
@@ -32,14 +33,14 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 500;
+  z-index: 20;
 	border-bottom: 1px solid rgba(36, 55, 77, 0.8);
 
 }
 
 header.sub{
 	top: 50px;
-	z-index: 200;
+	z-index: 10;
 }
 
 #main-logo{
