@@ -407,7 +407,7 @@ h3 + .sentence{
 
 	border-radius: 5px;
 	margin-bottom: 50px;
-	
+	margin: auto 10px 50px 10px;
 	background-repeat: no-repeat;
 }
 
