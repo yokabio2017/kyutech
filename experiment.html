@@ -17,19 +17,6 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/page-top.js"></script>
-	<script>
-	$(function(){
-		$("header.main").load("header.html", function(){
-			$("#nav-experiment").hide();
-	    $("#main-nav li").hover(function() {
-	        $("ul:not(:animated)", this).slideDown();
-	    }, function() {
-	        $(this).children('ul').slideUp();
-	    });
-	  });
-	});
-	</script>
-	</script>
 </head>
 <body>
 	<header class="main">
@@ -64,19 +51,19 @@
 		<div class="sentence">
 			<p class="bunsyo">
 				It is first necessary to confirm whether the DNA structure (Ground) that is the track on which the DNA Walker runs is properly made. In this case, three annealing times, i.e., 1, 5, and 10 hours, were
-				used to find an appropriate annealing condition. Ground A, B, and C were incubated as shown in the figure. In order to confirm that Ground A, B, and C were properly bound via C1 and C2 of single-stranded DNA, we carried out the following electrophoresis experiments. Since Ground A, B, C are each about 70 bp, the predicted length of Ground was about 200 bp. However, it was impossible to obtain a band near 200 bp in any cases where the annealing time was set to 1, 5, and 10 hours. Since annealing was carried out without S1 and S2, with a hairpin structure, there is a point where G1, G2, and G3 are present in a single-stranded state, and the structure is such that it is folded to a smaller conformation.
+				used to find an appropriate annealing condition. Ground A, B, and C were incubated as shown in the figure. In order to confirm that Ground A, B, and C were properly bound via C1 and C2 of single-stranded DNA, we carried out the following electrophoresis experiments.
 			</p>
 
-			<a href="img/Ground(Experiment2).png" rel="lightbox[img-group]" title="Figure 1:"><img src="img/Ground(Experiment2).png" alt="" width="70%"></a>
-			<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+			<a href="img/Ground(Experiment2).png" rel="lightbox[img-group]"><img src="img/Ground(Experiment2).png" alt="" width="70%"></a>
+			<p style="width: 60%; text-align: center; margin: auto;">
 				<strong>Figure 1</strong>
 			</p>
 
 			<div class="imgarea">
 				<div class="image">
 
-					<a href="img/Experiment1.png" rel="lightbox[img-group]" title="Figure 2:"><img src="img/Experiment1.png" alt="" width="70%"></a>
-					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
+					<a href="img/Experiment1.png" rel="lightbox[img-group]"><img src="img/Experiment1.png" alt="" width="70%"></a>
+					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 2</strong>
 					</p>
 
@@ -86,15 +73,15 @@
 							<caption>Table 1:</caption>
 							<tr><th>Wells</th><th>Sample</th></tr>
 							<tr><th>①</th><th>DNALadder</th></tr>
-							<tr><th>②</th><th>Ground A + B + C (1 h)</tl></tr>
-							<tr><th>③</th><th>Ground A + B  (1 h)</th></tr>
-							<tr><th>④</th><th>Ground B + C (1 h)</th></tr>
+							<tr><th>②</th><th>Ground A + B + C (10 h)</tl></tr>
+							<tr><th>③</th><th>Ground A + B  (10 h)</th></tr>
+							<tr><th>④</th><th>Ground B + C (10 h)</th></tr>
 							<tr><th>⑤</th><th>Ground A + B + C (5 h)</th></tr>
 							<tr><th>⑥</th><th>Ground A + B  (5 h)</th></tr>
 							<tr><th>⑦</th><th>Ground B + C (5 h)</th></tr>
-							<tr><th>⑧</th><th>Ground A + B + C (10 h)</th></tr>
-							<tr><th>⑨</th><th>Ground A + B  (10 h)</th></tr>
-							<tr><th>⑩</th><th>Ground B + C (10 h)</th></tr>
+							<tr><th>⑧</th><th>Ground A + B + C (1 h)</th></tr>
+							<tr><th>⑨</th><th>Ground A + B  (1 h)</th></tr>
+							<tr><th>⑩</th><th>Ground B + C (1 h)</th></tr>
 							<tr><th>⑪</th><th>C1</th></tr>
 							<tr><th>⑫</th><th>C2</th></tr>
 					</table>
@@ -122,14 +109,13 @@
 			<div class="imgarea">
 				<div class="image">
 
-					<a href="img/Experiment2.png" rel="lightbox[img-group]" title="Figure 3:"><img src="img/Experiment2.png" alt="" width="70%"></a>
-					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
-						<strong>Figure 3:</strong>
+					<a href="img/Experiment2.png" rel="lightbox[img-group]"><img src="img/Experiment2.png" alt="" width="70%"></a>
+					<p style="width: 60%; text-align: center; margin: auto;">
+						<strong>Figure 3</strong>
 					</p>
 
 				</div>
 				<div class="exp">
-
 						<table border=1>
 							<caption>Table 2:</caption>
 							<tr><th>Wells</th><th>Sample</th></tr>
@@ -158,8 +144,10 @@
 			<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
 				<strong>Figure 4:</strong>
 			</p>
+
 			<div class="imgarea">
 				<div class="image">
+
 					<a href="img/Experiment3.png" rel="lightbox[img-group]" title="Figure 5:"><img src="img/Experiment3.png" alt="" width="70%"></a>
 					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
 						<strong>Figure 5:</strong>
@@ -181,10 +169,12 @@
 					</table>
 				</div>
 			</div>
-		<p class="bunsyo">
-			This time we tried to find an appropriate annealing condition with annealing at 1, 5, 10 hours. Changes in time show that the bands change, but they spread out in a smear shape, which is not an appropriate condition. Therefore, the annealing condition was considered based on the TM value of the DNA chain to be annealed. As a result, we decided to change the temperature as shown in the following figure.
-			After heating at 95 ° C. for 5 minutes, it is abruptly brought to 65 ° C. Then, the temperature is gradually dropped from 65 ° C. to 55 ° C. over which the TM value of each chain to be mixed concentrates over 10 hours. Thereafter, the temperature was rapidly lowered to 4 ° C. so that unintended binding did not occur.
-		</p>
+
+
+			<p class="bunsyo">
+				This time we tried to find an appropriate annealing condition with annealing at 1, 5, 10 hours. Changes in time show that the bands change, but they spread out in a smear shape, which is not an appropriate condition. Therefore, the annealing condition was considered based on the TM value of the DNA chain to be annealed. As a result, we decided to change the temperature as shown in the following figure.
+				After heating at 95 ° C. for 5 minutes, it is abruptly brought to 65 ° C. Then, the temperature is gradually dropped from 65 ° C. to 55 ° C. over which the TM value of each chain to be mixed concentrates over 10 hours. Thereafter, the temperature was rapidly lowered to 4 ° C. so that unintended binding did not occur.
+			</p>
 
 		<a href="img/Annealing.png" rel="lightbox[img-group]" title="Figure 6:"><img src="img/Annealing.png" alt="" width="70%"></a>
 		<p style="width: 60%; text-align: center; margin: auto;">
@@ -192,15 +182,16 @@
 		</p>
 		<div class="imgarea">
 				<div class="image">
-
-					<a href="img/Experiment3.png" rel="lightbox[img-group]" title="Figure 7:"><img src="img/Experiment3.png" alt="" width="70%"></a>
+					<a href="img/Experiment4.png" rel="lightbox[img-group]"><img src="img/Experiment4.png" alt="" width="70%"></a>
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 7:</strong>
 					</p>
 
+
 				</div>
 				<div class="exp">
 						<table border=1>
+							<caption>Table 4:</caption>
 							<tr><th>Wells</th><th>Sample</th></tr>
 							<tr><th>①</th><th>DNALadder</th></tr>
 							<tr><th>②</th><th>Ground</tl></tr>
@@ -215,6 +206,9 @@
 					</table>
 				</div>
 			</div>
+			<p class="bunsyo">
+			The results of electrophoresis are shown in the figure. Compared with Figure 2, the band appears more dark in ② to ⑤. In FIG. 2, the band appeared only in a smear-like and thin manner, but in an annealing method based on the TM value, the band appeared darker. Therefore, it seems that reaction has advanced. However, since it is a smear-like band, we think that it is necessary to adjust the time spent for the temperature drop near the TM value.
+			</p>
 		</div>
 
 
@@ -229,6 +223,8 @@
 					<p style="width: 60%; text-align: center; margin: 0px auto 10px auto; padding: 0;">
 						<strong>Figure 8:</strong>
 					</p>
+
+
 				</div>
 				<div class="image">
 					<a href="img/DNAWalker100nM.png" rel="lightbox[img-group]" title="Figure 9:"><img src="img/DNAWalker100nM.png" alt="" width="70%"></a>
