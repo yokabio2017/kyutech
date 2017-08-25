@@ -930,5 +930,8 @@ td{
 	img{
 		width: 90% !important;
 	}
+	#lightbox, #overlay{
+		display: none !important;
+	}
 
 }
