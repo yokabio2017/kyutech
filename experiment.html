@@ -17,6 +17,18 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/page-top.js"></script>
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#nav-experiment").hide();
+	    $("#main-nav li").hover(function() {
+	        $("ul:not(:animated)", this).slideDown();
+	    }, function() {
+	        $(this).children('ul').slideUp();
+	    });
+	  });
+	});
+	</script>
 </head>
 <body>
 	<header class="main">
@@ -54,7 +66,7 @@
 				used to find an appropriate annealing condition. Ground A, B, and C were incubated as shown in the figure. In order to confirm that Ground A, B, and C were properly bound via C1 and C2 of single-stranded DNA, we carried out the following electrophoresis experiments.
 			</p>
 
-			<a href="img/Ground(Experiment2).png" rel="lightbox[img-group]"><img src="img/Ground(Experiment2).png" alt="" width="70%"></a>
+			<a href="img/Ground(Experiment2).png" rel="lightbox[img-group]" title="Figure 1:"><img src="img/Ground(Experiment2).png" alt="" width="70%"></a>
 			<p style="width: 60%; text-align: center; margin: auto;">
 				<strong>Figure 1</strong>
 			</p>
@@ -62,7 +74,7 @@
 			<div class="imgarea">
 				<div class="image">
 
-					<a href="img/Experiment1.png" rel="lightbox[img-group]"><img src="img/Experiment1.png" alt="" width="70%"></a>
+					<a href="img/Experiment1.png" rel="lightbox[img-group]" title="Figure 2:"><img src="img/Experiment1.png" alt="" width="70%"></a>
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 2</strong>
 					</p>
@@ -109,7 +121,7 @@
 			<div class="imgarea">
 				<div class="image">
 
-					<a href="img/Experiment2.png" rel="lightbox[img-group]"><img src="img/Experiment2.png" alt="" width="70%"></a>
+					<a href="img/Experiment2.png" rel="lightbox[img-group]" title="Figure 3:"><img src="img/Experiment2.png" alt="" width="70%"></a>
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 3</strong>
 					</p>
@@ -182,7 +194,7 @@
 		</p>
 		<div class="imgarea">
 				<div class="image">
-					<a href="img/Experiment4.png" rel="lightbox[img-group]"><img src="img/Experiment4.png" alt="" width="70%"></a>
+					<a href="img/Experiment4.png" rel="lightbox[img-group]" title="Figure 7:"><img src="img/Experiment4.png" alt="" width="70%"></a>
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 7:</strong>
 					</p>
