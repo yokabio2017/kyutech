@@ -12,6 +12,8 @@
 	<script src="js/jquery-ui.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<script src="js/lightbox.js" type="text/javascript"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/page-top.js"></script>
@@ -54,14 +56,17 @@
 			<p style="width: 60%; text-align: center; margin: auto;">
 				<strong>Figure 1</strong>
 			</p>
-			<img src="img/Ground(Experiment2).png" alt="" width="70%">
+			<a href="img/Ground(Experiment2).png" rel="lightbox[img-group]"><img src="img/Ground(Experiment2).png" alt="" width="70%"></a>
+
 
 			<div class="imgarea">
 				<div class="image">
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 2</strong>
 					</p>
-					<img src="img/Experiment1.png" alt="" width="70%">
+					<a href="img/Experiment1.png" rel="lightbox[img-group]"><img src="img/Experiment1.png" alt="" width="70%"></a>
+
+
 				</div>
 				<div class="exp">
 						<table border=1>
@@ -88,12 +93,14 @@
 
 		<h2>Experiment 2 DSD containing mismatched base pairs</h2>
 		<div class="sentence">
+			<!--
 			<p class="bunsyo">
 				今回DNAWalkerの設計において、望まない反応経路を遮断するためにミスマッチ塩基対を塩基配列に組み込んだ。
 				仕様は表に示す通りであり、きちんと設計できているのか電気泳動を用いて検証を行った。
 				レーン⑥、⑦の比較、⑧、⑨の比較よりきちんと仕様を満たすように設計できていることが確認できる。しかし、レーン⑩においてバンドが700bp付近に確認できた。
 				これは、アニーリングの際に意図しない鎖が連鎖的に結合し巨大な構造物を形成したためだと考えられる。
 			</p>
+		-->
 			<p class="bunsyo">
 				In the design of DNAWalker, <a href="discuss.html/#miss">mismatched base pairs</a> were incorporated into the base sequence in order to block undesired reaction pathways. The specifications are as shown in the table, and verification was carried out using electrophoresis whether it was designed properly.
 				It can be confirmed that it is designed to satisfy the specification properly from the comparison of lanes ⑥, ⑦, ⑧, ⑨. But in lane ⑩ the band was confirmed around 700 bp. This is probably because unintentional chains were linked in a chain in annealing to form a huge structure.
@@ -103,7 +110,9 @@
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 3</strong>
 					</p>
-					<img src="img/Experiment2.png" alt="" width="70%">
+					<a href="img/Experiment2.png" rel="lightbox[img-group]"><img src="img/Experiment2.png" alt="" width="70%"></a>
+
+
 				</div>
 				<div class="exp">
 						<table border=1>
@@ -121,9 +130,11 @@
 					</table>
 				</div>
 			</div>
+			<!--
 			<p class="bunsyo">
 				続いて、ミスマッチ塩基対を含む鎖でのDSDの検証を電気泳動で行った。反応の流れは図に示し、結果を図に示す。パターンAはs1-w1の2本鎖DNAとinputに相当するF1とで鎖置換反応がおこりw1が放出される。同様に、パターンBではs2-w2の2本鎖DNAとF2が反応しw2が放出される。パターンAは、レーン⑥と⑦のバンドを確認すると変化が見られないため鎖の交換が行われていないと考えられる。対して、パターンBはレーン⑧、⑨よりバンドに変化が見られ鎖の交換が行われたと考えられる。うまく反応が起こらなかったパターンAに関しては反応前後でエネルギーの差が大きくなかったためだと考えられる。したがって、より反応の前後でエネルギーの差が生じるように塩基配列を微調整する必要がある。
 			</p>
+		-->
 			<p class="bunsyo">
 				Subsequently, verification of DSD on chains containing <a href="discuss.html/#miss">mismatched base pairs</a> was performed by electrophoresis. The flow of the reaction is shown in the figure and the result is shown in the figure. In pattern A, a strand displacement reaction occurs between double-stranded DNA of s1-w1 and F1 corresponding to input, and w1 is released. Similarly, in pattern B, F2 reacts with s2-w2 double-stranded DNA and w2 is released. Pattern A seems to have not been exchanged for chain because no change is seen when checking the bands of lanes ⑥ and ⑦. On the other hand, Pattern B seems to have changed from the lanes ⑧ and ⑨, and the chain exchange was done. Regarding the pattern A in which the reaction did not occur properly, it is considered that the difference in energy was not large before and after the reaction. Therefore, it is necessary to finely adjust the base sequence so that a difference in energy occurs before and after the reaction.
 			</p>
@@ -132,7 +143,9 @@
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 4</strong>
 					</p>
-					<img src="img/Experiment3.png" alt="" width="60%">
+					<a href="img/Experiment3.png" rel="lightbox[img-group]"><img src="img/Experiment3.png" alt="" width="70%"></a>
+
+
 				</div>
 				<div class="exp">
 						<table border=1>
@@ -163,13 +176,15 @@
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 5</strong>
 					</p>
-					<img src="img/DNAWalker50nM.png" alt="">
+					<a href="img/DNAWalker50nM.png" rel="lightbox[img-group]"><img src="img/DNAWalker50nM.png" alt="" width="70%"></a>
+
+
 				</div>
 				<div class="image">
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 6</strong>
 					</p>
-					<img src="img/DNAWalker100nM.png" alt="">
+					<a href="img/DNAWalker100nM.png" rel="lightbox[img-group]"><img src="img/DNAWalker100nM.png" alt="" width="70%"></a>
 				</div>
 			</div>
 
@@ -178,24 +193,24 @@
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 7</strong>
 					</p>
-					<img src="img/DNAWalker150nM.png" alt="">
+					<a href="img/DNAWalker150nM.png" rel="lightbox[img-group]"><img src="img/DNAWalker150nM.png" alt="" width="70%"></a>
 				</div>
 				<div class="image">
 					<p style="width: 60%; text-align: center; margin: auto;">
 						<strong>Figure 8</strong>
 					</p>
-					<img src="img/DNAWalker200nM.png" alt="">
+					<a href="img/DNAWalker200nM.png" rel="lightbox[img-group]"><img src="img/DNAWalker200nM.png" alt="" width="70%"></a>
 				</div>
 			</div>
 			<p style="width: 60%; text-align: center; margin: auto;">
 				<strong>Figure 9</strong>
 			</p>
-			<img src="img/段数変化.png" alt="" width="80%">
+			<a href="img/段数変化.png" rel="lightbox[img-group]"><img src="img/段数変化.png" alt="" width="70%"></a>
+
 			<p style="width: 60%; text-align: center; margin: auto;">
 				<strong>Figure 10</strong>
 			</p>
-			<img src="img/DNAWalker段数.png" alt="" width="40%">
-
+			<a href="img/DNAWalker段数.png" rel="lightbox[img-group]"><img src="img/DNAWalker段数.png" alt="" width="70%"></a>
 		</div>
 
 		<h1 id="ref">Reference</h1>
