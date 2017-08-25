@@ -76,7 +76,7 @@ $(function(){
         shutter.css({transform: 'translate( -'+ shutter.width() + 'px, 0px)'}, 800);
       break;
     }
-    shutter.children('img').css('display', 'inline');
+    //shutter.children('img').css('display', 'inline');
     //シャッターが開き終わった時に呼ばれる
     shutter.on('transitionend', function(){
        //開いた状態のシャッターは(z-index:1001)

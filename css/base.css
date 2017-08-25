@@ -249,16 +249,18 @@ header.sub{
 	-webkit-align-content: space-between; /* Safari */
   align-content:         space-between;
 	padding: 30px 0px;
+
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.94, #123e99), color-stop(0.00, #000), color-stop(0.00, #000));
 	background: -webkit-linear-gradient(top, #000 0%, #000 0%, #123e99 94%);
 	background: -moz-linear-gradient(top, #000 0%, #000 0%, #123e99 94%);
 	background: -o-linear-gradient(top, #000 0%, #000 0%, #123e99 94%);
 	background: -ms-linear-gradient(top, #000 0%, #000 0%, #123e99 94%);
 	background: linear-gradient(to bottom, #000 0%, #000 0%, #123e99 94%);
-
 	font-weight: bold;
 }
-
+.c_bg{
+	background-image: url("../img/starbg.png");
+}
 .kiji{
 	color: black;
 	margin-bottom: 50px;
@@ -659,21 +661,16 @@ h3 + .sentence{
     right: 20px;
     font-size: 100%;
 		font-family: 'Ranchers', cursive;
+
 }
 #page-top a {
-    background: #54506D;
+
     text-decoration: none;
     color: #fff;
     width: 100px;
-    padding: 30px 0;
     text-align: center;
     display: block;
-    border-radius: 200px;
 
-}
-#page-top a:hover {
-    text-decoration: none;
-    background: #635F7A;
 }
 
 .video-wrap {
