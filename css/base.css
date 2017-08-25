@@ -310,9 +310,10 @@ table td.kusari{
 
 #kiji video{
 	text-align: center;
-	width: 60%;
+	width: 80%;
 	display: block;
-	margin: 30px auto;
+	margin: 10px auto;
+	border-radius: 3px;
 }
 
 .sentence{
@@ -747,6 +748,63 @@ td{
 	word-break:break-all;
 	width:200px;
 }
+
+#movietabs {
+    width: 80%;
+		margin: auto;
+}
+#movietabs:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.verticaltab{
+	float: left;
+	width: 20%;
+}
+
+.verticaltab li a{
+	font-family: 'Roboto Slab', serif;
+	font-size: 140%;
+	border: 1px solid black;
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+}
+.verticaltab li{
+	margin-bottom: 10px;
+	position: relative;
+	background-color: #d0d0d0;
+}
+.verticaltab .selected{
+	background-color: white;
+}
+
+.selected .play{
+	display: none;
+}
+
+.play{
+	display: block;
+	background: rgba(0, 0, 0, 0) url("./../img/play_btn.png") no-repeat scroll center center / 47px auto;
+	height: 47px;
+	right: 10px;
+	position: absolute;
+	top: 3px;
+	width: 47px;
+}
+
+.pause{
+	background: rgba(0, 0, 0, 0) url("./../img/pause_btn.png") no-repeat scroll center center / 47px auto !important;
+}
+
+.animarea{
+	float: left;
+	width: 80%;
+}
+
+
 @media screen and ( max-width:768px )
 {
 	td{

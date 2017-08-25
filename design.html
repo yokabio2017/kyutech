@@ -26,7 +26,31 @@
 	    }, function() {
 	        $(this).children('ul').slideUp();
 	    });
-	  });
+
+		});
+		$("#movietabs-2").hide();
+		$("#movietabs-3").hide();
+		$("#movietabs-4").hide();
+
+		$("#movietabs ul>li>a").on('click', function(){
+			$(".selected").removeClass('selected');
+			$(this).parent().addClass('selected');
+			var video = $($(this).attr("video")).get(0);
+			$(this).attr('stat', 'play')
+			$("#movietabs-1").hide();
+			$("#movietabs-2").hide();
+			$("#movietabs-3").hide();
+			$("#movietabs-4").hide();
+			video.currentTime = 0;
+			$("video").get(0).pause();
+
+			var disp = $(this).attr("disp");
+			//$(this).children('.play').addClass("pause");
+			video.play();
+			$(disp).css("display", "block");
+		});
+
+
 	});
 	</script>
 </head>
@@ -68,7 +92,7 @@
 				<p class="bunsyo">
 					We designed a system to move the DNA origami structure via a DNAWalker. First, I will summarize the reference article <sup>[1]</sup>. The walker is a structure in which two DNA strands are partially hybridized, and each single strand represents a leg. In addition, the scaffolds are designed to form partial complementary sequences to form a hairpin structure so that they do not bind, even if fuel DNA is added. However, S1 and S2 had exactly the same base sequence, and it is not known whether the Walker's reaction proceeds from the left foot or the right foot. The Walker will be dangling when it moves forward from the right foot (w2), resulting in an undesired reaction system. As a solution to this problem, we utilized <a href="discuss.html#miss">mismatched base pairs</a>. Specifically, we replaced a sequence with one that is not fully complementary to ensure that unintended chains do not bind to each other. When chains join to form a double strand, since there are many complimentary combinations in each strand, they are combined, and the combination is intentionally reduced to make it uncoupled.
 				</p>
-				<span style = "text-align: center; display: block;">アニメーション予定</span>
+
 					<!-- 動画ファイルは public_htmlimg/〇〇.mp4 と保存して src="img/〇〇.mp4"  poster は多分さむね-->
 					<!--
 					<div class="video-wrap">
@@ -176,6 +200,33 @@
 					</div>
 				</div><!-- imagearea -->
 
+				<div id="movietabs">
+					<div class="verticaltab">
+						<ul>
+							 <li><a stat="pause" disp="#movietabs-1" video="#video1">Step 1<span class="play"></span></a></li>
+							 <li><a stat="pause" disp="#movietabs-2" video="#video2">Step 2<span class="play"></span></a></li>
+							 <li><a stat="pause" disp="#movietabs-3" video="#video3">Step 3<span class="play"></span></a></li>
+							 <li><a stat="pause" disp="#movietabs-4" video="#video4">Step 4<span class="play"></span></a></li>
+					 </ul>
+					</div>
+					<div class="animarea">
+						<div id="movietabs-1">
+							<video  muted poster="" id="video1" src="img/wolker1.mp4"></video>
+						</div>
+						<div id="movietabs-2">
+							<video  muted poster="" id="video2" src="img/wolker2.mp4"></video>
+						</div>
+						<div id="movietabs-3">
+							<video  muted poster="" id="video3" src="img/wolker3.mp4"></video>
+						</div>
+						<div id="movietabs-4">
+							<video  muted poster="" id="video4" src="img/wolker4.mp4"></video>
+						</div>
+					</div>
+
+				</div>
+				
+
 				<p class="bunsyo">
 					The subsequent Step proceeds only when Fuel is not completely consumed; if the initial concentration of Fuel is low, the reaction will be proceed until Step 4.
 				</p>
@@ -262,9 +313,11 @@
 					</div>
 				</div><!-- imagearea -->
 
+
 				<p class="bunsyo">
 					In this way, by incorporating <a href="discuss.html#miss">mismatched base pairs</a>, the Walker is designed to proceed in a single direction.
 				</p>
+
 			</div>
 
 			<h1 id="ref">Reference</h1>
