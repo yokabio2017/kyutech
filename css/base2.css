@@ -197,17 +197,17 @@ header.sub{
 }
 
 #side-bar-container{
+  background-color: #666666;
   position: fixed;
 	width: 200px;
 	border-right: 1px solid #ccc;
   box-sizing: border-box;
   left: 0;
-  background-color: white;
   height: 100%;
   overflow: auto;
 }
 #side-bar{/*responsive*/
-
+  background-color: #666666;
 }
 
 #content-flow{/*responsive*/
@@ -335,7 +335,8 @@ header.sub{
 	color: black;
 	cursor: pointer;
   float: left;
-  background-color: #ccc;
+
+  background-color: white;
   border-radius: 100%;
 }
 .spectag a{
@@ -350,8 +351,7 @@ header.sub{
   margin: 0;
 }
 .spectag.selected{
-  background-color: white;
-
+  background-color: #ccc;
 	/*border:1px solid red !important;*/
 }
 
@@ -418,6 +418,7 @@ header.sub{
   padding: 0;
   margin: 0;
   list-style: none;
+
 }
 #side-bar-container li{
 

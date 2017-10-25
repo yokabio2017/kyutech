@@ -2,40 +2,93 @@
 #side-bar ul{
   padding: 0;
   margin: 0;
+  background-color: #666666;
+  color: white;
 }
 
 #side-bar li{
-  padding: 0;
-  margin: 0 10px;
+  padding: 0px;
+  margin: 10px;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+
   list-style: none;
-  background-color: white;
-  box-sizing: border-box;
-  border-bottom: 1px solid #ccc;
+  font-size: 93.75%;
+  font-weight: bold;
+  border-left:1px solid #333;
+
+}
+#side-bar li:hover{
+  border-left:1px solid #ff001a;
+}
+#side-bar li.g:hover{
+  border-left:1px solid #009966;
+}
+#side-bar li.o:hover{
+  border-left:1px solid #ff8000;
 }
 #side-bar li a{
   text-decoration: none;
   display: block;
   box-sizing: border-box;
   text-decoration: none;
-  padding: 15px;
-  color: black;
-}
-#side-bar li :hover{
-  background-color: #ccc;
-  border-bottom: 1px solid rgb(252, 165, 74);
+  padding: 10px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #side-bar li a:hover{
 
-  color: red !important;
+  color: #ff001a;
+text-decoration: none;
+opacity: .6;
+}
+#side-bar li.g a:hover{
+
+  color: #009966;
+}
+#side-bar li.o a:hover{
+
+  color: #ff8000;
+}
+.border {
+	  font-size:18px;
+	  color:black;
+          border-bottom: 
+	  1px solid #d1d1d1;
+	  margin-right:10px;
+	  
+}
+.copyright { 
+	text-align: center;
+        font-size: 70%;
+        background-color: #666666;
+        color: white;
+}
+.specification {
+ background-color: #666666;
+padding:15px;
+text-align: center;
+font-size:25px;
+
+
 }
 </style>
-<ul>
-  <li><a href="/">top</a></li>
-  <li><a href="">Design</a></li>
+  <ul>
+<li class="border"></li>
+  <div class="specification">3 spec</div>
+  <li class="g"><a href="connection.html">Connection</a></li>
+  <li class="o"><a href="connection.html">Distance</a></li>
+  <li><a href="direction.html">Direction</a></li>
+  <li class="border"></li>
+  <li><a href="">top</a></li>
+  <li><a href="mechanism.html">Design</a></li>
   <li><a href="method.html">Material&amp;Method</a></li>
   <li><a href="experiments.html">Experiment</a></li>
   <li><a href="">Discuss</a></li>
   <li><a href="elsi.html">ELSI</a></li>
   <li><a href="member.html">Team</a></li>
 </ul>
+ <div class="copyright">&copy;YOKABIO 2017</div>
+
