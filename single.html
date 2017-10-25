@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+これをコピーして個別ページを作る
+<title>を変更
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>各ページひな形Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base.css"
+			media="only screen and (min-width:600px)">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/open.js"></script>
+
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+
+			$("#main-nav li").hover(function() {
+					$("ul:not(:animated)", this).slideDown();
+			}, function() {
+					$(this).children('ul').slideUp();
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+	<header class="main">
+
+
+	</header>
+
+	<div class="main-contents sub">
+		<div style="width: 100%; " class="mc">
+			<div class="flex-wrap">
+				<div class="flex-content-wide" id="bg">
+					<div class="fcwc">
+						<div class="fcwct-l">
+							Background
+						</div>
+						<div class="spectags">
+							<div class="spectag">
+								<a href="connection.html">Connection</a>
+							</div>
+							<div class="spectag selected">
+								<a href="automatic.html">Automatic</a>
+							</div>
+							<div class="spectag">
+								<a href="control.html">Control</a>
+							</div>
+							<div class="spectag selected">
+								<a href="direction.html">Direction</a>
+							</div>
+						</div><!--仕様タグエリア-->
+						<div class="fcwcp">
+							Recently, DNA nanotechnology has evolved to combine DNA origami and DNA tiles to create various structures. In addition, molecular devices typified by DDS have been developed using insights from DNA nanocomputing. For example, by combining two-dimensional DNA origami, a box-shaped DNA origami structure can be generated such that the upper part of the box is capable of opening and closing by a DNA strand substitution reaction, thereby functioning as a lid <sup>[1]</sup>. However, according to the control method of this lid, there are only two states, i.e., completely closed or fully opened, and it is impossible to adjust the degree of opening to intermediate values. To address these issues, we reasoned that if we could develop a method to move the DNA origami structure an arbitrary distance, we could apply it to various applications, beyond the opening and closing of a lid.
+						</div>
+						<div class="fcwcimg">
+							<a href="img/back.png" rel="lightbox[img-group]" title="Figure 1: Background"><img src="img/back.png" alt="" width="100%" title="Figure 1: Project goal and achievement"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="width: 100%; background-color: #f9f9f9;" class="ref" id="ref">
+			<div class="refp">
+				[1] E. S. Andersen, M. Dong, M. M. Nielsen, K. Jahn, R. Subramani, W. Mamdouh, M. M. Golas, B. Sander, H. Stark, C. L. P. Oliveira, J. S. Pedersen, V. Birkedal, F. Besenbacher, K. V. Gothelf, J. Kjems: Self-assembly of a nanoscale DNA box with a controllable lid, Nature, Vol. 459, pp. 73, 2009. <br>
+				[2] P. Yin, H. Choi, C. Calvert, N. Pierce: Programming biomolecular self-assembly pathways, Nature, Vol. 451, pp. 318, 2008. <br>
+				[3] caDNAno:<a href="http://cadnano.org/">http://cadnano.org/</a><br>
+				M. Douglas, Adam H. Marblestone, Surat Teerapittayanon, Alejandro Vazquez, George M. Church, William M. Shih. Rapid prototyping of 3D DNA-origami shapes with caDNAno. Nucleic Acids Research, 37, 5001-5006 , 2009 <br>
+				[4] CanDo:<a href="http://cando-dna-origami.org/">http://cando-dna-origami.org/</a><br>
+				C.E. Castro, F. Kilchherr, D.N. Kim, E.L. Shiao, T. Wauer, P. Wortmann, M. Bathe, H. Dietz: A primer to scaffolded DNA origami, Nature Methods, Vol. 8, pp. 221-229, 2011.
+			</div>
+			<div class="copy" style="text-align: center;">
+			  &copy; YOKABIO 2017
+			</div>
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>

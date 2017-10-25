@@ -18,11 +18,4 @@ $(function() {
         return false;
     });
 
-    //スクロールしてトップ
-    $(".agenda div").click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
 });

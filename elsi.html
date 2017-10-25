@@ -2,79 +2,67 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="UTF-8" />
-	<title>BIOMOD2017 Team.YOKABIO ELSI</title>
-	<link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<title>ELSI -Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
-	<link rel="stylesheet" href="resource/lightbox.css">
 	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base2.css"
+			media="only screen and (min-width:600px)">
 	<script src="js/bootstrap.js"></script>
-	<script src="js/scroll.js"></script>
 	<script src="js/page-top.js"></script>
-	<script>
-	$(function(){
-		$("header.main").load("header.html", function(){
-			$("#nav-elsi").hide();
-	    $("#main-nav li").hover(function() {
-	        $("ul:not(:animated)", this).slideDown();
-	    }, function() {
-	        $(this).children('ul').slideUp();
-	    });
-	  });
-	});
-	</script>
+	<script src="js/scroll.js"></script>
+
+
 </head>
 <body>
-	<header class="main">
-	</header>
-	<div class="smart-menu">
-		<ul>
-			<li><a href="project.html" class="item">Our Project</a></li>
-			<li><a href="design.html" class="item">Design</a></li>
-			<li><a href="method.html" class="item">Material&Methods</a></li>
-			<li><a href="experiment.html" class="item">Experiment</a></li>
-			<li><a href="discuss.html"  class="item">Discussion</a></li>
-			<li class="main"><a href="elsi.html" class="item">ELSI</a></li>
-	    <li class="main"><a href="member.html" class="item">Member</a></li>
-		</ul>
+	<div id="side-bar-container">
+	  <a href="/">
+	    <div id="main-logo"></div>
+	  </a>
+	  <div id="side-bar"></div>
 	</div>
-	<div id="title"></div>
-	<div id="kiji">
-		<h1 id="elsi">ELSI</h1>
-		<h2>バイオセーフティ（安全性はどうか）</h2>
-		<h3>C リスク評価上の課題（比較対照の不在etc)</h3>
-		<div class="sentence">
-			<p class="bunsyo">
-				我々は、DNAオリガミで作られた構造物を運搬する方法について提案する。運搬するた
-				めの動力機構がDNAオリガミ構造物と接続されたDNAWalkerと呼ばれる構造物である。こ
-				のWalkerは人工的に生成されたヌクレオチドを組み合わせて作り上げられている。将来
-				、DNAWalkerを動力とするDDSが体内に組み込まれたとする。反応系が人工ヌクレオチド
-				内で閉じていれば、意図しない反応が起きたとしても人体に影響を与えることはないだろ
-				う。しかし、体内に存在するDNAと誤って反応してしまうと人体に多大な影響を及ぼすか
-				もしれない。現在では、体内のDNAと人工ヌクレオチドは反応しないと考えられているが
-				将来仕様が変化していき反応するようになるかもしれない。今の段階から対策を考えなが
-				ら設計を行うべきである。
-				また、先程の例では治療薬を中に入れたような箱型のDNA構造物をWalkerが体内で運搬
-				するケースを想定したが治療薬ではなく有害な物質になると新たな危険性が生まれる。も
-				し、Walkerが特定の臓器まで有害物質の入った箱を運搬し、臓器の中で箱が開くような設
-				計となるように悪用されたとすると人の生死に関わる重大な問題が生じてしまう。
-				したがって、今回提案する運搬システムがアプリケーションの一部として組み込まれる
-				ようになったとするとプラスの面だけでなく、マイナスな面も持ち合わせていると考えら
-				れるため慎重に応用を考えるべきである。
-			</p>
+	<div id="container">
+		<div id="main-content">
+			<!--div id="content-title">NEW TEMPLATE</div-->
+			<div id="youtube">
+				ELSI
+			</div>
 
+
+			<div class="content">
+				<div class="content-body">
+					<p>
+						We propose a way to transport structures made of DNA origami.
+						It is a structure called DNAWalker in which a power mechanism for transportation is connected to a DNA origami structure.
+						This Walker is created by combining artificially generated nucleotides.
+						In the future, it is assumed that DDS powered by DNAWalker has been incorporated into the body.
+						If the reaction system is closed within the artificial nucleotide, even if an unintended reaction occurs, it will not affect the human body.
+						However, if it mistakenly reacts with DNA present in the body, it may have a big impact on the human body.
+						Currently, it is thought that DNA in the body and artificial nucleotide do not react, but specifications may change in the future and it may become responsive.
+						Design should be done while considering measures from the current stage.
+						Also, in the above example, we assumed a case where Walker carries a box-shaped DNA structure containing therapeutic drugs in the body, but when it becomes a harmful substance rather than a therapeutic drug, a new danger is created.
+						If Walker were to be exploited to carry a box containing harmful substances up to a specific organ and to be designed to open boxes in organs, serious problems related to human life and death would arise.
+						Therefore, if the transport system proposed this time is to be incorporated as part of the application, it should be considered carefully because it is considered that it has not only a positive side but also a negative side.
+				</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	</div>
-	<p id="page-top"><a href="#"><img src="img/santa.png" width="100%" height="100%;" alt=""></a></p>
 
 	<div id="footer"></div>
-
+	<p id="page-top"><a href="#">TOP</a></p>
 </body>
 </html>

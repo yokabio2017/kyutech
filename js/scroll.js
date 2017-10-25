@@ -2,11 +2,7 @@ $(function(){
   $('html, body').hide();
   // URLのアンカー（#以降の部分）を取得
   var urlHash = location.hash;
-  var offset = 50;
-
-  if(window.innerWidth >= 768){
-    offset = 100;
-  }
+  var offset = 0;
   // URLにアンカーが存在する場合
   if(urlHash){
     $('html, body').show();

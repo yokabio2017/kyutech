@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Material&amp;Methods Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base.css"
+			media="only screen and (min-width:600px)">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/page-top.js"></script>
+</head>
+<body>
+
+	<header class="main">
+	</header>
+
+	<div class="" id="container">
+		<div class="content-back">
+			<div class="content">
+				<h1>Material&amp;Methods</h1>
+			</div>
+		</div>
+		<div class="content-back" id="sc">
+			<div class="content">
+				<h2>Simulation Condition</h2>
+				<p>We set the binding rate constant (kf) based on toehold length as follows [1,2].</p>
+				<p style="text-indent: 0; display: block; margin: auto;">
+					If toehold_length &le; 6 <br>
+						&nbsp;&nbsp;&nbsp;kf = 5.0&times;10<sup>n-1</sup> [M<sup>-1</sup>s<sup>-1</sup>] <br>
+					else<br>
+						&nbsp;&nbsp;&nbsp;kf = 3.0&times;10<sup>6</sup> [M<sup>-1</sup>s<sup>-1</sup>]<br>
+					Where<br>
+						&nbsp;&nbsp;&nbsp;n : toehold_length<br>
+				</p>
+			</div>
+		</div>
+		<div class="content-back odd-content-back" id="ts">
+			<div class="content">
+				<h1>Type &amp; Strands</h1>
+				<h2>Walker</h2>
+				<p>
+					The Walker is composed of annealed W1 and W2, which are single DNA strands.
+				</p>
+				<div class="img">
+					<a href="img/Tractor.png" rel="lightbox[img-group]" title="Figure 1:Structure of DNAwalker"><img src="img/Tractor.png" alt="" width="40%"></a>
+					<div class="caption">Figure 1:Structure of DNAwalker</div>
+				</div>
+				<table border=1>
+					<caption>Table 1:DNAwalker base sequences</caption>
+				<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
+				 <tr><td class="kusari">W1</td><td><div>CCCTAAACTAAACATTACTAACTTATCCTTTTGCCTCGTATCCTAACCGAACGGACTCCAGGACATCACACGCTCAATCACCACCT</div></td></tr>
+				 <tr><td class="kusari">W2</td><td>CCCTAAACTAAACATTACTAACTTATCCTTGTCCGTTCGGTTAGGATACGAGGCAATCCAGGACATCCTCACGCTCAATCAGCACCT</td></tr>
+				</table>
+
+				<h2>Ground A</h2>
+				<p>
+					Hairpins S1 and S2 were mixed with single strands C1, G1, and G4, and subsequently annealed to produce Ground A.
+				</p>
+				<div class="img">
+					<a href="img/Ground1.png" rel="lightbox[img-group]" title="Figure 2:Structure of Ground A"><img src="img/Ground1.png" alt="" width="60%"></a>
+					<div class="caption">
+						Figure 2:Structure of Ground A
+					</div>
+				</div>
+				<div class="img">
+					<table border=1>
+						<caption>Table 2:GroundA base sequences</caption>
+						<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
+						<tr><td class="kusari">S1</td><td>GGTAGTTCTAGGGTGCTGAGGTGGTGATTGAGCGTGTGATGTCACCACGTCTTCTCGCATCACACGCTCAATC</td></tr>
+						<tr><td class="kusari">S2</td><td>CACCTCGGATCTTGATGGAGGTGCTGATTGAGCGTGAGGATGTCAGCACCTCAACTCGCATCCTCACGCTCAATC</td></tr>
+						<tr><td class="kusari">G1</td><td>TCATAGGCACCGTTCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCT</td></tr>
+						<tr><td class="kusari">G4</td><td>GTCCAAGGCTATGACTATCTATGCACT</td></tr>
+						<tr><td class="kusari">C1</td><td>ACGGTGCCTATGACATGGTACTCAGCT</td></tr>
+					</table>
+				</div>
+				<h2>Ground B</h2>
+				<p>
+					Hairpins S1 and S2 were mixed with single strands C2, G2, and G4, and then annealed to produce Ground B.
+				</p>
+				<div class="img">
+					<a href="img/Ground2.png" rel="lightbox[img-group]" title="Figure 3:Structure of Ground B"><img src="img/Ground2.png" alt="" width="60%"></a>
+					<div class="caption">Figure 3:Structure of Ground B</div>
+				</div>
+
+				<div class="img">
+					<table border=1>
+						<caption>Table 3:Ground B base sequences</caption>
+					<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
+					 <tr><td class="kusari">G2</td><td>TACCATGAGTCGATCAAGATCCGAGGTGAGTGCATAGATAGTCATAGCCTTGGACCACCCTAGAACTACCAGCTGAGTACCATG</td></tr>
+					 <tr><td class="kusari">C2</td><td>TCGACTCATGGTACAGTATCCGTGGCA</td></tr>
+					</table>
+				</div>
+				<h2>Ground C</h2>
+				<p>
+					Hairpin S1 and single strands S3, S4 were mixed with single strands G3 and S4, and then annealed to produce Ground C.
+				</p>
+				<div class="img">
+					<a href="img/Ground3.png" rel="lightbox[img-group]" title="Figure 4:Structure of Ground C"><img src="img/Ground3.png" alt="" width="60%"></a>
+					<div class="caption">Figure 4:Structure of Ground C</div>
+				</div>
+				<div class="img">
+					<a href="img/Ground3.png" rel="lightbox[img-group]" title="Figure 4:Structure of Ground C"><img src="img/Ground3.png" alt="" width="60%"></a>
+					<div class="caption">Figure 4:Structure of Ground C</div>
+				</div>
+				<h2>Ground</h2>
+				<p>
+					Ground A, B, and C were incubated at room temperature for 5 hours to produce Ground.
+				</p>
+				<div class="img">
+					<a href="img/Ground.png" rel="lightbox[img-group]" title="Figure 5:Structure of Ground"><img src="img/Ground.png" alt="" width="60%"></a>
+					<div class="caption">Figure 5:Structure of Ground</div>
+				</div>
+				<h2>Walker & Ground A</h2>
+				<p>
+					Ground A and the pre-assembled Walker were incubated at room temperature for 2 hours to produce Walker &amp; Ground A.
+				</p>
+				<div class="img">
+					<div class="sentence">
+						<a href="img/Ground1+Tractor.png" rel="lightbox[img-group]" title="Figure 6:Structure of Walker & Ground A"><img src="img/Ground1+Tractor.png" alt="" width="50%"></a>
+						<div class="caption">Figure 6:Structure of Walker & Ground A</div>
+					</div>
+				</div>
+				<h2>Fuel</h2>
+				<p>
+					Fuel is made of annealed F1 and F2, which are single DNA strands.
+				</p>
+				<div class="img">
+					<a href="img/Fuel.png" rel="lightbox[img-group]" title="Figure 7:Structure of Fuel"><img src="img/Fuel.png" alt="" width="40%"></a>
+					<div class="caption">Figure 7:Structure of Fuel</div>
+				</div>
+				<div class="img">
+					<table border=1>
+						<caption>Table 5:Fuel base sequences</caption>
+					<tr><th>Name</th><th>Base sequences (5'&rarr;3')</th></tr>
+					 <tr><td class="kusari">F1</td><td>TGTGAAGCGAGAACTCGTGGTGAGATGTCTCCCTCAATCAGCACCTCAACTCGCATCCTCA</td></tr>
+					 <tr><td class="kusari">F2</td><td>TGAGGATGCGAGTTGAGGTGCTGACATCCTCACGCTCAATCAGCACCTCAACTCGCA</td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="contentback" id="wedt">
+			<div class="content">
+				<h2>DNA Walker experiment</h2>
+				<h2>Sample preparation</h2>
+				<h3>Step 1 Dilution</h3>
+				<p>
+					We diluted each strand to 10 μM in Tris-EDTA buffer supplemented with 12.5 mM MgCl<sub>2</sub>. The experiment was performed at 20°C.
+				</p>
+				<h3>Step 2 Annealing</h3>
+				<p>
+					We annealed DNA samples in the following three conditions to determine the optimal annealing conditions. We heated the mixture at 95°C for 5 minutes and slowly cooled it to 20°C for 1, 5, and 10 hours with a thermal cycler(Figure 8).
+				</p>
+				<div class="img">
+					<a href="img/Thermal.JPG" rel="lightbox[img-group]" title="Figure 8:Thermal cycler"><img src="img/Thermal.JPG" alt="" width="25%"></a>
+					<div class="caption">Figure 8:Thermal cycler</div>
+				</div>
+				<h2>Electrophoresis</h2>
+				<p style="text-indent: 0;">
+					① The gel was set on an electrophoresis chamber. <br>
+					② Samples (10 μL) and loading dye (2 μL) were mixed.<br>
+					③ Each sample (10 μL) was added to wells and 150 V was applied for approximately 80 minutes.<br>
+					④ Gels were taken out of wells and stained using a DNA staining solution for 30 minutes.<br>
+					⑤ Fluorescence was observed using a gel imager(Figure 9).<br>
+				</p>
+				<div class="img">
+					<a href="img/electro.JPG" rel="lightbox[img-group]" title="Figure 9:Electrophoresis chamber"><img src="img/electro.JPG" alt="" width="30%"></a>
+					<div class="caption">Figure 9:Electrophoresis chamber</div>
+				</div>
+				<div class="img">
+					<a href="img/gelimager.JPG" rel="lightbox[img-group]" title="Figure 10:Gel imager"><img src="img/gelimager.JPG" alt="" width="30%"></a>
+					<div class="caption">Figure 10:Gel imager</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-back odd-content-back" id="mat">
+			<div class="content">
+				<h1>Material</h1>
+				<p>
+					Materials were purchased from the companies indicated below.
+				</p>
+				<div class="img">
+					<table border=1>
+						<caption>Table 6:Materials</caption>
+					 <tr><th>Material</th><th>Name</th><th>Company</th></tr>
+					 <tr><th>Poly-Acrylamide Gel</th><th>e-PAGEL</th><th>ATTO, JAPAN</th></tr>
+					 <tr><th>TBE Buffer</th><th>WSE-7051EzRunTBE</th><th>ATTO, JAPAN</th></tr>
+					 <tr><th>Loading dye</th><th>Gel Loading Dye Purple (6×) B7024S</th><th>BioLabs, JAPAN</th></tr>
+					 <tr><th>DNA stain</th><th>GelGreen Nucleic Acid Stain 10,000× DMSO (0.5 mL)</th><th>Biotium, USA</th></tr>
+					 <tr><th>DNA ladder</th><th>Low Molecular Weight DNA</th><th>BioLabs, JAPAN</th></tr>
+					</table>
+				</div>
+				<h2>Equipment</h2>
+				<p>
+					Equipment was purchased from the companies indicated below.
+				</p>
+				<table border=1>
+					<caption>Table 7:Equipment used</caption>
+				 <tr><th>Equipment</th><th>Name</th><th>Company</th></tr>
+				 <tr><th>Electrophoresis chamber</th><th>AE-y530MW</th><th>ATTO, JAPAN</th></tr>
+				 <tr><th>Thermal cycler</th><th>GeneAtlas(ASTEC325)</th><th>ASTEC, JAPAN</th></tr>
+				 <tr><th>Gel imager</th><th>GELSCAN-2</th><th>iMeasure, JAPAN</th></tr>
+				</table>
+			</div>
+		</div>
+		<div class="content-back odd-content-back ref">
+			<div class="content">
+				<div class="refp">
+					[1] D. Zhan and E. Winfree: Control of DNA strand displacement kinetics using toehold exchange, J. Am. Chem. Soc., Vol. 131, pp. 17303-17314, 2009.<br>
+					[2] S. Kobayashi, K. Yanagibashi, K. Fujimoto, K. Komiya and M. Hagiya: Analog DNA computing devices toward the control of molecular robots, Workshop on Self-organization in Swarm of Robots: from
+					Molecular Robots to Mobile Agents (WSSR 2014), Nara, October, 2014.
+				</div>
+				<div class="copy" style="text-align: center;">
+				  &copy; YOKABIO 2017
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<p id="page-top"><a href="#">TOP</a></p>
+
+
+
+</body>
+</html>

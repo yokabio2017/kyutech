@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Automatic Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base.css"
+			media="only screen and (min-width:600px)">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#main-nav li").hover(function() {
+					$("ul:not(:animated)", this).slideDown();
+			}, function() {
+					$(this).children('ul').slideUp();
+			});
+		});
+		$( "#tabs" ).tabs();
+	});
+	</script>
+</head>
+<body>
+	<header class="main">
+
+
+	</header>
+
+	<div class="main-contents sub">
+		<div style="width: 100%; " class="mc">
+			<div class="flex-wrap">
+				<div class="flex-content-wide" id="bg">
+					<div class="fcwc">
+						<div class="fcwct-l">
+							Automatic
+						</div>
+						<div class="spectags">
+							<div class="spectag">
+								<a href="connection.html">Connection</a>
+							</div>
+							<div class="spectag selected">
+								<a href="automatic.html">Automatic</a>
+							</div>
+							<div class="spectag">
+								<a href="control.html">Control</a>
+							</div>
+							<div class="spectag">
+								<a href="direction.html">Direction</a>
+							</div>
+						</div><!--仕様タグエリア-->
+
+						<div>
+							<div class="fcwcp">
+								我々の悲願を達成するための一つとしてAutoMaticである必要がある。○○するためにはそれにふさわしい<a href="mechanism.html">DNA Walker Mechanism</a>でシミュレーションする必要があるだろう。
+							</div>
+
+							<div id="spec-blocks" style="">
+								<div class="spec-block">
+									<div class="spec-imgarea">
+										<img src="img/7-2.png" alt="">
+									</div>
+									<p class="strong">DNA Walker Mechanism</p>
+									<p><span style="color: rgb(20, 255, 33);text-align: center;">&#10004;done.</span></p>
+									<a href="origami.html" class="more">more</a>
+								</div>
+
+								<div class="spec-block">
+									<div class="spec-imgarea">
+										<img src="img/DNAWalker50nM.png" alt="">
+									</div>
+									<p class="strong">Simulate of DNAWalker</p>
+									<p><span style="color: rgb(20, 255, 33);text-align: center;">&#10004;done.</span></p>
+									<a href="origami.html" class="more">more</a>
+								</div>
+								<div class="spec-block">
+									<div class="spec-imgarea">
+										<img src="img/Experiment4.png" alt="">
+									</div>
+									<p class="strong">Experiment of DNA Walker</p>
+									<p><span style="color: rgb(255, 140, 20);text-align: center;">in Progress.</span></p>
+									<a href="origami.html" class="more">more</a>
+								</div>
+
+						</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="width: 100%; background-color: #f9f9f9;" class="ref" id="ref">
+			<div class="refp">
+			</div>
+			<div class="copy" style="text-align: center;">
+			  &copy; YOKABIO 2017
+			</div>
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>

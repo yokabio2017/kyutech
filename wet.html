@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Experiment of DNAWalker Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base.css"
+			media="only screen and (min-width:600px)">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#main-nav li").hover(function() {
+					$("ul:not(:animated)", this).slideDown();
+			}, function() {
+					$(this).children('ul').slideUp();
+			});
+		});
+		$( "#tabs" ).tabs();
+	});
+	</script>
+</head>
+<body>
+	<header class="main">
+
+
+	</header>
+
+	<div id="container">
+		<div class="content-back">
+			<div class="content">
+				<h1>
+					Experiment : Ground design
+				</h1>
+				<div class="spectags">
+					<div class="spectag">
+						<a href="connection.html">Connection</a>
+					</div>
+					<div class="spectag selected">
+						<a href="distance.html">Distance</a>
+					</div>
+
+					<div class="spectag">
+						<a href="direction.html">Direction</a>
+					</div>
+				</div><!--仕様タグエリア-->
+
+				<p>
+					It is first necessary to confirm whether the DNA structure (Ground) that is the track on which the DNA Walker runs is properly made. In this case, three annealing times, i.e., 1, 5, and 10 hours, were
+					used to find an appropriate annealing condition. Ground A, B, and C were incubated as shown in Figure 1. In order to confirm that Ground A, B, and C were properly bound via C1 and C2 of single-stranded DNA, we carried out the following electrophoresis experiments.
+				</p>
+				<div class="img">
+					<a href="img/Ground(Experiment2).png" rel="lightbox[img-group]" title="Figure 1:Ground configuration"><img src="img/Ground(Experiment2).png" alt="" width="70%"></a>
+					<div class="caption">Figure 1:Ground configuration</div>
+				</div>
+
+				<div class="flex flex-space-around">
+					<div class="img half">
+						<a href="img/Experiment1.png" rel="lightbox[img-group]" title="Figure 2:Electrophoresis result of Experiment 1"><img src="img/Experiment1.png" alt="" width="90%"></a>
+						<div class="caption">
+							Figure 2:Electrophoresis result of Experiment 1
+						</div>
+					</div>
+					<div class="half">
+						<table border=1>
+							<caption>Table 1:Samples of each well</caption>
+							<tr><th>Wells</th><th>Sample</th></tr>
+							<tr><th>①</th><th>DNALadder</th></tr>
+							<tr><th>②</th><th>Ground A + B + C (10 h)</tl></tr>
+							<tr><th>③</th><th>Ground A + B  (10 h)</th></tr>
+							<tr><th>④</th><th>Ground B + C (10 h)</th></tr>
+							<tr><th>⑤</th><th>Ground A + B + C (5 h)</th></tr>
+							<tr><th>⑥</th><th>Ground A + B  (5 h)</th></tr>
+							<tr><th>⑦</th><th>Ground B + C (5 h)</th></tr>
+							<tr><th>⑧</th><th>Ground A + B + C (1 h)</th></tr>
+							<tr><th>⑨</th><th>Ground A + B  (1 h)</th></tr>
+							<tr><th>⑩</th><th>Ground B + C (1 h)</th></tr>
+							<tr><th>⑪</th><th>C1</th></tr>
+							<tr><th>⑫</th><th>C2</th></tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="content-back ref">
+			<div class="content">
+				<div class="refp">
+					[1]Matlab: <a href="http://jp.mathworks.com/products/matlab/">http://jp.mathworks.com/products/matlab/</a>
+				</div>
+				<div class="copy" style="text-align: center;">
+				  &copy; YOKABIO 2017
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

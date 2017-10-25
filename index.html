@@ -3,106 +3,107 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="Content-Script-Type" content="text/javascript">
-	<title>Team YOKABIO</title>
-	<link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>The Transporter -Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+
+
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<script src="js/open.js"></script>
-	<script src="js/scroll.js"></script>
-	<script src="js/page-top.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script>
-	$(function(){
-		$("header.main").load("header.html", function(){
-			$("#main-nav li").hover(function() {
-					$("ul:not(:animated)", this).slideDown();
-			}, function() {
-					$(this).children('ul').slideUp();
-			});
-		});
-	});
+	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
 
-	</script>
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base2.css"
+			media="only screen and (min-width:600px)">
+	<script src="js/bootstrap.js"></script>
+	<script src="js/page-top.js"></script>
+	<script src="js/scroll.js"></script>
+
 
 </head>
 <body>
-	<header class="main"></header>
-	<div class="smart-menu">
+	<!--header class="main"></header-->
+	<div id="side-bar-container">
+		<a href="/"><div id="main-logo"></div></a>
+
 		<ul>
-			<li><a href="project.html" class="item">Our Project</a></li>
-			<li><a href="design.html" class="item">Design</a></li>
-			<li><a href="method.html" class="item">Material&amp;Methods</a></li>
-			<li><a href="experiment.html" class="item">Experiment</a></li>
-			<li><a href="discuss.html"  class="item">Discussion</a></li>
-			<li class="main"><a href="elsi.html" class="item">ELSI</a></li>
-	    <li class="main"><a href="member.html" class="item">Member</a></li>
+			<li><a href="#abst">Abstract</a></li>
+			<li><a href="#pi">Project Idea</a></li>
+			<li><a href="#gr">Goal reached</a></li>
 		</ul>
-	</div>
-	<div id="title">
-		<img src="img/title.png" alt="" style="width: 100%;">
+		<div id="side-bar"></div>
 	</div>
 
-	<div class="abst" style="position: relative; z-index: -1;">
-		<h1 style="text-decoration: underline; padding-top: 10px;">ABSTRACT</h1>
-		<!--<iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>-->
+	<div id="container">
+		<div id="main-content">
+			<!--div id="content-title">NEW TEMPLATE</div-->
+			<div id="youtube">
+				The Transporter
+			</div>
+			
+			<div class="content" id="abst">
+				<div class="content-body">
+					<h1>Abstract</h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/-O4PA_ul11g?rel=0" frameborder="0" allowfullscreen></iframe>
+					<p>
+						We propose a method for the development of DNA nanostructures that autonomously move in a single direction. A structure called a DNAWalker was used in which two DNA strands were partially bound and a single-stranded region was present at both ends of the double-stranded portion. The Walker runs on double-stranded DNA (Ground) in which single-stranded DNA (Spot) of the same base sequence with a hairpin structure is continuously arranged. The Walker uses its single-strand region as a toehold, causes a strand displacement reaction at a particular Spot, and moves to the next Spot. Then, the strand displacement reaction between the Walker and Spot takes place again and the Walker spontaneously travels on the Ground. Since the progress of the Walker depends on the initial concentration of fuel DNA, progress can be controlled by adjusting the initial concentration. We added <a href="missmatch.html">mismatched base pairs</a> to the nucleotide sequence of the DNAWalker to avoid an unintended reaction pathway. In addition, we changed the structure of the Walker to connect to the DNA origami to make it available as a force to move the DNA origami structure. Walkers moving the structure resembled a number of reindeer pulling Santa Claus’ sled; accordingly, we named it "Nano Santa Claus' Reindeers."
+					</p>
+				</div>
+			</div>
+			<div class="content" id="pi">
+				<div class="content-body">
+					<h1>Project Idea</h1>
+					<p>
+						We created a system that functions as a power source for moving DNA structures. We considered a system with a separate structure to be moved and power source, rather than one in which the DNA structure to be moved and its power source are united. In this framework, even if the DNA structure was changed according to the specifications of the application, movement was possible as long as a connection with the power source was made. Therefore, the aim of this project was to design a system that functions as a power source. The proposed power source must satisfy the following three specifications. First, this system must be able to connect to the target DNA structure. Second, since DNA molecules are in Brownian motion in solution, they move in all directions; therefore, this system should move in a single direction. Third, this system must be able to adjust its progress. We built a system that satisfies these three specifications with reference to the principle of operation of a structure called a DNAWalker [2].
+					</p>
+					<div id="spec-blocks">
+						<a href="connection.html" class="spec-block">
+							<p class="spec-title strong">Connection</p>
+							<div class="spec-imgarea"><img src="img/connect.png" alt=""></div>
+							<div class="more">more</div>
+						</a>
 
-		<div class="honbun" style="padding: 0;">
-			<p style="font-size: 110%; line-height: 2em; padding-top: 0; margin-top: 0;padding-bottom: 20px;">
-				We propose a method for the development of DNA nanostructures that autonomously move in a single direction. A structure called a DNAWalker was used in which two DNA strands were partially bound and a single-stranded region was present at both ends of the double-stranded portion. The Walker runs on double-stranded DNA (Ground) in which single-stranded DNA (Spot) of the same base sequence with a hairpin structure is continuously arranged. The Walker uses its single-strand region as a toehold, causes a strand displacement reaction at a particular Spot, and moves to the next Spot. Then, the strand displacement reaction between the Walker and Spot takes place again and the Walker spontaneously travels on the Ground. Since the progress of the Walker depends on the initial concentration of fuel DNA, progress can be controlled by adjusting the initial concentration. We added <a href="discuss.html#miss" style="color: yellow;">mismatched base pairs</a> to the nucleotide sequence of the DNAWalker to avoid an unintended reaction pathway. In addition, we changed the structure of the Walker to connect to the DNA origami to make it available as a force to move the DNA origami structure. Walkers moving the structure resembled a number of reindeer pulling Santa Claus’ sled; accordingly, we named it "Nano Santa Claus' Reindeers."
-			</p>
-		</div>
-
-	</div>
-
-
-	<div class="back">
-		<div id="container" style="position: relative;">
-			<div class="c_bg" style="width: 100%; height: 100%;position:absolute; top: 0; right: 0; bottom: 0; left: 0;"></div>
-
-			<div style="width: 1000px;">
-				<div class="contents right" id="Project">
-					<div id="t4"  dir="left"  style="background-image: url('img/sori_project.png'); background-repeat: no-repeat;"  class="shutter color1" to="project.html" stat="closed">
+						<a class="spec-block" href="distance.html" >
+							<p class="spec-title strong">Distance</p>
+							<div class="spec-imgarea"><img src="img/distance.png" alt=""></div>
+							<div class="more">more</div>
+						</a>
+						<a href="direction.html" class="spec-block">
+							<p class="spec-title strong">Direction</p>
+							<div class="spec-imgarea"><img src="img/direction.png" alt=""></div>
+							<div class="more">more</div>
+						</a>
 					</div>
 				</div>
 
-				<div class="contents left" id="Design">
-					<div id="t1" dir="right" class="shutter color4" style="background-image: url('img/sori_design.png'); background-repeat: no-repeat;" to="design.html" stat="closed">
-					</div>
-				</div>
-				<div class="contents right" id="MatMet">
-					<div id="t1" dir="left" class="shutter color4" style="background-image: url('img/sori_method.png'); background-repeat: no-repeat;" to="method.html" stat="closed">
-					</div>
-				</div>
-
-				<div class="contents left" id="Experiment">
-					<div id="t3" dir="right" class="shutter color2" style="background-image: url('img/sori_experiment.png'); background-repeat: no-repeat;" to="experiment.html" stat="closed">
-
-					</div>
-				</div>
-
-
-				<div class="contents right" id="Discuss">
-					<div id="t3" dir="left" class="shutter color2" style="background-image: url('img/sori_discuss.png'); background-repeat: no-repeat;" to="discuss.html" stat="closed">
-
-					</div>
-				</div>
-				<div class="contents left" id="Member">
-					<div id="t4"  dir="right" class="shutter color1" style="background-image: url('img/sori_member.png'); background-repeat: no-repeat;" to="member.html" stat="closed">
-
+			</div>
+			<div class="content" id="gr">
+				<div class="content-body">
+					<h1>Goals Reached</h1>
+					<div style="display: -webkit-flex;display: -ms-flex;display: flex;">
+						<div style="width: 50%;">
+							<a href="img/goalreached.png" rel="lightbox[img-group]" title="Figure 3: Goal reached image"><img src="img/goalreachedn.png"alt="" width="80%" title="Figure 1: Project goal and achievement"></a>
+						</div>
+						<div style="width: 50%;">
+							<p>
+								Our goal is to realize a method for the development of autonomously move in a single direction. We divide the goal into 8steps.
+								We have finished up to 6 steps.<br>
+								We will move forward with the remaining steps towards Jamboree.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
-	<p id="page-top"><a href="#"><img src="img/santa.png" width="100%" height="100%;" alt=""></a></p>
 
 	<div id="footer"></div>
-
+	<p id="page-top"><a href="#">TOP</a></p>
 </body>
 </html>

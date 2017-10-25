@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<title>Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base2.css"
+			media="only screen and (min-width:600px)">
+	<script src="js/bootstrap.js"></script>
+	<script src="js/page-top.js"></script>
+	<script src="js/scroll.js"></script>
+
+
+</head>
+<body>
+	<div id="side-bar-container">
+	  <a href="/">
+	    <div id="main-logo"></div>
+	  </a>
+		<ul>
+			<li><a href="experiments.html">Other Experiments</a></li>
+		</ul>
+	  <div id="side-bar"></div>
+	</div>
+	<div id="container">
+		<div id="main-content">
+			<!--div id="content-title">NEW TEMPLATE</div-->
+			<div id="youtube">
+				Simulation
+			</div>
+
+			<div class="content" id="">
+				<div class="content-body">
+					<div class="spectags">
+						<div class="spectag ">
+							<a href="connection.html"><img src="img/connect.png" alt="connection" title="connection"></a>
+						</div>
+						<div class="spectag selected">
+							<a href="distance.html"><img src="img/distance.png" alt="distance" title="distance"></a>
+						</div>
+						<div class="spectag">
+							<a href="direction.html"><img src="img/direction.png" alt="direction" title="direction"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content-body">
+					<p>
+						We performed simulations using Matlab[1] to confirm that the Walker process depends on the initial concentration of Fuel. We simulated the time-dependent concentration change of Output after setting the initial concentrations of Walker and Ground in 100 nM, and the concentration of Fuel to 50, 100, 150, and 200 nM. Additionally, we simulated the concentration change of Output when changing the initial concentration of Fuel from 0 to 500 nM with a fixed time of 10000 seconds. As shown in Figures 1 to 4, we found that the time-dependent concentration change of Output depends on the initial concentration of Fuel. As shown in Figure 5, the concentration of Output increased rapidly when the initial concentration of Fuel was given more than a specific value. Additionally, the concentration of Output increased rapidly above a threshold value as the levels of Spot increased (Version A, B, and C). We set up differential equations using state variables such as x1, x2, ... as shown in Fig. 7 and conducted simulations. Therefore, it can be said that similar simulation results can be obtained if not only Walker and Ground's reaction but also a model in which the state transits similarly. In this simulation, when Fuel is regarded as an input, it is shown that the output is released only when the input exceeds a certain threshold, so that it functions as a switch circuit.
+					</p>
+					<div style="display: -webkit-flex;display: -ms-flex;display: flex;">
+						<div style="width: 50%">
+							<a href="img/DNAWalker50nM.png" rel="lightbox[img-group]" title="Figure 1:Simulation result(fuel 50nM)">
+								<img src="img/DNAWalker50nM.png" alt="" width="90%">
+							</a>
+							<div class="caption">
+								Figure 1: Simulation result(fuel 50nM)
+							</div>
+						</div>
+						<div style="width: 50%;">
+							<a href="img/DNAWalker100nM.png" rel="lightbox[img-group]" title="Figure 2:Simulation result(fuel 100nM)">
+								<img src="img/DNAWalker100nM.png" alt="" width="90%">
+							</a>
+							<div class="caption">
+								Figure 2:Simulation result(fuel 100nM)
+							</div>
+						</div>
+					</div>
+					<div style="display: -webkit-flex;display: -ms-flex;display: flex;">
+						<div style="width: 50%;">
+							<a href="img/DNAWalker150nM.png" rel="lightbox[img-group]" title="Figure 3:Simulation result(fuel 150nM)">
+								<img src="img/DNAWalker150nM.png" alt="" width="90%">
+							</a>
+							<div class="caption">
+								Figure 3:Simulation result(fuel 150nM)
+							</div>
+						</div>
+						<div style="width: 50%;">
+							<a href="img/DNAWalker200nM.png" rel="lightbox[img-group]" title="Figure 4:Simulation result(fuel 200nM)">
+								<img src="img/DNAWalker200nM.png" alt="" width="90%">
+							</a>
+							<div class="caption">
+								Figure 4:Simulation result(fuel 200nM)
+							</div>
+						</div>
+					</div>
+					<a href="img/typeA.png" rel="lightbox[img-group]" title="Figure 5:Type A">
+						<img src="img/typeA.png" alt="" width="70%">
+					</a>
+					<div class="caption">
+						Figure 5:Type A
+					</div>
+					<a href="img/TypeB.png" rel="lightbox[img-group]" title="Figure 6:Type B">
+						<img src="img/TypeB.png" alt="" width="90%">
+					</a>
+					<div class="caption">
+						Figure 6:Type B
+					</div>
+					<a href="img/TypeC.png" rel="lightbox[img-group]" title="Figure 7:Type C">
+						<img src="img/TypeC.png" alt="" width="90%">
+					</a>
+					<div class="caption">
+						Figure 7:Type C
+					</div>
+					<a href="img/statetrdiagram.png" rel="lightbox[img-group]" title="Figure 8: State transition diagram">
+						<img src="img/statetrdiagram.png" alt="" width="90%">
+					</a>
+					<div class="caption">
+						Figure 8: State transition diagram
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer"></div>
+	<p id="page-top"><a href="#">TOP</a></p>
+</body>
+</html>

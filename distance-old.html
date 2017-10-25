@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Distance Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base.css"
+			media="only screen and (min-width:600px)">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#main-nav li").hover(function() {
+					$("ul:not(:animated)", this).slideDown();
+			}, function() {
+					$(this).children('ul').slideUp();
+			});
+		});
+		$( "#tabs" ).tabs();
+	});
+	</script>
+</head>
+<body>
+	<header class="main"></header>
+	<div id="container">
+		<div class="content-back">
+			<div class="content">
+				<h1>Distance</h1>
+				<div class="spectags">
+					<div class="spectag ">
+						<a href="connection.html">Connection</a>
+					</div>
+					<div class="spectag selected">
+						<a href="distance.html">Distance</a>
+					</div>
+					<!--div class="spectag">
+						<a href="control.html">Control</a>
+					</div-->
+					<div class="spectag">
+						<a href="direction.html">Direction</a>
+					</div>
+				</div><!--仕様タグエリア-->
+				<p>
+					我々の悲願を達成するための一つとして接続可能である必要がある。○○するためには<a href="origami.html">DNA origami</a>でシミュレーションする必要があるだろう。
+				</p>
+				<div id="spec-blocks" style="">
+					<a href="wet2.html" class="spec-block">
+						<div class="spec-imgarea">
+							<img src="img/ミスマッチ塩基対DSDスキーム.png" alt="">
+						</div>
+						<p class="spec-title strong">DSD containing mismatched base pairs</p>
+						<p style="text-indent: 0; text-align: center;"><span style="text-indent: 0; color: rgb(20, 255, 33);text-align: center;">&#10004;done.</span></p>
+						<div href="/" class="more">more</div>
+					</a>
+					<a href="dry.html" class="spec-block">
+						<div class="spec-imgarea">
+							<img src="img/DNAWalker50nM.png" alt="">
+						</div>
+						<p class="spec-title strong">Simulate of DNAWalker</p>
+						<p style="text-indent: 0; text-align: center;"><span style="text-indent: 0; color: rgb(20, 255, 33);text-align: center;">&#10004;done.</span></p>
+						<div href="/" class="more">more</div>
+					</a>
+					<a href="mechanism.html" class="spec-block">
+						<div class="spec-imgarea">
+							<img src="img/7-2.png" alt="">
+						</div>
+						<p class="spec-title strong">DNA Walker Mechanism</p>
+						<p style="text-indent: 0; text-align: center;"><span style="text-indent: 0; color: rgb(20, 255, 33);text-align: center;">&#10004;done.</span></p>
+						<div href="/" class="more">more</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="content-back odd-content-back ref">
+			<div class="refp">
+			</div>
+			<div class="copy" style="text-align: center;">
+			  &copy; YOKABIO 2017
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

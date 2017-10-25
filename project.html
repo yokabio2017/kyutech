@@ -3,10 +3,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Team YOKABIO PROJECT</title>
-	<link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -17,98 +15,194 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/open.js"></script>
-	<script src="js/page-top.js"></script>
+
 	<script>
 	$(function(){
-		$("header.main").load("header.html", function(){
-			$("#nav-project").hide();
-	    $("#main-nav li").hover(function() {
-	        $("ul:not(:animated)", this).slideDown();
-	    }, function() {
-	        $(this).children('ul').slideUp();
-	    });
-	  });
+		$("#main-nav li").hover(function() {
+				$("ul:not(:animated)", this).slideDown();
+		}, function() {
+				$(this).children('ul').slideUp();
+		});
+		$('.accordion_ul ul').hide();
+    $('.accordion_ul h1').click(function(e){
+		    $(this).toggleClass("active");
+		    $(this).next("div").slideToggle();
+		});
+
+
+
 	});
 	</script>
 </head>
 <body>
 	<header class="main">
+
+		<a id="main-logo" href="index.html"></a>
+		<nav id="main-nav">
+		  <ul>
+		    <li class="main" id="nav-project">
+		      <a href="project.html" class="item"><span style="color: yellow;">Our Project</span></a>
+		      <ul>
+		        <li>
+		          <a href="#bg">Background</a>
+		        </li>
+		        <li>
+		          <a href="#pi">Project Idea</a>
+		        </li>
+		        <li>
+		          <a href="#gr">Goals reached</a>
+		        </li>
+		      </ul>
+		    </li>
+		    <li class="main"><span class="wake"></span></li>
+		    <li class="main" id="nav-design">
+		      <a href="design.html" class="item">Design</a>
+		      <ul>
+		        <li>
+		          <a href="design.html#me">Mechanism</a>
+		        </li>
+		      </ul>
+		    </li>
+		    <li class="main"><span class="wake"></span></li>
+		    <li class="main" id="nav-method">
+		      <a href="method.html" class="item">Material&Methods</a>
+		      <ul>
+		        <li>
+		          <a href="method.html#sc">Simulation Condition</a>
+		        </li>
+		        <li>
+		          <a href="method.html#ts">Type &amp; strands</a>
+		        </li>
+		        <li>
+		          <a href="method.html#wedt">Wet experiment of DNA Walker</a>
+		        </li>
+		      </ul>
+		    </li>
+		    <li class="main"><span class="wake"></span></li>
+		    <li class="main" id="nav-experiment">
+		      <a href="experiment.html" class="item">Experiment</a>
+		      <ul>
+		        <li>
+		          <a href="experiment.html#wet">Wet Experiment</a>
+		        </li>
+		        <li>
+		          <a href="experiment.html#dry">Dry Experiment</a>
+		        </li>
+		      </ul>
+		    </li>
+		    <li class="main"><span class="wake"></span></li>
+		    <li class="main" id="nav-discuss">
+		      <a href="discuss.html"  class="item">Discussion</a>
+		    </li>
+		    <li class="main"><span class="wake"></span></li>
+		    <li class="main" id="nav-elsi"><a href="elsi.html" class="item">ELSI</a></li>
+		    <li class="main"><span class="wake"></span></li>
+		    <li class="main" id="nav-member"><a href="member.html" class="item">Member</a></li>
+		    <li class="main"><span class="wake"></span></li>
+		  </ul>
+		</nav>
+		<div id="menu">
+		  <a href="" id="panel-btn"><span id="panel-btn-icon"></span></a>
+		</div>
+
 	</header>
 	<header class="sub">
 		<nav id="main-nav" class="sub">
-			<ul>
-				<li class="main"><a href="#" class="item">OurProject</a></li>
+		  <ul>
+				<li class="main"><a href="#" class="item">△TOP</a></li>
 				<li class="main"><span class="wake"></span></li>
 				<li class="main"><a href="#bg" class="item">Background</a></li>
 				<li class="main"><a href="#pi" class="item">Project Idea</a></li>
-				<li class="main"><a href="#gr" class="item">Goals Reached</a></li>
-				<li class="main"><a href="#ref" class="item">Reference</a></li>
+				<li class="main"><a href="#gr" class="item">Goal Reached</a></li>
+				<!--li class="main"><a href="#ref" class="item">Reference</a></li-->
 			</ul>
 		</nav>
 	</header>
-	<div class="smart-menu">
-		<ul>
-			<li class="main"><a href="#" class="item">OurProject</a></li>
-			<li class="main"><a href="#bg" class="item">Background</a></li>
-			<li class="main"><a href="#pi" class="item">Project Idea</a></li>
-			<li class="main"><a href="#gr" class="item">Goals Reached</a></li>
-			<li class="main"><a href="#ref" class="item">Reference</a></li>
-		</ul>
-	</div>
-	<div id="title" class="sub">
-		<h1>YOKABIO PROJECT</h1>
-	</div>
 
 
-	<div id="kiji">
-		<h1 id="bg">Background</h1>
-		<div class="sentence">
-			<a href="img/back.png" rel="lightbox[img-group]" title="Figure 1: Background"><img src="img/back.png"alt="" width="55%" title="Figure 1: Project goal and achievement"></a>
-			<p style="width: 60%; text-align: center; margin: auto;">
-				<strong>Figure 1: Background</strong>
-			</p>
-			<p class="bunsyo">
-				Recently, DNA nanotechnology has evolved to combine DNA origami and DNA tiles to create various structures. In addition, molecular devices typified by DDS have been developed using insights from DNA nanocomputing. For example, by combining two-dimensional DNA origami, a box-shaped DNA origami structure can be generated such that the upper part of the box is capable of opening and closing by a DNA strand substitution reaction, thereby functioning as a lid <sup>[1]</sup>. However, according to the control method of this lid, there are only two states, i.e., completely closed or fully opened, and it is impossible to adjust the degree of opening to intermediate values. To address these issues, we reasoned that if we could develop a method to move the DNA origami structure an arbitrary distance, we could apply it to various applications, beyond the opening and closing of a lid.
-			</p>
+	<div class="main-contents sub">
+		<div style="width: 100%; " class="mcbg">
+			<div class="flex-wrap">
+				<div class="flex-content-wide" id="bg">
+					<div class="fcwc">
+						<div class="fcwct-l">
+							Background
+						</div>
+
+						<div class="fcwcp">
+							Recently, DNA nanotechnology has evolved to combine DNA origami and DNA tiles to create various structures. In addition, molecular devices typified by DDS have been developed using insights from DNA nanocomputing. For example, by combining two-dimensional DNA origami, a box-shaped DNA origami structure can be generated such that the upper part of the box is capable of opening and closing by a DNA strand substitution reaction, thereby functioning as a lid <sup>[1]</sup>. However, according to the control method of this lid, there are only two states, i.e., completely closed or fully opened, and it is impossible to adjust the degree of opening to intermediate values. To address these issues, we reasoned that if we could develop a method to move the DNA origami structure an arbitrary distance, we could apply it to various applications, beyond the opening and closing of a lid.
+						</div>
+						<div class="fcwcimg">
+							<a href="img/back.png" rel="lightbox[img-group]" title="Figure 1: Background"><img src="img/back.png" alt="" width="100%" title="Figure 1: Project goal and achievement"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="width: 100%; background-color: #f9f9f9;" class="mcpi">
+			<div class="flex-wrap" id="pi" style="">
+				<div class="flex-content-wide">
+					<div class="fcwc">
+						<div class="fcwct-l">
+							Project Idea
+						</div>
+
+						<div class="fcwcp">
+							We created a system that functions as a power source for moving DNA structures. We considered a system with a separate structure to be moved and power source, rather than one in which the DNA structure to be moved and its power source are united. In this framework, even if the DNA structure was changed according to the specifications of the application, movement was possible as long as a connection with the power source was made. Therefore, the aim of this project was to design a system that functions as a power source. The proposed power source must satisfy the following three specifications. First, this system must be able to connect to the target DNA structure. Second, since DNA molecules are in Brownian motion in solution, they move in all directions; therefore, this system should move in a single direction. Third, this system must be able to adjust its progress. We built a system that satisfies these three specifications with reference to the principle of operation of a structure called a DNAWalker [2].
+						</div>
+						<div class="fcwcimg">
+							<a href="img/pullsori_touka.png" rel="lightbox[img-group]" title="Figure 2: Project idea image"><img src="img/pullsori_touka.png"alt="" width="100%" title="Figure 1: Project goal and achievement"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div style="width: 100%; " id="gr">
+			<div class="flex-wrap">
+				<div class="flex-content-wide">
+					<div class="fcwc">
+						<div class="fcwct-l">
+							Goals Reached
+						</div>
+						<div>
+							<div class="half">
+								<div class="fcwcp">
+									Our goal is to realize a method for the development of autonomously move in a single direction. We divide the goal into 8steps.
+									We have finished up to 6 steps.<br>
+									We will move forward with the remaining steps towards Jamboree.
+								</div>
+							</div>
+							<div class="half">
+
+
+								<div class="fcwcimg">
+									<a href="img/goalreached.png" rel="lightbox[img-group]" title="Figure 3: Goal reached image"><img src="img/goalreachedn.png"alt="" width="80%" title="Figure 1: Project goal and achievement"></a>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+					</div>
+				</div>
+
+			</div>
 		</div>
 
-		<h1 id="pi">Project Idea</h1>
-		<div class="sentence">
-			<a href="img/pullsori_touka.png" rel="lightbox[img-group]" title="Figure 2: Project idea image"><img src="img/pullsori_touka.png"alt="" width="30%" title="Figure 1: Project goal and achievement"></a>
-			<p style="width: 60%; text-align: center; margin: auto;">
-				<strong>Figure 2: Project idea image</strong>
-			</p>
-			<p class="bunsyo">
-				We created a system that functions as a power source for moving DNA structures. We considered a system with a separate structure to be moved and power source, rather than one in which the DNA structure to be moved and its power source are united. In this framework, even if the DNA structure was changed according to the specifications of the application, movement was possible as long as a connection with the power source was made. Therefore, the aim of this project was to design a system that functions as a power source. The proposed power source must satisfy the following four specifications. First, this system must be able to connect to the target DNA structure. Second, this system must be able to move autonomously. Third, since DNA molecules are in Brownian motion in solution, they move in all directions; therefore, this system should move in a single direction. Fourth, this system must be able to adjust its progress. We built a system that satisfies these four specifications with reference to the principle of operation of a structure called a DNAWalker <sup>[2]</sup>.
-			</p>
-		</div>
-
-		<h1 id="gr">Goals Reached</h1>
-		<div class="sentence">
-			<a href="img/goalreached.png" rel="lightbox[img-group]" title="Figure 3: Project goal and achievement"><img src="img/goalreached.png"alt="" width="75%" title="Figure 1: Project goal and achievement"></a>
-			<p style="width: 60%; text-align: center; margin: auto;">
-				<strong>Figure 3: Project goal and achievement</strong>
-			</p>
-			<p class="bunsyo">
-			</p>
-		</div>
-
-
-		<h1 id="ref">References</h1>
-		<div class="sentence">
-			<p class="ref">
+		<div style="width: 100%; background-color: #f9f9f9;" class="ref" id="ref">
+			<div class="refp">
 				[1] E. S. Andersen, M. Dong, M. M. Nielsen, K. Jahn, R. Subramani, W. Mamdouh, M. M. Golas, B. Sander, H. Stark, C. L. P. Oliveira, J. S. Pedersen, V. Birkedal, F. Besenbacher, K. V. Gothelf, J. Kjems: Self-assembly of a nanoscale DNA box with a controllable lid, Nature, Vol. 459, pp. 73, 2009. <br>
 				[2] P. Yin, H. Choi, C. Calvert, N. Pierce: Programming biomolecular self-assembly pathways, Nature, Vol. 451, pp. 318, 2008. <br>
 				[3] caDNAno:<a href="http://cadnano.org/">http://cadnano.org/</a><br>
 				M. Douglas, Adam H. Marblestone, Surat Teerapittayanon, Alejandro Vazquez, George M. Church, William M. Shih. Rapid prototyping of 3D DNA-origami shapes with caDNAno. Nucleic Acids Research, 37, 5001-5006 , 2009 <br>
 				[4] CanDo:<a href="http://cando-dna-origami.org/">http://cando-dna-origami.org/</a><br>
 				C.E. Castro, F. Kilchherr, D.N. Kim, E.L. Shiao, T. Wauer, P. Wortmann, M. Bathe, H. Dietz: A primer to scaffolded DNA origami, Nature Methods, Vol. 8, pp. 221-229, 2011.
-
-			</p>
+			</div>
 		</div>
-
 	</div>
-	<p id="page-top"><a href="#"><img src="img/santa.png" width="100%" height="100%;" alt=""></a></p>
 
 	<div id="footer"></div>
 

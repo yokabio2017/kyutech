@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<title>Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/base.css" id="pcstyle">-->
+	<!--<link rel="stylesheet" type="text/css" href="css/base_sp.css" id="mbstyle">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base.css"
+			media="only screen and (min-width:600px)">
+	<script src="js/bootstrap.js"></script>
+	<script src="js/page-top.js"></script>
+
+</head>
+<body>
+	<header class="main"></header>
+
+	<div id="container" class="flex">
+		<div style="flex-grow: 1; background-color: #ccc; padding: 5px;">
+			<div class="side-bar">
+				<div class="side-content"><a href="mechanism.html">Design</a></div>
+				<div class="side-content"><a href="method.html">Material&amp;Methods</a></div>
+				<div class="side-content"><a href="">Our Project</a></div>
+				<div class="side-content"><a href="experiments.html">Experiment</a></div>
+				<div class="side-content"><a href="">Discuss</a></div>
+				<div class="side-content"><a href="">ELSI</a></div>
+				<div class="side-content"><a href="member.html">Team</a></div>
+			</div>
+
+		</div>
+		<div style="flex-grow: 4;">
+			<div class="content-back">
+				<div class="content" id="youtube">
+					<h2>youtube動画エリア</h2>
+					<video  autoplay muted poster="" id="video1" src="img/wolker1.mp4"></video>
+				</div>
+			</div>
+			<div class="content-back odd-content-back">
+				<div class="content">
+					<h1>Abstract</h1>
+					<p>
+						We propose a method for the development of DNA nanostructures that autonomously move in a single direction. A structure called a DNAWalker was used in which two DNA strands were partially bound and a single-stranded region was present at both ends of the double-stranded portion. The Walker runs on double-stranded DNA (Ground) in which single-stranded DNA (Spot) of the same base sequence with a hairpin structure is continuously arranged. The Walker uses its single-strand region as a toehold, causes a strand displacement reaction at a particular Spot, and moves to the next Spot. Then, the strand displacement reaction between the Walker and Spot takes place again and the Walker spontaneously travels on the Ground. Since the progress of the Walker depends on the initial concentration of fuel DNA, progress can be controlled by adjusting the initial concentration. We added <a href="missmatch.html">mismatched base pairs</a> to the nucleotide sequence of the DNAWalker to avoid an unintended reaction pathway. In addition, we changed the structure of the Walker to connect to the DNA origami to make it available as a force to move the DNA origami structure. Walkers moving the structure resembled a number of reindeer pulling Santa Claus’ sled; accordingly, we named it "Nano Santa Claus' Reindeers."
+					</p>
+				</div>
+			</div>
+			<div class="content-back">
+				<div class="content">
+					<h1>Project Idea</h1>
+					<p>
+						We created a system that functions as a power source for moving DNA structures. We considered a system with a separate structure to be moved and power source, rather than one in which the DNA structure to be moved and its power source are united. In this framework, even if the DNA structure was changed according to the specifications of the application, movement was possible as long as a connection with the power source was made. Therefore, the aim of this project was to design a system that functions as a power source. The proposed power source must satisfy the following four specifications. First, this system must be able to connect to the target DNA structure. Second, this system must be able to move autonomously. Third, since DNA molecules are in Brownian motion in solution, they move in all directions; therefore, this system should move in a single direction. Fourth, this system must be able to adjust its progress. We built a system that satisfies these four specifications with reference to the principle of operation of a structure called a DNAWalker <sup>[2]</sup>.
+					</p>
+					<div id="spec-blocks">
+						<a href="connection.html" class="spec-block">
+							<p class="spec-title strong">Connection</p>
+							<div class="spec-imgarea"><img src="img/spec1.png" alt=""></div>
+							<p class="spec-title achieve">Achieve</p>
+							<div class="gauge-wrapper">
+								<div class="gauge" style="width: 50%;"><!--70%--></div>
+							</div>
+							<div class="more">more</div>
+						</a>
+						<!--div class="spec-block">
+							<div><p class="strong">Automatic</p></div>
+							<div class="spec-imgarea"><img src="img/spec1.png" alt=""></div>
+							<p class="achieve">Achieve</p>
+							<div class="gauge-wrapper">
+								<div class="gauge" style="width: 66%;"></div>
+							</div>
+
+							<a href="automatic.html" class="more">more</a>
+						</div-->
+						<a class="spec-block" href="distance.html" >
+							<p class="spec-title strong">Distance</p>
+							<div class="spec-imgarea"><img src="img/spec1.png" alt=""></div>
+							<p class="spec-title achieve">Achieve</p>
+							<div class="gauge-wrapper">
+								<div class="gauge" style="width: 66%;"><!--70%--></div>
+							</div>
+							<div class="more">more</div>
+						</a>
+						<a href="direction.html" class="spec-block">
+							<p class="spec-title strong">Direction</p>
+							<div class="spec-imgarea"><img src="img/spec1.png" alt=""></div>
+							<p class="spec-title achieve">Achieve</p>
+							<div class="gauge-wrapper">
+								<div class="gauge" style="width: 35%;"><!--70%--></div>
+							</div>
+							<div class="more">more</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="content-back odd-content-back">
+				<div class="content">
+					<h1>Goals Reached</h1>
+					<div class="flex flex-space-around">
+						<div class="half img">
+							<a href="img/goalreached.png" rel="lightbox[img-group]" title="Figure 3: Goal reached image"><img src="img/goalreachedn.png"alt="" width="80%" title="Figure 1: Project goal and achievement"></a>
+						</div>
+						<div class="half">
+							<p>
+								Our goal is to realize a method for the development of autonomously move in a single direction. We divide the goal into 8steps.
+								We have finished up to 6 steps.<br>
+								We will move forward with the remaining steps towards Jamboree.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<p id="page-top"><a href="#">TOP</a></p>
+	<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Simulate of DNAWalker Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base.css"
+			media="only screen and (min-width:600px)">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/page-top.js"></script>
+</head>
+<body>
+	<header class="main">
+
+
+	</header>
+
+	<div class="main-contents sub">
+		<div style="width: 100%; " class="mc">
+			<div class="flex-wrap">
+				<div class="flex-content-wide" id="bg">
+					<div class="fcwc">
+						<div class="fcwct-l">
+							Simulate of DNAWalker
+						</div>
+						<div class="spectags">
+							<div class="spectag">
+								<a href="connection.html">Connection</a>
+							</div>
+							<div class="spectag ">
+								<a href="automatic.html">Automatic</a>
+							</div>
+							<div class="spectag selected">
+								<a href="control.html">Control</a>
+							</div>
+							<div class="spectag selected">
+								<a href="direction.html">Direction</a>
+							</div>
+						</div><!--仕様タグエリア-->
+
+						<div class="fcwcp">
+							We performed simulations using Matlab<sup>[1]</sup> to confirm that the Walker process depends on the initial concentration of Fuel. We simulated the time-dependent concentration change of Output after setting the initial concentrations of Walker and Ground in 100 nM, and the concentration of Fuel to 50, 100, 150, and 200 nM. Additionally, we simulated the concentration change of Output when changing the initial concentration of Fuel from 0 to 500 nM with a fixed time of 10000 seconds. As shown in Figures 8 to 11, we found that the time-dependent concentration change of Output depends on the initial concentration of Fuel. As shown in Figure 12, the concentration of Output increased rapidly when the initial concentration of Fuel was given more than a specific value. Additionally, the concentration of Output increased rapidly above a threshold value as the levels of Spot increased (Type A, B, and C).
+						</div>
+						<div class="fcwcimg">
+							<a href="img/DNAWalker50nM.png" rel="lightbox[img-group]" title="Figure 1:Simulation result(fuel 50nM)"><img src="img/DNAWalker50nM.png" alt="" width="70%"></a>
+							<div class="imgtitle">
+								Figure 1: Simulation result(fuel 50nM)
+							</div>
+							<a href="img/DNAWalker100nM.png" rel="lightbox[img-group]" title="Figure 2:Simulation result(fuel 100nM)"><img src="img/DNAWalker100nM.png" alt="" width="70%"></a>
+							<div class="imgtitle">
+								Figure 2:Simulation result(fuel 100nM)
+							</div>
+							<a href="img/DNAWalker150nM.png" rel="lightbox[img-group]" title="Figure 3:Simulation result(fuel 150nM)"><img src="img/DNAWalker150nM.png" alt="" width="70%"></a>
+							<div class="imgtitle">
+								Figure 3:Simulation result(fuel 150nM)
+							</div>
+							<a href="img/DNAWalker200nM.png" rel="lightbox[img-group]" title="Figure 4:Simulation result(fuel 200nM)"><img src="img/DNAWalker200nM.png" alt="" width="70%"></a>
+							<div class="imgtitle">
+								Figure 4:Simulation result(fuel 200nM)
+							</div>
+							<a href="img/typeA.png" rel="lightbox[img-group]" title="Figure 5:Type A"><img src="img/typeA.png" alt="" width="70%"></a>
+							<div class="imgtitle">
+								Figure 5:Type A
+							</div>
+							<a href="img/TypeB.png" rel="lightbox[img-group]" title="Figure 6:Type B"><img src="img/TypeB.png" alt="" width="70%"></a>
+							<div class="imgtitle">
+								Figure 6:Type B
+							</div>
+							<a href="img/TypeC.png" rel="lightbox[img-group]" title="Figure 7:Type C"><img src="img/TypeC.png" alt="" width="70%"></a>
+							<div class="imgtitle">
+								Figure 7:Type C
+							</div>
+							<a href="img/DNAWalker段数.png" rel="lightbox[img-group]" title="Figure 8:Density change of outputs of type A,B,C"><img src="img/DNAWalker段数.png" alt="" width="70%"></a>
+							<div class="imgtitle">
+								Figure 8:Density change of outputs of type A,B,C
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div style="width: 100%; background-color: #f9f9f9;" class="ref" id="ref">
+			<div class="refp">
+				[1]Matlab: <a href="http://jp.mathworks.com/products/matlab/">http://jp.mathworks.com/products/matlab/</a>
+			</div>
+			<div class="copy" style="text-align: center;">
+			  &copy; YOKABIO 2017
+			</div>
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>

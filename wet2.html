@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Experiment of DNAWalker Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link 	href="css/base_sp.css"
+			rel="stylesheet"
+			type="text/css"
+			media="only screen and (max-width:599px)">
+
+	<link 	rel="stylesheet"
+			type="text/css"
+			href="css/base.css"
+			media="only screen and (min-width:600px)">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<script>
+	$(function(){
+		$("header.main").load("header.html", function(){
+			$("#main-nav li").hover(function() {
+					$("ul:not(:animated)", this).slideDown();
+			}, function() {
+					$(this).children('ul').slideUp();
+			});
+		});
+		$( "#tabs" ).tabs();
+	});
+	</script>
+</head>
+<body>
+	<header class="main">
+
+
+	</header>
+
+	<div id="container">
+		<div class="content-back">
+			<div class="content">
+				<h1>Experiment : DSD containing mismatched base pairs</h1>
+				<div class="spectags">
+					<div class="spectag">
+						<a href="connection.html">Connection</a>
+					</div>
+					<div class="spectag selected">
+						<a href="distance.html">Distance</a>
+					</div>
+					<div class="spectag">
+						<a href="direction.html">Direction</a>
+					</div>
+				</div><!--仕様タグエリア-->
+
+				<p>
+					In the design of DNAWalker, <a href="discuss.html#miss">mismatched base pairs</a> were incorporated into the base sequence in order to block undesired reaction pathways. The specifications are as shown in Table 2, and verification was carried out using electrophoresis whether it was designed properly.
+					It can be confirmed that it is designed to satisfy the specification properly from the comparison of lanes ⑥, ⑦, ⑧, ⑨. But in lane ⑩ the band was confirmed around 500 bp. This is probably because unintentional chains were linked in a chain in annealing to form a huge structure.
+				</p>
+				<div class="flex flex-space-around">
+					<div class="half img">
+						<a href="img/Experiment2.png" rel="lightbox[img-group]" title="Figure 3:Electrophoresis result of Experiment 2"><img src="img/Experiment2.png" alt="" width="70%"></a>
+						<div class="caption">
+							Figure 3:Electrophoresis result of Experiment 2
+						</div>
+					</div>
+					<div class="half">
+						<table border=1>
+							<caption>Table 2:Samples of each well</caption>
+							<tr><th>Wells</th><th>Sample</th></tr>
+							<tr><th>①</th><th>DNALadder</th></tr>
+							<tr><th>②</th><th>S1</tl></tr>
+							<tr><th>③</th><th>S2</th></tr>
+							<tr><th>④</th><th>F1</th></tr>
+							<tr><th>⑤</th><th>F2</th></tr>
+							<tr><th>⑥</th><th>S1-F1</th></tr>
+							<tr><th>⑦</th><th>S1-F2</th></tr>
+							<tr><th>⑧</th><th>S2-F2</th></tr>
+							<tr><th>⑨</th><th>S2-F1</th></tr>
+							<tr><th>⑩</th><th>F1-F2</th></tr>
+						</table>
+					</div>
+				</div>
+				<p>
+					Subsequently, verification of DSD on chains containing <a href="discuss.html#miss">mismatched base pairs</a> was performed by electrophoresis. The flow of the reaction is shown in the figure and the result is shown in the figure. In pattern A, a strand displacement reaction occurs between double-stranded DNA of s1-w1 and F1 corresponding to input, and w1 is released. Similarly, in pattern B, F2 reacts with s2-w2 double-stranded DNA and w2 is released. Pattern A seems to have not been exchanged for chain because no change is seen when checking the bands of lanes ⑥ and ⑦. On the other hand, Pattern B seems to have changed from the lanes ⑧ and ⑨, and the chain exchange was done. Regarding the pattern A in which the reaction did not occur properly, it is considered that the difference in energy was not large before and after the reaction. Therefore, it is necessary to finely adjust the base sequence so that a difference in energy occurs before and after the reaction.
+				</p>
+				<div class="img">
+					<a href="img/ミスマッチ塩基対DSDスキーム.png" rel="lightbox[img-group]" title="Figure 4:Schemes of Pattern A,B"><img src="img/ミスマッチ塩基対DSDスキーム.png" alt="" width="70%"></a>
+					<div class="caption">Figure 4:Schemes of Pattern A,B</div>
+				</div>
+				<div class="flex flex-space-around">
+					<div class="half img">
+						<a href="img/Experiment3.png" rel="lightbox[img-group]" title="Figure 5:Electrophoresis result of Pattern A,B"><img src="img/Experiment3.png" alt="" width="70%"></a>
+						<div class="caption">
+							Figure 5:Electrophoresis result of Pattern A,B
+						</div>
+					</div>
+					<div class="half">
+						<table border=1>
+							<caption>Table 3:Samples of each well</caption>
+							<tr><th>Wells</th><th>Sample</th></tr>
+							<tr><th>①</th><th>DNALadder</th></tr>
+							<tr><th>②</th><th>F1</tl></tr>
+							<tr><th>③</th><th>F2</th></tr>
+							<tr><th>④</th><th>W1</th></tr>
+							<tr><th>⑤</th><th>W2</th></tr>
+							<tr><th>⑥</th><th>S1-W1</th></tr>
+							<tr><th>⑦</th><th>S1-W1 & F1</th></tr>
+							<tr><th>⑧</th><th>S2-W2</th></tr>
+							<tr><th>⑨</th><th>S2-W2 & F2</th></tr>
+						</table>
+					</div>
+				</div>
+				<p>
+					This time we tried to find an appropriate annealing condition with annealing at 1, 5, 10 hours. Changes in time show that the bands change, but they spread out in a smear shape, which is not an appropriate condition. Therefore, the annealing condition was considered based on the TM value of the DNA chain to be annealed. As a result, we decided to change the temperature as shown in the following figure.
+					After heating at 95 ° C. for 5 minutes, it is abruptly brought to 65 ° C. Then, the temperature is gradually dropped from 65 ° C. to 55 ° C. over which the TM value of each chain to be mixed concentrates over 10 hours. Thereafter, the temperature was rapidly lowered to 4 ° C. so that unintended binding did not occur.
+				</p>
+				<div class="img">
+					<a href="img/Annealing.png" rel="lightbox[img-group]" title="Figure 6:Annealing conditions"><img src="img/Annealing.png" alt="" width="90%"></a>
+					<div class="caption">Figure 6:Annealing conditions</div>
+				</div>
+				<div class="flex flex-space-around">
+					<div class="half img">
+						<a href="img/Experiment4.png" rel="lightbox[img-group]" title="Figure 7:Electrophoresis result"><img src="img/Experiment4.png" alt="" width="70%"></a>
+						<div class="caption">Figure 7:Electrophoresis result</div>
+					</div>
+					<div class="half">
+						<table border=1>
+							<caption>Table 4:Samples of each well</caption>
+							<tr><th>Wells</th><th>Sample</th></tr>
+							<tr><th>①</th><th>DNALadder</th></tr>
+							<tr><th>②</th><th>Ground</tl></tr>
+							<tr><th>③</th><th>Ground A</th></tr>
+							<tr><th>④</th><th>Ground B</th></tr>
+							<tr><th>⑤</th><th>Ground C</th></tr>
+							<tr><th>⑥</th><th>S1-F1</th></tr>
+							<tr><th>⑦</th><th>S1-F2</th></tr>
+							<tr><th>⑧</th><th>S2-F2</th></tr>
+							<tr><th>⑨</th><th>S2-F1</th></tr>
+							<tr><th>⑩</th><th>F1-F2</th></tr>
+						</table>
+					</div>
+				</div>
+				<p>The results of electrophoresis are shown in Figure 7. Compared with Figure 2, the band appears more dark in ② to ④. In Figure 2, the band appeared only in a smear-like and thin manner, but in an annealing method based on the TM value, the band appeared darker. Therefore, it seems that reaction has advanced. However, since it is a smear-like band, we think that it is necessary to adjust the time spent for the temperature drop near the TM value.</p>
+
+			</div>
+		</div>
+
+		<div class="content-back ref">
+			<div class="content">
+				<div class="refp">
+					[1]Matlab: <a href="http://jp.mathworks.com/products/matlab/">http://jp.mathworks.com/products/matlab/</a>
+				</div>
+				<div class="copy" style="text-align: center;">
+				  &copy; YOKABIO 2017
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
