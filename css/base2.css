@@ -265,14 +265,16 @@ header.sub{
   margin-bottom: 20px;
 }
 .content table{
-  margin: auto;
+  margin: 20px auto;
 	width: 90%;
 }
 .content table th{
 }
 .content table td{
+	max-width: 200px;
 	padding: 5px;
 	word-wrap: break-word;
+	text-align: center;
 }
 
 
