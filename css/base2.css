@@ -8,6 +8,20 @@ html,body{
 	/*font-family: 'Ranchers', cursive;*/
 	font-family: 'Ubuntu', sans-serif;
 }
+
+li{
+	padding: 5px 0;
+}
+
+a{
+	color: rgb(0, 32, 249);
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
 header{
 	background: rgba(0,0,0,0.8);
   height: 49px;
@@ -251,11 +265,14 @@ header.sub{
   margin-bottom: 20px;
 }
 .content table{
-  max-width: 1000px;
-  margin: 20px auto;
+  margin: auto;
+	width: 90%;
+}
+.content table th{
 }
 .content table td{
 	padding: 5px;
+	word-wrap: break-word;
 }
 
 
