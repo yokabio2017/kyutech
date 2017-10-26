@@ -178,9 +178,15 @@ header.sub{
   text-align: center;
   border-bottom: 3px solid rgb(115, 115, 115);
   box-sizing: border-box;
-  padding-bottom: 10px;
-	padding-top: 30px;
+	padding: 20px;
 }
+#content-title img{
+	padding-bottom: 10px;
+	padding-top: 30px;
+	display: block;
+
+}
+
 .content-body{/*responsive*/
   width: 80%;
   margin: auto;

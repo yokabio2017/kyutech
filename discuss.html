@@ -2,122 +2,79 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="UTF-8" />
-	<title>BIOMOD2017 Team.YOKABIO DISCUSSION</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<title>The Transporter -Team YOKABIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
-	<link rel="stylesheet" href="resource/lightbox.css">
 	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<link rel="stylesheet" href="css/base2.css">
+
 	<script src="js/bootstrap.js"></script>
-	<script src="js/scroll.js"></script>
 	<script src="js/page-top.js"></script>
-	<script>
-	$(function(){
-		$("header.main").load("header.html", function(){
-			$("#nav-discuss").hide();
-	    $("#main-nav li").hover(function() {
-	        $("ul:not(:animated)", this).slideDown();
-	    }, function() {
-	        $(this).children('ul').slideUp();
-	    });
-	  });
-	});
-	</script>
+	<script src="js/scroll.js"></script>
+
+
 </head>
 <body>
-	<header class="main">
-	</header>
-	<header class="sub">
-		<nav id="main-nav" class="sub">
-		  <ul>
-				<li class="main"><a href="#" class="item">Discussion</a></li>
-				<li class="main"><span class="wake"></span></li>
-				<li class="main"><a href="#miss" class="item">DNA mismatch base pair</a></li>
-				<li class="main"><a href="#dodo" class="item">Design of DNA origami</a></li>
-				<li class="main"><a href="#ref" class="item">Reference</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="smart-menu">
-		<ul>
-			<li class="main"><a href="#" class="item">Discussion</a></li>
-			<li class="main"><a href="#miss" class="item">DNA mismatch base pair</a></li>
-			<li class="main"><a href="#dodo" class="item">Design of DNA origami</a></li>
-			<li class="main"><a href="#ref" class="item">Reference</a></li>
-		</ul>
+
+	<div id="side-bar-container">
+	  <a href="index.html">
+	    <div id="main-logo"></div>
+	  </a>
+	  <div id="side-bar"></div>
 	</div>
-
-	<div id="title" class="sub">
-		<h1>YOKABIO DISCUSSION</h1>
-	</div>
-
-	<div id="kiji">
-		<h1 id="miss">DNA mismatch base pair</h1>
-		<div class="sentence">
-				<p class="bunsyo">
-					A mismatched base pair occurs when a sequence is paired with a sequence that is partially complementary for binding to desired chains, but not unintended chains. When chains are joined into two strands, there are many combinations that complement each of the chains; accordingly, they are linked and the combination is intentionally reduced to prevent combining.
-					For example, strand 1 and strand 2, which are unwanted bonds, replacement with base sequences that are partially not complementary results in a decrease in complementary portions, reducing binding.
-				</p>
-				<a href="img/Mismatch base pairs.png" rel="lightbox[img-group]" title="Figure 1:Comparison of reaction by mismatch base pair "><img src="img/Mismatch base pairs.png" alt="" width="75%"></a>
-				<p style="width: 60%; text-align: center; margin: auto;">
-					<strong>Figure 1:Comparison of reaction by mismatch base pair</strong>
-				</p>
-		</div>
-
-		<h1 id="dodo">Design of DNA origami</h1>
-		<div class="sentence">
-			<a href="img/roof_foor_tractor.png" rel="lightbox[img-group]" title="Figure 2: Image of movement"><img src="img/roof_foor_tractor.png" alt="" width="75%"></a>
-			<p style="width: 60%; text-align: center; margin: auto;">
-				<strong>Figure 2: Image of movement</strong>
-			</p>
-			<p class="bunsyo">
-				This structure is a combination of a DNA Walker and DNA origami digitized in plate form. The Walker moves in one direction so that the connected plate-like DNA origami moves in a sliding manner (Figure 2). Furthermore, since the amount of movement of the structure depends on the amount of movement of the Walker, it can be adjusted. A design drawn using caDNAno <sup>[1]</sup> demonstrates this point. Figure 3 shows a structure (referred to as a roof) in which a walker is connected to a plate-like DNA origin. Figure 4 shows a structure (referred to as a floor) in which a single-stranded DNA serving as a foot of the Walker connected to a plate-like Origami.
-				By combining these concepts, we believe that it is possible to realize a structure of DNA that can control the amount of movement by an input (Figure 5).
-				 Movie 1 is a moving image simulated by Cando <sup>[2]</sup> on Figure 5. The ideal is that the behavior in liquid is as shown in Figure 5, but floor and roof lack stability in liquid from Movie 1. We would like to improve this by redesigning the design.
-			</p>
-			<div class="imgarea">
-				<div class="image">
-					<a href="img/cadnanoroof.png" rel="lightbox[img-group]" title="Figure 3: Design of roof by CaDNAno2"><img src="img/cadnanoroof.png" alt="" width="75%"></a>
-					<p style="width: 60%; text-align: center; margin: auto;">
-						<strong>Figure 3: Design of roof by CaDNAno2</strong>
-					</p>
-				</div>
-				<div class="image">
-					<a href="img/cadnanofloor.png" rel="lightbox[img-group]" title="Figure 4: Design of floor by CaDNAno2"><img src="img/cadnanofloor.png" alt="" width="75%"></a>
-					<p style="width: 60%; text-align: center; margin: auto;">
-						<strong>Figure 4: Design of floor by CaDNAno2</strong>
-					</p>
-				</div>
+	<div id="container">
+		<div id="main-content">
+			<!--div id="content-title">NEW TEMPLATE</div-->
+			<div id="youtube">
+				Discuss
 			</div>
 
+			<div class="content" id="">
+				<div class="content-body">
+					<p>
+					</p>
+					<div id="spec-blocks" style="">
+						<a class="spec-block" href="origami.html" style="width: 40%;">
+							<div class="spec-imgarea">
+								<img src="img/Fig_Roof.png" alt="">
+							</div>
+							<p class="strong spec-title">Design of DNA origami</p>
+							<p style="text-indent: 0; text-align: center;"><span style="color: rgb(20, 255, 33);text-align: center;">&#10004;done.</span></p>
+							<div href="/" class="more">more</div>
+						</a>
+						<a href="missmatch.html" class="spec-block">
+							<div class="spec-imgarea">
+								<img src="img/7-2.png" alt="">
+							</div>
+							<p class="strong spec-title">
+								DNA mismatch base pair
+							</p>
+							<p style="text-indent: 0; text-align: center;"><span style="text-indent: 0; color: rgb(20, 255, 33);text-align: center;">&#10004;done.</span></p>
+							<div href="/" class="more">more</div>
+						</a>
 
-			<a href="img/cadnanogoal.png" rel="lightbox[img-group]" title="Figure 5: CanDo simulation image"><img src="img/cadnanogoal.png" alt="" width="50%"></a>
-			<p style="width: 60%; text-align: center; margin: auto;">
-				<strong>Figure 5: CanDo simulation image</strong>
-			</p>
+						<a href="reverse.html" class="spec-block">
+							<div class="spec-imgarea">
+								<img src="img/R-2.png" alt="">
+							</div>
+							<p class="strong spec-title">Reverse Theory</p>
+							<p style="text-indent: 0; text-align: center;"><span style="text-indent: 0; color: rgb(20, 255, 33);text-align: center;">&#10004;done.</span></p>
+							<div href="/" class="more">more</div>
+						</a>
+					</div>
+				</div>
 
-		</div>
-		<video src="img/cando_v.mp4" controls style="width: 50%;"></video>
-		<p style="width: 60%; text-align: center; margin: auto;">
-			<strong>Movie 1: Simulation of behavior in liquid by Cando</strong>
-		</p>
-
-		<h1 id="ref">Reference</h1>
-		<div class="sentence">
-			<p class="ref">
-				[1] caDNAno:<a href="http://cadnano.org/">http://cadnano.org/</a><br>
-				M. Douglas, Adam H. Marblestone, Surat Teerapittayanon, Alejandro Vazquez, George M. Church, William M. Shih. Rapid prototyping of 3D DNA-origami shapes with caDNAno. Nucleic Acids Research, 37, 5001-5006 , 2009 <br>
-				[2] CanDo:<a href="http://cando-dna-origami.org/">http://cando-dna-origami.org/</a><br>
-				C.E. Castro, F. Kilchherr, D.N. Kim, E.L. Shiao, T. Wauer, P. Wortmann, M. Bathe, H. Dietz: A primer to scaffolded DNA origami, Nature Methods, Vol. 8, pp. 221-229, 2011.
+			</div>
 		</div>
 	</div>
-	<p id="page-top"><a href="#"><img src="img/santa.png" width="100%" height="100%;" alt=""></a></p>
+
 
 	<div id="footer"></div>
-
+	<p id="page-top"><a href="#">TOP</a></p>
 </body>
 </html>
