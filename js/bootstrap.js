@@ -11,4 +11,6 @@ $(function(){
   });
   $("#footer").load("footer.html");
   */
+  $("#main-content").append("<div id='footer'>");
+  $("#footer").load("footer.html");
 });

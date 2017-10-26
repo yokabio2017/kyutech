@@ -2,7 +2,7 @@ html,body{
 	padding: 0;
 	margin: 0;
 	overflow-x:hidden;
-	background-color: rgb(143, 143, 143);
+	background-color: #666;
 	color: black;
 	font-size: 17px;
 	/*font-family: 'Ranchers', cursive;*/
@@ -124,8 +124,7 @@ header.sub{
 }
 #footer{
 	width: 100%;
-	border-top: 2px solid #ccc;
-	background-color: #f9f9f9;
+	background-color: #666;
 	color: #ccc;
   z-index: 100;
 }
@@ -158,6 +157,7 @@ header.sub{
 	color: orange;
 }
 #footer .copy{
+	padding: 10px;
 	text-align: center;
 	clear: both;
 }
@@ -167,11 +167,8 @@ header.sub{
   background-color: white;
 }
 #main-content{/*responsive*/
-  background-color: white;
   width: 100%;
-  margin: auto;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  margin: 0 auto;
   min-height: 100%;
 }
 #content-title, #youtube{/*responsive*/
@@ -200,7 +197,8 @@ header.sub{
   background-color: #666666;
   position: fixed;
 	width: 200px;
-	border-right: 1px solid #ccc;
+	/*border-right: 1px solid #ccc;*/
+  box-shadow: 2px 0px 5px rgba(60, 60, 60, 0.78);
   box-sizing: border-box;
   left: 0;
   height: 100%;
@@ -222,7 +220,8 @@ header.sub{
 }
 .content h1{
   font-size: 250%;
-  margin: 35px auto;
+  margin: 25px auto;
+  margin-top: 15px;
 }
 .content h2{
   font-size: 180%;
@@ -247,6 +246,9 @@ header.sub{
 .content table{
   max-width: 1000px;
   margin: 20px auto;
+}
+.content table td{
+	padding: 5px;
 }
 
 
@@ -400,7 +402,9 @@ header.sub{
 	overflow: auto;
 }
 .tab-content img.step{
-	display: block; margin: 20px auto;
+	display: block;
+  width: 90%;
+  margin: 20px auto;
 }
 
 .tab-content p{
