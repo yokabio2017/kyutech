@@ -2,455 +2,60 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="UTF-8" />
-	<title>BIOMOD2017 Team.YOKABIO DESIGN</title>
-	<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
-
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<title>The Transporter -Team YOKABIO</title>
 	<link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+
+
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/accodion.css">
-	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
-	<link rel="stylesheet" href="resource/lightbox.css">
 	<script type="text/javascript" src="resource/lightbox_plus_min.js"></script>
+	<link rel="stylesheet" href="resource/lightbox.css">
+	<link rel="stylesheet" href="css/base2.css">
+
 	<script src="js/bootstrap.js"></script>
+	<script src="js/page-top.js"></script>
 	<script src="js/scroll.js"></script>
-	<script src="js/open.js"></script>
-	<link rel="stylesheet" href="css/slider-pro.min.css">
-	<script src="js/jquery.sliderPro.min.js"></script>
-	<script>
-
-	$(function(){
-		$( "#tabs" ).tabs();
-		$('#thumb-h').sliderPro({
-			width:'100%',//横幅
-			height:500,
-			buttons: false,//ナビゲーションボタン
-			thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
-			//shuffle: true,//スライドのシャッフル
-			autoplay: false,
-			arrows: true,//左右の矢印
-			thumbnailWidth: 200,//サムネイルの横幅
-			thumbnailHeight: 50,//サムネイルの縦幅
-			slideDistance:20,//スライド同士の距離
-			//orientation: 'vertical',//スライドの方向
-			//thumbnailsPosition: 'right',//サムネイルの位置
-			//visibleSize: '100%',//前後のスライドを表示
-			breakpoints: {
-				480: {//表示方法を変えるサイズ
-					thumbnailWidth: 110,
-					thumbnailHeight: 40
-				}
-			}
-		});
-		$('.accordion_ul ul').hide();
-    $('.accordion_ul h1').click(function(e){
-		    $(this).toggleClass("active");
-		    $(this).next("div").slideToggle();
-		});
-		$("#main-nav li").hover(function() {
-				$("ul:not(:animated)", this).slideDown();
-		}, function() {
-				$(this).children('ul').slideUp();
-		});
-		$("#movietabs-2").hide();
-		$("#movietabs-3").hide();
-		$("#movietabs-4").hide();
-
-		$("#movietabs ul>li>a").on('click', function(){
-			$(".selected").removeClass('selected');
-			$(this).parent().addClass('selected');
-			var video = $($(this).attr("video")).get(0);
-			$(this).attr('stat', 'play')
-			$("#movietabs-1").hide();
-			$("#movietabs-2").hide();
-			$("#movietabs-3").hide();
-			$("#movietabs-4").hide();
-			video.currentTime = 0;
-			$("video").get(0).pause();
-
-			var disp = $(this).attr("disp");
-			//$(this).children('.play').addClass("pause");
-			video.play();
-			$(disp).css("display", "block");
-
-		});
 
 
-	});
-	</script>
 </head>
 <body>
-	<header class="main">
 
-		<a id="main-logo" href="index.html"></a>
-		<nav id="main-nav">
-		  <ul>
-		    <li class="main" id="nav-project">
-		      <a href="project.html" class="item">Our Project</a>
-		      <ul>
-		        <li>
-		          <a href="project.html#bg">Background</a>
-		        </li>
-		        <li>
-		          <a href="project.html#pi">Project Idea</a>
-		        </li>
-		        <li>
-		          <a href="project.html#gr">Goals reached</a>
-		        </li>
-		      </ul>
-		    </li>
-		    <li class="main"><span class="wake"></span></li>
-		    <li class="main" id="nav-design">
-		      <a href="#" class="item"><span style="color: yellow;">Design</span></a>
-		      <ul>
-		        <li>
-		          <a href="#me">Mechanism</a>
-		        </li>
-		      </ul>
-		    </li>
-		    <li class="main"><span class="wake"></span></li>
-		    <li class="main" id="nav-method">
-		      <a href="method.html" class="item">Material&Methods</a>
-		      <ul>
-		        <li>
-		          <a href="method.html#sc">Simulation Condition</a>
-		        </li>
-		        <li>
-		          <a href="method.html#ts">Type &amp; strands</a>
-		        </li>
-		        <li>
-		          <a href="method.html#wedt">Wet experiment of DNA Walker</a>
-		        </li>
-		      </ul>
-		    </li>
-		    <li class="main"><span class="wake"></span></li>
-		    <li class="main" id="nav-experiment">
-		      <a href="experiment.html" class="item">Experiment</a>
-		      <ul>
-		        <li>
-		          <a href="experiment.html#wet">Wet Experiment</a>
-		        </li>
-		        <li>
-		          <a href="experiment.html#dry">Dry Experiment</a>
-		        </li>
-		      </ul>
-		    </li>
-		    <li class="main"><span class="wake"></span></li>
-		    <li class="main" id="nav-discuss">
-		      <a href="discuss.html"  class="item">Discussion</a>
-		    </li>
-		    <li class="main"><span class="wake"></span></li>
-		    <li class="main" id="nav-elsi"><a href="elsi.html" class="item">ELSI</a></li>
-		    <li class="main"><span class="wake"></span></li>
-		    <li class="main" id="nav-member"><a href="member.html" class="item">Member</a></li>
-		    <li class="main"><span class="wake"></span></li>
-		  </ul>
-		</nav>
-		<div id="menu">
-		  <a href="" id="panel-btn"><span id="panel-btn-icon"></span></a>
-		</div>
+	<div id="side-bar-container">
+	  <a href="index.html">
+	    <div id="main-logo"></div>
+	  </a>
+	  <div id="side-bar"></div>
+	</div>
+	<div id="container">
+		<div id="main-content">
+			<!--div id="content-title">NEW TEMPLATE</div-->
+			<div id="youtube">
+				Design
+			</div>
 
-	</header>
-	<header class="sub">
-		<nav id="main-nav" class="sub">
-		  <ul>
-				<li class="main"><a href="#" class="item">△TOP</a></li>
-				<li class="main"><span class="wake"></span></li>
-		    <li class="main"><a href="#me" class="item">Mechanism</a></li>
-
-			</ul>
-		</nav>
-	</header>
-	<div class="main-contents sub">
-		<div style="width: 100%; " class="mcbg" id="me">
-			<div class="flex-wrap">
-				<div class="flex-content-wide">
-					<div class="fcwc">
-						<div class="fcwct-l">
-							Mechanism
-						</div>
-						<div class="fcwcimg">
-							<a href="img/zenbou.png" rel="lightbox[img-group]" title="Figure 1:DNAwalker"><img src="img/zenbou.png" alt=""width="60%"></a>
-							<p style="width: 60%; text-align: center; margin: auto; color: black;">
-								<strong>Figure 1:DNAwalker</strong>
-							</p>
-						</div>
-						<div class="fcwcp">
-							We designed a system to move the DNA origami structure via a DNAWalker. First, We will summarize the reference article <sup>[1]</sup>. The walker is a structure in which two DNA strands are partially hybridized, and each single strand represents a leg. In addition, the scaffolds are designed to form partial complementary sequences to form a hairpin structure so that they do not bind, even if fuel DNA is added. However, S1 and S2 had exactly the same base sequence, and it is not known whether the Walker's reaction proceeds from the left foot or the right foot. The Walker will be dangling when it moves forward from the right foot (w2), resulting in an undesired reaction system. As a solution to this problem, we utilized <a href="discuss.html#miss">mismatched base pairs</a>. Specifically, we replaced a sequence with one that is not fully complementary to ensure that unintended chains do not bind to each other. When chains join to form a double strand, since there are many complimentary combinations in each strand, they are combined, and the combination is intentionally reduced to make it uncoupled.
-						</div>
-
-						<div class="fcwcp">
-							The principle of the Walker with a mismatched base pair is explained below. <a href="discuss.html#miss">mismatched base pairs</a> were incorporated into the base sequence to satisfy the specifications indicated in Table 1. The symbol ◯ indicates a successful combination, and the X symbol indicates that the components are not successfully combined. For example, S1 and F1 are coupled, whereas S1 and F2 are not.
-						</div>
-						<div class="fcwcp">
-							<table border=1 class="ox_table">
-								<caption>Table 1:Specification of mismatched base sequence</caption>
-								<tr><th>Strands</th><th>S1</th><th>S2</th><th>F1</th><th>F2</th></tr>
-								<tr><th>S1</th><th>×</th><th>×</th><th class="o">〇</th><th>×</th></tr>
-								<tr><th>S2</th><th>×</th><th>×</th><th>×</th><th class="o">〇</th></tr>
-								<tr><th>F1</th><th class="o">〇</th><th>×</th><th>×</th><th class="o">〇</th></tr>
-								<tr><th>F2</th><th>×</th><th class="o">〇</th><th class="o">〇</th><th>×</th></tr>
-							</table>
-							First, the left leg (W1) and the right foot (W2) are arranged in different arrangements; the Walker scaffolds are arranged in different steps, as described below, and the left leg (W1) and S1, followed by the right leg (W2) are designed. In addition, Fuel is a duplex composed of F1 and F2 designed with <a href="discuss.html#miss">mismatched base pairs</a> such that the toehold of F2 is hidden and only the toehold of F1 is exposed. F1 and S1 combine to dissociate F2 and W1, and then dissociated W1 and S2 combine to move the Walker. The detailed reaction procedure is described in 8 steps below.
-
-						</div>
-
+			<div class="content" id="">
+				<div class="content-body">
+					<p>
+					</p>
+					<div id="spec-blocks" style="">
+						<a href="mechanism.html" class="spec-block">
+							<div class="spec-imgarea">
+								<img src="img/7-2.png" alt="">
+							</div>
+							<p class="spec-title strong">DNA Walker Mechanism</p>
+							<p style="text-indent: 0; text-align: center;"><span style="text-indent: 0; color: rgb(20, 255, 33);text-align: center;">&#10004;done.</span></p>
+							<div href="/" class="more">more</div>
+						</a>
 					</div>
-
 				</div>
-				<div class="flex-content-wide">
-					<div class="fcwcp">
-						<h2 style="color: black; text-decoration: underline; font-weight: bold;padding-left: 5px;">Step 1</h2>
-						<p style="font-size: 20px; color: black;">
-							In this process, we aim to peel S1 and W1 and float the left foot (W1). <br>
-						</p>
-						<ol class="nor">
-							<li>initial state</li>
-							<li>S1 and F1 join in the toehold region</li>
-							<li>In the chain substitution reaction between S1 and F1, F2 starts to dissociate</li>
-							<li>In the chain substitution reaction of W1 and F1, W1 and F2 dissociate</li>
-							<li>F1 and S1 are combined, and W1 is dangling</li>
-						</ol>
-					</div>
-					<div class="fcwcimg">
-						<a href="img/step1.png" rel="lightbox[img-group]" style="width: 100%;display: block; margin: auto;"><img width="100%" src="img/step1.png"></a>
-					</div>
 
-				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="main-contents sub">
 
-
-		<div id="" class="kiji">
-			<ul class="accordion_ul">
-				<li>
-
-
-							<p class="bunsyo">
-							</p>
-
-
-
-							<div class="imgarea">
-								<div class="image">
-									<a href="img/step1.png" rel="lightbox[img-group]"><img src="img/step1.png"></a>
-								</div>
-								<div class="exp">
-									<h2>Step 1</h2>
-									<div class="sentence">
-										<p>
-											In this process, we aim to peel S1 and W1 and float the left foot (W1). <br>
-										</p>
-										<ol>
-											<li>initial state</li>
-											<li>S1 and F1 join in the toehold region</li>
-											<li>In the chain substitution reaction between S1 and F1, F2 starts to dissociate</li>
-											<li>In the chain substitution reaction of W1 and F1, W1 and F2 dissociate</li>
-											<li>F1 and S1 are combined, and W1 is dangling</li>
-										</ol>
-									</div>
-								</div>
-							</div><!-- imagearea -->
-							<div class="imgarea">
-								<div class="image">
-									<a href="img/step2.png" rel="lightbox[img-group]" ><img src="img/step2.png"></a>
-								</div>
-								<div class="exp">
-									<h2>Step 2</h2>
-									<div class="sentence">
-										<p>
-											In this process, the goal is to combine Spot 1 with the left foot lifted in Step 1, to advance one step.
-										</p>
-										<ol>
-											<li>Initial state</li>
-											<li>Dangling W1 searches for complementary sequences</li>
-											<li>W1 and Spot1 join in the toehold region</li>
-											<li>The binding of W1 and Spot 1 disrupts the hairpin structure. As a result, the Walker moves one step.</li>
-										</ol>
-									</div>
-								</div>
-							</div><!-- imagearea -->
-							<div class="imgarea">
-								<div class="image">
-									<a href="img/step3.png" rel="lightbox[img-group]"><img src="img/step3.png"></a>
-								</div>
-								<div class="exp">
-									<h2>Step 3</h2>
-									<div class="sentence">
-										<p>
-											In this process, we aim to peel off W2 and s2, and let W2 float.
-										</p>
-										<ol>
-											<li>Initial state</li>
-											<li>S2 and F2 join in the toehold region</li>
-											<li>Binding progresses between S2 and F2</li>
-											<li>In the strand displacement reaction of S2 and F2, W2 dissociates</li>
-											<li>F2 and S2 are combined, and W2 is dangling</li>
-										</ol>
-									</div>
-								</div>
-							</div><!-- imagearea -->
-							<div class="imgarea">
-								<div class="image">
-									<a href="img/step4.png" rel="lightbox[img-group]"><img src="img/step4.png"></a>
-								</div>
-								<div class="exp">
-									<h2>Step 4</h2>
-									<div class="sentence">
-										<p>
-											In this process, the right foot (W2) floated in Step 3 is combined with Spot 2 and the goal is to go one step further.
-										</p>
-										<ol>
-											<li>Initial state</li>
-											<li>Dangling W2 searches for complementary sequences</li>
-											<li>W2 and Spot 2 join in the toehold region</li>
-											<li>The binding of W2 and Spot 2 collapses the hairpin structure. As a result, the Walker moves one step. </li>
-										</ol>
-									</div>
-								</div>
-							</div><!-- imagearea -->
-
-							<div id="movietabs">
-								<div class="verticaltab">
-									<ul>
-										 <li><a stat="pause" disp="#movietabs-1" video="#video1">Step 1<span class="play"></span></a></li>
-										 <li><a stat="pause" disp="#movietabs-2" video="#video2">Step 2<span class="play"></span></a></li>
-										 <li><a stat="pause" disp="#movietabs-3" video="#video3">Step 3<span class="play"></span></a></li>
-										 <li><a stat="pause" disp="#movietabs-4" video="#video4">Step 4<span class="play"></span></a></li>
-								 </ul>
-								</div>
-								<div class="animarea">
-									<div id="movietabs-1">
-										<video  muted poster="" id="video1" src="img/wolker1.mp4"></video>
-									</div>
-									<div id="movietabs-2">
-										<video  muted poster="" id="video2" src="img/wolker2.mp4"></video>
-									</div>
-									<div id="movietabs-3">
-										<video  muted poster="" id="video3" src="img/wolker3.mp4"></video>
-									</div>
-									<div id="movietabs-4">
-										<video  muted poster="" id="video4" src="img/wolker4.mp4"></video>
-									</div>
-								</div>
-
-							</div>
-
-
-							<p class="bunsyo">
-								The subsequent Step proceeds only when Fuel is not completely consumed; if the initial concentration of Fuel is low, the reaction will be proceed until Step 4.
-							</p>
-
-
-							<div class="imgarea">
-								<div class="image">
-									<a href="img/step5.png" rel="lightbox[img-group]"><img src="img/step5.png"></a>
-								</div>
-								<div class="exp">
-									<h2>Step 5</h2>
-									<div class="sentence">
-										<p>
-											In this process, we aim to peel S1 and W1 and float the left foot (W1).
-										</p>
-										<ol>
-											<li>Initial state</li>
-											<li>S1 and F1 join in the toehold region </li>
-											<li>In the chain substitution reaction between S1 and F1, F2 starts to dissociate</li>
-											<li>In the chain substitution reaction of W1 and F1, W1 and F2 dissociate </li>
-											<li>F1 and S1 are combined, and W1 is dangling</li>
-										</ol>
-									</div>
-
-								</div>
-							</div><!-- imagearea -->
-							<div class="imgarea">
-								<div class="image">
-									<a href="img/step6.png" rel="lightbox[img-group]"><img src="img/step6.png"></a>
-								</div>
-								<div class="exp">
-									<h2>Step 6</h2>
-									<div class="sentence">
-										<p>
-											In this process, the goal is to combine Spot 3 with the left foot lifted in Step 5, to advance one step.
-										</p>
-										<ol>
-											<li>Initial state</li>
-											<li>Dangling W1 searches for complementary sequences</li>
-											<li>W1 and Spot3 join in the toehold region</li>
-											<li>The binding of W1 and Spot 3 collapses the hairpin structure. As a result, the Walker moves one step.</li>
-										</ol>
-									</div>
-								</div>
-							</div><!-- imagearea -->
-							<div class="imgarea">
-								<div class="image">
-									<a href="img/step7.png" rel="lightbox[img-group]"><img src="img/step7.png"></a>
-								</div>
-								<div class="exp">
-									<h2>Step 7</h2>
-									<div class="sentence">
-										<p>
-											In this process, we aim to peel off W2 and S2 and let W2 float.
-										</p>
-										<ol>
-											<li>Initial state</li>
-											<li>S2 and F2 join in the toehold region</li>
-											<li>Binding progresses between S2 and F2</li>
-											<li>In the strand displacement reaction of S2 and F2, W2 dissociates</li>
-											<li>F2 and S2 are combined, and W2 is dangling</li>
-										</ol>
-									</div>
-
-								</div>
-							</div><!-- imagearea -->
-							<div class="imgarea">
-								<div class="image">
-									<a href="img/step8.png" rel="lightbox[img-group]"><img src="img/step8.png"></a>
-								</div>
-								<div class="exp">
-									<h2>Step 8</h2>
-									<div class="sentence">
-										<p>
-											In this process, the right foot (W2) floated in Step 7 is combined with Spot 4 and the goal is to move one step further.
-										</p>
-										<ol>
-											<li>Initial state</li>
-											<li>Dangling W2 searches for complementary sequences</li>
-											<li>W2 and Spot 4 join in the toehold region</li>
-											<li>By combining W2 and Spot 4, Output is released. As a result, the Walker moves one step.</li>
-										</ol>
-									</div>
-								</div>
-							</div><!-- imagearea -->
-
-
-							<p class="bunsyo">
-								In this way, by incorporating <a href="discuss.html#miss">mismatched base pairs</a>, the Walker is designed to proceed in a single direction.
-							</p>
-
-		        </div>
-		        </section>
-		    </li>
-				<li id="ref">
-					<section>
-						<h1>Reference</h1>
-						<div>
-							[1] P. Yin, H. Choi, C. Calvert, N. Pierce: Programming biomolecular self-assembly pathways, Nature, Vol. 451, pp. 318, 2008.
-						</div>
-					</section>
-				</li>
-			</ul>
-
-		</div>
-
-	</div>
-
-	<p id="page-top"><a href="#"><img src="img/santa.png" width="100%" height="100%;" alt=""></a></p>
 	<div id="footer"></div>
-
+	<p id="page-top"><a href="#">TOP</a></p>
 </body>
 </html>
