@@ -397,8 +397,8 @@ header.sub{
   margin: 0;
 }
 .spectag.selected{
-  background-color: #ccc;
-	/*border:1px solid red !important;*/
+  /*background-color: #ccc;*/
+	border:3px dashed  #ccc !important;
 }
 
 #page-top {
