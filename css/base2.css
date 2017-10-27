@@ -309,23 +309,32 @@ header.sub{
 	width: 300px;
 	background: white;
 	border-radius: 5px;
-	border: 1px solid #ccc;
+
 	color: black;
 	margin: 10px 20px;
-	box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
 	padding-bottom: 20px;
 	text-decoration: none;
 }
 .spec-imgarea{
-	width: 60%;
+	width: 200px;
 	margin: 30px auto;
+	margin-top: 0;
 	border-radius: 3px;
-	min-height: 100px;
+	height: 200px;
 }
 .spec-block img{
 	margin: auto;
 	width: 100%;
 }
+.spec-imgarea img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	border: 2px solid rgb(227, 227, 227);
+}
+
 .spec-block p{
 	margin: 10px auto;
 	text-align: center;
@@ -351,6 +360,10 @@ header.sub{
 	padding: 5px;
 	font-weight: bold;
 	text-decoration: none !important;
+}
+.spec-title{
+	font-size: 150%;
+	font-weight: bold;
 }
 .spectags{
 	width: 380px;
