@@ -307,6 +307,8 @@ header.sub{
   align-content:         space-between;
 	-webkit-align-items: baseline; /* Safari */
   align-items:         baseline;
+	-webkit-align-items: flex-end; /* Safari */
+  align-items:         flex-end;
 	-webkit-justify-content: center !important; /* Safari */justify-content:center !important;
 
 	width: 100%;
