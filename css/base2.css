@@ -405,6 +405,10 @@ header.sub{
 	border:3px dashed  #ccc !important;
 }
 
+.spec-icon{
+	border: none; padding-top: 15px;
+}
+
 #page-top {
     position: fixed;
     bottom: 20px;
