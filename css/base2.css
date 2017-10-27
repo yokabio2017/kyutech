@@ -228,7 +228,8 @@ header.sub{
   overflow: auto;
 }
 #side-bar-container #page-title{
-	color: white; text-align: center;padding: 10px 0;
+	color: #00cce6; 
+	text-align: center;padding: 10px 0;
 	font-size: 120%;
 	font-weight: bold;
 }
