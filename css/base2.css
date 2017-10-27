@@ -430,7 +430,7 @@ header.sub{
 
 }
 .team_img{padding: 10px;}
-.team_img img{display: block; width: 100px; height: 100px;border-radius: 100%;margin: 10px;}
+.team_img img{display: block; width: 100px; height: 100px;border-radius: 100%;margin: 10px; border: 3px solid #959595;}
 .team_info{margin-left: 30px;flex-grow: 3;display: -webkit-flex;display: -ms-flex;display: flex; flex-direction: column; height: 100%;}
 .team_info_name{
 	font-size: 150%;
