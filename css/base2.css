@@ -442,7 +442,7 @@ header.sub{
 }
 .tab-content{
 	font-size: 140%;
-	max-height: 600px;
+	max-height: 400px;
 	overflow: auto;
 }
 .tab-content img.step{
