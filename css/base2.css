@@ -350,7 +350,7 @@ header.sub{
 	font-weight: bold;
 	text-shadow: 1px 1px 0 #ccc;
 }
-.spec-block .more{
+.more{
 	display: block;
 	border: 1px solid #00cde8;
 	text-align: center;
@@ -471,7 +471,17 @@ header.sub{
 #side-bar-container li{
 
 }
+#side-bar-container li.selected{
+  border-left:3px solid yellow;
+}
 #side-bar-container li a{
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+#side-bar-container li.selected a{
+	color: yellow;
   text-decoration: none;
   display: block;
   padding: 10px;
