@@ -49,13 +49,13 @@
 				<div class="content-body">
 					<div class="spectags">
 						<div class="spectag selected">
-							<a href="direction.html"><img src="img/direction.png" alt="direction" title="direction"></a>
+							<a href="distance.html"><img src="img/dynamics.png" alt="dynamics" title="dynamics"></a>
 						</div>
 						<div class="spectag">
 							<a href="connection.html"><img src="img/connect.png" alt="connection" title="connection"></a>
 						</div>
 						<div class="spectag selected">
-							<a href="distance.html"><img src="img/dynamics.png" alt="distance" title="distance"></a>
+							<a href="direction.html"><img src="img/direction.png" alt="direction" title="direction"></a>
 						</div>
 
 					</div>
@@ -69,7 +69,9 @@
 						DNAWalker is a structure in which two DNA strands are partially hybridized, and each single strand represents a leg. In addition, the scaffolds are designed to form partial complementary sequences in a hairpin structure so that they do not bind, even if fuel DNA is added.
 						However, as shown in Figure 1, when DNAWalker is used as a means for transporting a structure, there are two serious problem.
 					</p>
-					<a href="img/zenbou.png" rel="lightbox[img-group]" title="Figure 1:DNAwalker"><img src="img/zenbou.png" alt=""width="60%"></a>
+					<a href="img/zenbou.png" rel="lightbox[img-group]" title="Figure 1:DNAwalker">
+						<img src="img/zenbou.png" alt=""width="60%">
+					</a>
 					<div class="caption">Figure 1: DNAWalker</div>
 					<p>
 						First, S1 and S2 had exactly the same base sequence, and it is not known whether the DNAWalker reaction proceeds from the left foot or the right foot. The DNAWalker would be dangling when it moves forward from the right foot (w2), resulting in an undesired reaction system. As a solution to this problem, we utilized <a href="missmatch.html">mismatched base pairs</a>. Specifically, we replaced a sequence with one that was not fully complementary to ensure that unintended chains did not bind to each other. When chains joined to form a double strand, since there were many complimentary combinations in each strand, they were combined, and the combination was intentionally reduced to make it uncoupled.
@@ -97,8 +99,8 @@
 						(3) Joining S2 and F2
 					</p>
 					<p>
-						In order to make (1) the fastest among the three reactions, in (2), (3), a <a href="missmatch.html">mismatched base pair</a> was added near Toehold so that the reaction became slower than (1).
-						Also, regarding the reaction rate between (2) and (3), we changed the length of Toehold by 1 so that (2) made the reaction faster than (3). Through these two points of design, we were able to design the reaction speed to be in the above order.
+						In order to make (1) the fastest among the three reactions, in (2), (3), a <a href="missmatch.html">mismatched base pair</a> was added near toehold so that the reaction became slower than (1).
+						Also, regarding the reaction rate between (2) and (3), we changed the length of toehold by 1 so that (2) made the reaction faster than (3). Through these two points of design, we were able to design the reaction speed to be in the above order.
 						With the above improvement, the problem of DNAWalker was solved. Next, briefly explain the movement of DNAWalker.
 					</p>
 					<p>
@@ -120,27 +122,25 @@
 								In this process, we aimed to peel away S1 and W1 and float the left foot (W1).
 							</p>
 							<video  controls muted poster="" id="video1" src="img/wolker1.mp4"></video>
-
+							<a href="img/step1.png" rel="lightbox[img-group]" title="Step 1">
+								<img src="img/step1.png" alt=""width="60%">
+							</a>
+							<img src="" alt="">
 							<ol>
 								<li>
 									initial state
-									<img src="img/1-1.png" alt="" class="step">
 								</li>
 								<li>
 									S1 and F1 joined in the toehold region
-									<img src="img/1-2.png" alt="" style="width: 40% !important" class="step">
 								</li>
 								<li>
 									Binding progressed between S1 and F1
-									<img src="img/1-3.png" alt=""style="width: 40% !important" class="step">
 								</li>
 								<li>
 									In the chain substitution reaction of W1 and F1, W1 and F2 dissociated
-									<img src="img/1-4.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									F1 and S1 were combined, and W1 was dangling
-									<img src="img/1-5.png" alt="" class="step">
 								</li>
 							</ol>
 					  </div>
@@ -149,22 +149,21 @@
 								In this process, the goal was to combine Spot1 with the left foot lifted in step 1 in order to advance one step.
 							</p>
 							<video  controls muted poster="" id="video2" src="img/wolker2.mp4"></video>
+							<a href="img/step2.png" rel="lightbox[img-group]" title="Step 2">
+								<img src="img/step2.png" alt=""width="60%">
+							</a>
 							<ol>
 								<li>
 									Initial state
-									<img src="img/2-1.png" alt="" class="step">
 								</li>
 								<li>
 									Dangling W1 searched for complementary sequences
-									<img src="img/2-2.png" alt="" style="width: 40% !important" class="step">
 								</li>
 								<li>
 									W1 and Spot1 joined in the toehold region
-									<img src="img/2-3.png"  alt="" class="step">
 								</li>
 								<li>
 									The binding of W1 and Spot 1 disrupted the hairpin structure, allowing DNAWalker to move one step
-									<img src="img/2-4.png" alt="" class="step">
 								</li>
 							</ol>
 					  </div>
@@ -173,26 +172,24 @@
 								In this process, we aimed to peel away W2 and S2 and allow W2 to float.
 							</p>
 							<video  controls muted poster="" id="video3" src="img/wolker3.mp4"></video>
+							<a href="img/step3.png" rel="lightbox[img-group]" title="Step 3">
+								<img src="img/step3.png" alt=""width="60%">
+							</a>
 							<ol>
 								<li>
 									Initial state
-									<img src="img/3-1.png" alt="" class="step">
 								</li>
 								<li>
 									S2 and F2 joined in the toehold region
-									<img src="img/3-2.png"  style="width: 40% !important"alt="" class="step">
 								</li>
 								<li>
 									Binding progressed between S2 and F2
-									<img src="img/3-3.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									In the strand displacement reaction of S2 and F2, W2 dissociated
-									<img src="img/3-4.png" style="width: 40% !important"alt="" class="step">
 								</li>
 								<li>
 									F2 and S2 were combined, and W2 was dangling
-									<img src="img/3-5.png" alt="" class="step">
 								</li>
 							</ol>
 					  </div>
@@ -201,22 +198,21 @@
 								In this process, the right foot (W2) that floated in step 3 was combined with Spot2, and the goal was to progress one step further.
 							</p>
 							<video  controls muted poster="" id="video4" src="img/wolker4.mp4"></video>
+							<a href="img/step4.png" rel="lightbox[img-group]" title="Step 4">
+								<img src="img/step4.png" alt=""width="60%">
+							</a>
 							<ol>
 								<li>
 									Initial state
-									<img src="img/4-1.png" alt="" class="step">
 								</li>
 								<li>
 									Dangling W2 searched for complementary sequences
-									<img src="img/4-2.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									W2 and Spot2 joined in the toehold region
-									<img src="img/4-3.png" alt="" class="step">
 								</li>
 								<li>
 									The binding of W2 and Spot2 collapsed the hairpin structure. As a result, DNAWalker moved one step.
-									<img src="img/4-4.png" alt="" class="step">
 								</li>
 							</ol>
 							<p>
@@ -227,26 +223,24 @@
 							<p>
 								In this process, we aimed to peel away S1 and W1 and float the left foot (W1).
 							</p>
+							<a href="img/step5.png" rel="lightbox[img-group]" title="Step 5">
+								<img src="img/step5.png" alt=""width="60%">
+							</a>
 							<ol>
 								<li>
 									Initial state
-									<img src="img/5-1.png" alt="" class="step">
 								</li>
 								<li>
 									S1 and F1 joined in the toehold region
-									<img src="img/5-2.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									In the chain substitution reaction between S1 and F1, F2 started to dissociate
-									<img src="img/5-3.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									In the chain substitution reaction of W1 and F1, W1 and F2 dissociated
-									<img src="img/5-4.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									F1 and S1 were combined, and W1 was dangling
-									<img src="img/5-5.png" alt="" class="step">
 								</li>
 							</ol>
 						</div>
@@ -254,22 +248,21 @@
 							<p>
 								In this process, the goal was to combine Spot3 with the left foot lifted in step 5 in order to advance one step.
 							</p>
+							<a href="img/step6.png" rel="lightbox[img-group]" title="Step 6">
+								<img src="img/step6.png" alt=""width="60%">
+							</a>
 							<ol>
 								<li>
 									Initial state
-									<img src="img/6-1.png" alt="" class="step">
 								</li>
 								<li>
 									Dangling W1 searches for complementary sequences
-									<img src="img/6-2.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									W1 and Spot3 joined in the toehold region
-									<img src="img/6-3.png" alt="" class="step">
 								</li>
 								<li>
 									The binding of W1 and Spot3 collapsed the hairpin structure, allowing DNAWalker to move one step
-									<img src="img/6-4.png" alt="" class="step">
 								</li>
 							</ol>
 						</div>
@@ -277,26 +270,24 @@
 							<p>
 								In this process, we aimed to peel away W2 and S2 and allow W2 to float.
 							</p>
+							<a href="img/step7.png" rel="lightbox[img-group]" title="Step 7">
+								<img src="img/step7.png" alt=""width="60%">
+							</a>
 							<ol>
 								<li>
 									Initial state
-									<img src="img/7-1.png" alt="" class="step">
 								</li>
 								<li>
 									S2 and F2 joined in the toehold region
-									<img src="img/7-2.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									Binding progressed between S2 and F2
-									<img src="img/7-3.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									In the strand displacement reaction of S2 and F2, W2 dissociated
-									<img src="img/7-4.png" style="width: 40% !important" alt="" class="step">
 								</li>
 								<li>
 									F2 and S2 were combined, and W2 was dangling
-									<img src="img/7-5.png" alt="" class="step">
 								</li>
 							</ol>
 						</div>
@@ -304,6 +295,9 @@
 							<p>
 								In this process, the right foot (W2) floated in step 7 was combined with Spot4, and the goal was to progress one step further.
 							</p>
+							<a href="img/step8.png" rel="lightbox[img-group]" title="Step 8">
+								<img src="img/step8.png" alt=""width="60%">
+							</a>
 							<ol>
 								<li>
 									Initial state

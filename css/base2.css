@@ -262,6 +262,17 @@ header.sub{
   text-indent: 1.4em;
   line-height: 2em;
 }
+#tabs p{
+	font-size: 100%;
+  margin: 20px auto;
+  padding: 0px 10px;
+	color: black !important;
+  text-indent: 1.4em;
+  line-height: 2em;
+}
+#tabs{
+	color: black !important;
+}
 .content img{
   display: block;
   margin: 20px auto;
@@ -445,22 +456,15 @@ header.sub{
 	text-align: center;
 }
 
-#tabs{
-	font-family: 'Ubuntu', sans-serif;
-}
+
 .tab-content{
-	font-size: 140%;
-	max-height: 400px;
+	max-height: 600px;
 	overflow: auto;
 }
 .tab-content img.step{
 	display: block;
   width: 90%;
   margin: 20px auto;
-}
-
-.tab-content p{
-	margin: 50px auto;
 }
 
 .tab-content video{
@@ -493,4 +497,12 @@ header.sub{
   text-decoration: none;
   display: block;
   padding: 10px;
+}
+
+.ox_table{
+	width: 500px;
+}
+
+.ox_table .o{
+	background-color: yellow;
 }
