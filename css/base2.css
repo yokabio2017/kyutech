@@ -190,7 +190,7 @@ header.sub{
   font-size: 400%;
   font-weight: bold;
   text-align: center;
-  border-bottom: 3px solid rgb(115, 115, 115);
+  box-shadow: 0 -5px 15px rgba(36, 34, 34, 0.76);
 	background-color: #2b2b2b;
 	color: white;
   box-sizing: border-box;
